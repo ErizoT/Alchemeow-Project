@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{326d436d-2e0e-477a-9a0c-f99b9d94b38a}">
+		<property name="assetPath">
+			<value>mixkit-cartoon-toy-whistle-616.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2119954648526077</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{77707889-4fae-4ae7-b62e-6df70b2b02fa}</destination>
+		</relationship>
+	</object>
+</objects>
