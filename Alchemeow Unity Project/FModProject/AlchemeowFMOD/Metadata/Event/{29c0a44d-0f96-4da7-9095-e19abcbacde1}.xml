@@ -5,7 +5,7 @@
 			<value>NULL</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5b657906-a41b-447d-9351-bfbdd2f9df1d}</destination>
@@ -30,6 +30,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{02c7dc69-abf4-4a79-a6e5-68868368ceb3}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{61a0a570-c7d3-4161-aa9c-22b2d998b020}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{3905a146-8840-4210-8363-c68d0455b66d}">
@@ -56,11 +59,18 @@
 	<object class="EventAutomatableProperties" id="{29a48420-ce7f-4546-af95-3d9c7dc233a2}" />
 	<object class="MarkerTrack" id="{dcf460db-3e12-40f1-afdb-1ea5bdd672a1}" />
 	<object class="GroupTrack" id="{486c1fb0-4ef0-4db7-ba41-dba0013956ee}">
+		<relationship name="modules">
+			<destination>{98dbdc7d-3f74-4332-b632-b5e8f0bd5d04}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{59d88e5d-3ee3-495a-9cbc-5bc1032796fc}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{02c7dc69-abf4-4a79-a6e5-68868368ceb3}" />
+	<object class="Timeline" id="{02c7dc69-abf4-4a79-a6e5-68868368ceb3}">
+		<relationship name="modules">
+			<destination>{98dbdc7d-3f74-4332-b632-b5e8f0bd5d04}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{6243ccb5-2c1a-40f4-875a-7d29669e6d54}">
 		<relationship name="effectChain">
 			<destination>{37283b92-4033-47c6-8f09-67f7b6c6b50f}</destination>
@@ -78,6 +88,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{46bf77fc-0e04-41fe-969f-9394a1f2d5b7}" />
+	<object class="SingleSound" id="{98dbdc7d-3f74-4332-b632-b5e8f0bd5d04}">
+		<property name="length">
+			<value>1.2119954648526077</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{326d436d-2e0e-477a-9a0c-f99b9d94b38a}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{59d88e5d-3ee3-495a-9cbc-5bc1032796fc}">
 		<property name="name">
 			<value>Audio 1</value>
