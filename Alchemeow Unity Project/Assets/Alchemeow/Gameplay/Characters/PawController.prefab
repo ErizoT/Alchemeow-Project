@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 9208606044530037577}
   - component: {fileID: 5529179515131860957}
   m_Layer: 0
-  m_Name: Paw
+  m_Name: PawController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
