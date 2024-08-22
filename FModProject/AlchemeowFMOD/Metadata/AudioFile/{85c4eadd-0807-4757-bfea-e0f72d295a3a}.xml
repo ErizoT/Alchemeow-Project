@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{85c4eadd-0807-4757-bfea-e0f72d295a3a}">
+		<property name="assetPath">
+			<value>NOT GRABBING.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.6599999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{77707889-4fae-4ae7-b62e-6df70b2b02fa}</destination>
+		</relationship>
+	</object>
+</objects>

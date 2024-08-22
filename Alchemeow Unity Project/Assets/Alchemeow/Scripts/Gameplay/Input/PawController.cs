@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Windows;
+using FMODUnity;
 
 public class PawController : MonoBehaviour
 {
@@ -10,14 +12,20 @@ public class PawController : MonoBehaviour
     [SerializeField] float rotateSpeed = 10f;
     [Range(.5f, 1f)]
     [SerializeField] float damping = 0.7f;
+    
+    //CALLUM FMOD TEST
+    [SerializeField] private EventReference goodjobyougrabbedsound;
+    [SerializeField] private EventReference badjobyounograbbedsound;
+    
 
     private bool isHolding;
+    
 
     // Movement Input
     private Vector2 moveVector;
     private Vector2 rotateVector;
     private Rigidbody rb;
-
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -60,14 +68,18 @@ public class PawController : MonoBehaviour
             {
                 isHolding = false;
                 Debug.Log("Not Grabbing");
+                AudioManager.instance.PlayOneShot(badjobyounograbbedsound, this.transform.position);
             }
             else
             {
                 isHolding = true;
                 Debug.Log("Grabbed!");
+                AudioManager.instance.PlayOneShot(goodjobyougrabbedsound, this.transform.position);
+                
             }
         }
     }
-
-
+    
+    
+    
 }

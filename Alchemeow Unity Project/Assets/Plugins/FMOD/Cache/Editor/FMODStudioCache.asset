@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: ../FModProject/AlchemeowFMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638599516210032747
+  lastModified: 638599745745259082
   FileSizes:
   - Name: Desktop
-    Value: 14848
+    Value: 62560
   Exists: 1
 --- !u!114 &-7792913975228956675
 MonoBehaviour:
@@ -44,9 +44,36 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
+  MinDistance: 1
+  MaxDistance: 20
   Length: 1212
+--- !u!114 &-6687382345103391766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GRABBIN
+  m_EditorClassIdentifier: 
+  Path: event:/GRABBIN
+  Guid:
+    Data1: 1421594001
+    Data2: 1297829100
+    Data3: 463764621
+    Data4: 741838633
+  Banks:
+  - {fileID: -8180589079112833105}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 780
 --- !u!114 &-5300838985386300538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,11 +89,38 @@ MonoBehaviour:
   Path: ../FModProject/AlchemeowFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638599516209737391
+  lastModified: 638599745745038633
   FileSizes:
   - Name: Desktop
-    Value: 1000
+    Value: 1036
   Exists: 1
+--- !u!114 &-922995591890174184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/COmehereboy
+  m_EditorClassIdentifier: 
+  Path: event:/COmehereboy
+  Guid:
+    Data1: -463234780
+    Data2: 1094408415
+    Data3: -1633353033
+    Data4: -935208738
+  Banks:
+  - {fileID: -8180589079112833105}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2096
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,12 +139,15 @@ MonoBehaviour:
   - {fileID: -8180589079112833105}
   EditorEvents:
   - {fileID: -7792913975228956675}
+  - {fileID: -922995591890174184}
+  - {fileID: -6687382345103391766}
+  - {fileID: 3242289428369591326}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5300838985386300538}
   StringsBanks:
   - {fileID: 1879384703242202858}
-  cacheTime: 638599516210032747
+  cacheTime: 638599745745259082
   cacheVersion: 131619
 --- !u!114 &1879384703242202858
 MonoBehaviour:
@@ -107,8 +164,35 @@ MonoBehaviour:
   Path: ../FModProject/AlchemeowFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638599516209757311
+  lastModified: 638599745745043998
   FileSizes:
   - Name: Desktop
-    Value: 780
+    Value: 938
   Exists: 1
+--- !u!114 &3242289428369591326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/NOT GRABBIN
+  m_EditorClassIdentifier: 
+  Path: event:/NOT GRABBIN
+  Guid:
+    Data1: 643648455
+    Data2: 1175767290
+    Data3: -2028512333
+    Data4: -503769631
+  Banks:
+  - {fileID: -8180589079112833105}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1660

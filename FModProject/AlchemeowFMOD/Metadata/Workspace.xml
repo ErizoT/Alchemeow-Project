@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Workspace" id="{4663e011-5c54-4b28-b780-2b4fe618b4fd}">
-		<property name="builtBanksOutputDirectory" />
-		<property name="builtBanksSeparateAssets">
-			<value>true</value>
+		<property name="builtBanksOutputDirectory">
+			<value>Build</value>
 		</property>
 		<relationship name="masterEventFolder">
 			<destination>{5b657906-a41b-447d-9351-bfbdd2f9df1d}</destination>
@@ -20,11 +19,17 @@
 		<relationship name="masterBankFolder">
 			<destination>{e7055a37-3e2d-40ba-a8bc-47cc51335cdc}</destination>
 		</relationship>
+		<relationship name="masterSandboxFolder">
+			<destination>{735ee4cf-2572-475d-9919-420ed3efd382}</destination>
+		</relationship>
 		<relationship name="masterAssetFolder">
 			<destination>{77707889-4fae-4ae7-b62e-6df70b2b02fa}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{aa2039fc-75a7-4cc2-9124-8ba09fe36fc5}</destination>
+		</relationship>
+		<relationship name="profilerSessionFolder">
+			<destination>{3db305fd-d8df-4971-8324-67ca982dec84}</destination>
 		</relationship>
 		<relationship name="platforms">
 			<destination>{e4d86215-6176-4042-97bd-6dc729b89b5c}</destination>

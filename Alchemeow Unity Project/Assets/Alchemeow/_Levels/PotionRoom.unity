@@ -544,47 +544,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3886056102008260746, guid: 4086d2365b5eb3644a43de5b56f0ccc1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3719283991994556151}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4086d2365b5eb3644a43de5b56f0ccc1, type: 3}
---- !u!1 &3719283991994556150 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3886056102008260746, guid: 4086d2365b5eb3644a43de5b56f0ccc1, type: 3}
-  m_PrefabInstance: {fileID: 3719283991994556149}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3719283991994556151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3719283991994556150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 700490829
-      Data2: 1302794134
-      Data3: -1696492144
-      Data4: -506611012
-    Path: event:/DeezNuts
-  Event: 
-  PlayEvent: 13
-  StopEvent: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 0
-  OverrideMaxDistance: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
