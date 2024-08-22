@@ -453,8 +453,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FModProject/AlchemeowFMOD/AlchemeowFMOD.fspro
-  sourceBankPath: FModProject/AlchemeowFMOD/Build
+  sourceProjectPath: ../FModProject/AlchemeowFMOD/AlchemeowFMOD.fspro
+  sourceBankPath: ../FModProject/AlchemeowFMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

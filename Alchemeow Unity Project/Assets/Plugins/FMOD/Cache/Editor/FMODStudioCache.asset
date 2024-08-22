@@ -1,5 +1,45 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8180589079112833105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../FModProject/AlchemeowFMOD/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638599509365385562
+  FileSizes:
+  - Name: Desktop
+    Value: 14848
+  Exists: 1
+--- !u!114 &-5300838985386300538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../FModProject/AlchemeowFMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638599509364391102
+  FileSizes:
+  - Name: Desktop
+    Value: 1000
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,19 +53,19 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 2200599997198202242}
-  - {fileID: 3078360833542432649}
-  - {fileID: 5468345657734661556}
+  - {fileID: 1879384703242202858}
+  - {fileID: -5300838985386300538}
+  - {fileID: -8180589079112833105}
   EditorEvents:
   - {fileID: 8904148319695554475}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 3078360833542432649}
+  - {fileID: -5300838985386300538}
   StringsBanks:
-  - {fileID: 2200599997198202242}
-  cacheTime: 638599492316220099
+  - {fileID: 1879384703242202858}
+  cacheTime: 638599509365385562
   cacheVersion: 131619
---- !u!114 &2200599997198202242
+--- !u!114 &1879384703242202858
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,53 +77,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: FModProject/AlchemeowFMOD/Build/Desktop/Master.strings.bank
+  Path: ../FModProject/AlchemeowFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638599492315201290
+  lastModified: 638599509364413710
   FileSizes:
   - Name: Desktop
     Value: 776
-  Exists: 1
---- !u!114 &3078360833542432649
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: FModProject/AlchemeowFMOD/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638599492315177439
-  FileSizes:
-  - Name: Desktop
-    Value: 1000
-  Exists: 1
---- !u!114 &5468345657734661556
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
-  m_EditorClassIdentifier: 
-  Path: FModProject/AlchemeowFMOD/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638599492316220099
-  FileSizes:
-  - Name: Desktop
-    Value: 14848
   Exists: 1
 --- !u!114 &8904148319695554475
 MonoBehaviour:
@@ -104,7 +104,7 @@ MonoBehaviour:
     Data3: -1696492144
     Data4: -506611012
   Banks:
-  - {fileID: 5468345657734661556}
+  - {fileID: -8180589079112833105}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
