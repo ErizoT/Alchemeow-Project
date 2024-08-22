@@ -15,11 +15,38 @@ MonoBehaviour:
   Path: ../FModProject/AlchemeowFMOD/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638599509365385562
+  lastModified: 638599516210032747
   FileSizes:
   - Name: Desktop
     Value: 14848
   Exists: 1
+--- !u!114 &-7792913975228956675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DeezNuts
+  m_EditorClassIdentifier: 
+  Path: event:/DeezNuts
+  Guid:
+    Data1: 700490829
+    Data2: 1302794134
+    Data3: -1696492144
+    Data4: -506611012
+  Banks:
+  - {fileID: -8180589079112833105}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1212
 --- !u!114 &-5300838985386300538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,7 +62,7 @@ MonoBehaviour:
   Path: ../FModProject/AlchemeowFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638599509364391102
+  lastModified: 638599516209737391
   FileSizes:
   - Name: Desktop
     Value: 1000
@@ -57,13 +84,13 @@ MonoBehaviour:
   - {fileID: -5300838985386300538}
   - {fileID: -8180589079112833105}
   EditorEvents:
-  - {fileID: 8904148319695554475}
+  - {fileID: -7792913975228956675}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5300838985386300538}
   StringsBanks:
   - {fileID: 1879384703242202858}
-  cacheTime: 638599509365385562
+  cacheTime: 638599516210032747
   cacheVersion: 131619
 --- !u!114 &1879384703242202858
 MonoBehaviour:
@@ -80,35 +107,8 @@ MonoBehaviour:
   Path: ../FModProject/AlchemeowFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638599509364413710
+  lastModified: 638599516209757311
   FileSizes:
   - Name: Desktop
-    Value: 776
+    Value: 780
   Exists: 1
---- !u!114 &8904148319695554475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/NULL
-  m_EditorClassIdentifier: 
-  Path: event:/NULL
-  Guid:
-    Data1: 700490829
-    Data2: 1302794134
-    Data3: -1696492144
-    Data4: -506611012
-  Banks:
-  - {fileID: -8180589079112833105}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1212
