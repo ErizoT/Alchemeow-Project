@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Desktop/Master.strings.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
   Path: Assets/FMODAssets/Desktop/Master.strings.bank
-  Name: Desktop/Master.strings
+  Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638600541447276781
+  lastModified: 638600543896247205
   FileSizes:
   - Name: 
     Value: 938
@@ -127,7 +127,7 @@ MonoBehaviour:
   - {fileID: 7452726451314571816}
   StringsBanks:
   - {fileID: -8135284076807566715}
-  cacheTime: 638600541451318958
+  cacheTime: 638600543896382797
   cacheVersion: 131619
 --- !u!114 &193033744573342758
 MonoBehaviour:
@@ -144,7 +144,7 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/SFX.bank
   Name: Desktop/SFX
   StudioPath: bank:/SFX
-  lastModified: 638600541451318958
+  lastModified: 638600543896382797
   FileSizes: []
   Exists: 1
 --- !u!114 &3242289428369591326
@@ -189,6 +189,6 @@ MonoBehaviour:
   Path: Assets/FMODAssets/Desktop/Master.bank
   Name: Desktop/Master
   StudioPath: bank:/Master
-  lastModified: 638600541447271577
+  lastModified: 638600543896127532
   FileSizes: []
   Exists: 1
