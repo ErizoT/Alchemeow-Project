@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8180589079112833105
+--- !u!114 &-8135284076807566715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX.bank
+  m_Name: bank:/Desktop/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../FModProject/AlchemeowFMOD/Build/Desktop/SFX.bank
-  Name: SFX
-  StudioPath: bank:/SFX
-  lastModified: 638600530643856929
+  Path: Assets/FMODAssets/Desktop/Master.strings.bank
+  Name: Desktop/Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638600541447276781
   FileSizes:
-  - Name: Desktop
-    Value: 62560
+  - Name: 
+    Value: 938
   Exists: 1
 --- !u!114 &-7792913975228956675
 MonoBehaviour:
@@ -39,7 +39,7 @@ MonoBehaviour:
     Data3: -1696492144
     Data4: -506611012
   Banks:
-  - {fileID: -8180589079112833105}
+  - {fileID: 193033744573342758}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -66,7 +66,7 @@ MonoBehaviour:
     Data3: 463764621
     Data4: 741838633
   Banks:
-  - {fileID: -8180589079112833105}
+  - {fileID: 193033744573342758}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -74,26 +74,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 780
---- !u!114 &-5300838985386300538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: ../FModProject/AlchemeowFMOD/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638600530643836946
-  FileSizes:
-  - Name: Desktop
-    Value: 1036
-  Exists: 1
 --- !u!114 &-922995591890174184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +93,7 @@ MonoBehaviour:
     Data3: -1633353033
     Data4: -935208738
   Banks:
-  - {fileID: -8180589079112833105}
+  - {fileID: 193033744573342758}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -134,9 +114,9 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 1879384703242202858}
-  - {fileID: -5300838985386300538}
-  - {fileID: -8180589079112833105}
+  - {fileID: -8135284076807566715}
+  - {fileID: 7452726451314571816}
+  - {fileID: 193033744573342758}
   EditorEvents:
   - {fileID: -7792913975228956675}
   - {fileID: -922995591890174184}
@@ -144,12 +124,12 @@ MonoBehaviour:
   - {fileID: 3242289428369591326}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -5300838985386300538}
+  - {fileID: 7452726451314571816}
   StringsBanks:
-  - {fileID: 1879384703242202858}
-  cacheTime: 638600530643856929
+  - {fileID: -8135284076807566715}
+  cacheTime: 638600541451318958
   cacheVersion: 131619
---- !u!114 &1879384703242202858
+--- !u!114 &193033744573342758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,15 +139,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
+  m_Name: bank:/Desktop/SFX.bank
   m_EditorClassIdentifier: 
-  Path: ../FModProject/AlchemeowFMOD/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638600530643846909
-  FileSizes:
-  - Name: Desktop
-    Value: 938
+  Path: Assets/FMODAssets/Desktop/SFX.bank
+  Name: Desktop/SFX
+  StudioPath: bank:/SFX
+  lastModified: 638600541451318958
+  FileSizes: []
   Exists: 1
 --- !u!114 &3242289428369591326
 MonoBehaviour:
@@ -188,7 +166,7 @@ MonoBehaviour:
     Data3: -2028512333
     Data4: -503769631
   Banks:
-  - {fileID: -8180589079112833105}
+  - {fileID: 193033744573342758}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -196,3 +174,21 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1660
+--- !u!114 &7452726451314571816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Desktop/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODAssets/Desktop/Master.bank
+  Name: Desktop/Master
+  StudioPath: bank:/Master
+  lastModified: 638600541447271577
+  FileSizes: []
+  Exists: 1
