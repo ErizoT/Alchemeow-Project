@@ -6,7 +6,7 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x3236aa208 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x31ddb2e08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -17,23 +17,129 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Thread::initThread                       : Init FMOD profiler thread (recv). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] Thread::initThread                       : Init FMOD profiler thread (send). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 131072, Semaphore: No, Sleep Time: 0, Looping: No.
+[LOG] LiveUpdate::clientConnected              : client = 0x159fde408
+[LOG] LiveUpdate::readPacket                   : Recieved init packet from client 0x159fde408
+[LOG] LiveUpdate::readPacket                   : Accepting init message for client 0x159fde408
+[LOG] LiveUpdate::transitionToConnected        : 
+[LOG] Manager::sendConnectTimeHash             : 
+[LOG] LiveUpdate::sendBankHash                 : 
+[LOG] LiveUpdate::acceptInitPacket             : Client 0x159fde408 connected, entering connected state
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 58208
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 4352
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3326267f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39d464528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39d4645f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39d464634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39d464704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x31d3bcc28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Grabbing -001-001', format=5, channels=2, frequency=48000, lengthbytes=7456, lengthpcm=37440, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.177255.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 58208
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 4352
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3326267f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39d464528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39d4645f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39d464634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39d464704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x15a642e68
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='NOT GRABBING', format=5, channels=2, frequency=48000, lengthbytes=16832, lengthpcm=79680, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.120780.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_0.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_0.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_1.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_1.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_2.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_2.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_3.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_3.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_4.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_4.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_5.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_5.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_6.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_6.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_7.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_7.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_8.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_8.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_9.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_9.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_10.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_10.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_11.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_11.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_12.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_12.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_13.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_13.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_14.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_14.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_15.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_15.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_16.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_16.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_17.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_17.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_18.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_18.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_19.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_19.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_20.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_20.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_21.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-ubVCpP/hotswap_21.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SoundI::release                          :  (0x333d8ec68)
+[LOG] SoundI::release                          :     Grabbing -001-001 (0x333d92418)
+[LOG] SoundI::release                          :  (0x15a66b8a8)
+[LOG] SoundI::release                          :     NOT GRABBING (0x15a6430b8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[ERR] FMOD_OS_Net_Read                         : read failed with errno 9
+[ERR] ProfileClient::recvThreadLoopFunction    : Recv thread loop returned 43
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
