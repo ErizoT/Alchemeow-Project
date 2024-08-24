@@ -456,7 +456,7 @@ MonoBehaviour:
   sourceProjectPath: ../FModProject/AlchemeowFMOD/AlchemeowFMOD.fspro
   sourceBankPath: Assets/FMODAssets/Desktop
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -476,9 +476,9 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Desktop/Master
+  - Master
   Banks:
-  - Desktop/SFX
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
