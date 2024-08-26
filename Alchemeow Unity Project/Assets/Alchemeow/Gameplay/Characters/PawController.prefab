@@ -101,7 +101,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -206,7 +206,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -220,8 +220,6 @@ GameObject:
   m_Component:
   - component: {fileID: 257874082193587020}
   - component: {fileID: 8800434092929163034}
-  - component: {fileID: 7550845017466215431}
-  - component: {fileID: 9055421318075428438}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -253,7 +251,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4753066886768650826}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62ee10986b730814e9a4244059796486, type: 3}
   m_Name: 
@@ -265,51 +263,6 @@ MonoBehaviour:
   _stiffness: 100
   _damper: 5
   _mass: 1
---- !u!114 &7550845017466215431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4753066886768650826}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bdd4f0b155d5174aa5eaadd2b74eecc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  localEquilibriumRotation: {x: 0, y: 0, z: 0}
-  torqueScale: {x: 1, y: 1, z: 1}
-  stiffness: 100
-  _damper: 5
-  _localPivotPosition: {x: 0, y: 0, z: 0}
-  angularDisplacementMagnitude: 0
---- !u!54 &9055421318075428438
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4753066886768650826}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &4758212547997966723
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,7 +278,7 @@ GameObject:
   - component: {fileID: 5529179515131860957}
   m_Layer: 0
   m_Name: PawController
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -387,7 +340,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 5529179515131860957}
   moveSpeed: 15
-  rotateSpeed: 10
+  rotateSpeed: 10.55
+  raiseLowerSpeed: 1
+  visuals: {fileID: 4753066886768650826}
   damping: 0.7
 --- !u!114 &9208606044530037577
 MonoBehaviour:
@@ -396,7 +351,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4758212547997966723}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62ff0a61c0fcceb44b963ff7e0a91422, type: 3}
   m_Name: 
@@ -518,6 +473,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 760ebb72-20e1-4583-8e62-48a2738a9c6b
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5692666194571809138}
+        m_TargetAssemblyTypeName: PawController, Assembly-CSharp
+        m_MethodName: RaiseLower
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7068d6d2-9d95-4261-b958-723a4a0afdc1
+    m_ActionName: Player/RaiseLower[/XInputControllerWindows/dpad/down,/XInputControllerWindows/dpad/up]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

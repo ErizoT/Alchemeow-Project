@@ -8,6 +8,8 @@ public class PawController : MonoBehaviour
     [SerializeField] PlayerInput playerInput;
     [SerializeField] float moveSpeed = 10;
     [SerializeField] float rotateSpeed = 10f;
+    [SerializeField] float raiseLowerSpeed = 10f;
+    [SerializeField] GameObject visuals;
     [Range(.5f, 1f)]
     [SerializeField] float damping = 0.7f;
 
@@ -16,7 +18,10 @@ public class PawController : MonoBehaviour
     // Movement Input
     private Vector2 moveVector;
     private Vector2 rotateVector;
+    private float raiseValue;
     private Rigidbody rb;
+
+    private GameObject nearestObject;
 
     private void Start()
     {
@@ -26,12 +31,44 @@ public class PawController : MonoBehaviour
     private void Update()
     {
         // Player Movement
-        Vector3 playerVel = new Vector3(moveVector.x, 0, moveVector.y) * moveSpeed;
+        Vector3 playerVel = new Vector3(moveVector.x, raiseValue, moveVector.y) * moveSpeed;
         rb.AddForce(playerVel, ForceMode.Acceleration);
 
         // Player Rotation
-        //Vector3 playerRotation = new Vector3(rotateVector.x, 0, rotateVector.y) * rotateSpeed;
-        //rb.AddTorque(playerRotation, ForceMode.Acceleration);
+        //Find all objects with tag "Object"
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("Objects");
+
+        if (objects.Length == 0)
+        return;
+
+        // Find the nearest object
+        nearestObject = null;
+        float minDistance = Mathf.Infinity;
+        Vector3 currentPosition = transform.position;
+
+        foreach (GameObject obj in objects)
+        {
+            float distance = Vector3.Distance(currentPosition, obj.transform.position);
+
+            if (distance < minDistance)
+            {
+                minDistance = distance;
+                nearestObject = obj;
+            }
+        }
+
+        // If a nearest object is found, make this object look at it
+        if (nearestObject != null)
+        {
+            visuals.transform.LookAt(nearestObject.transform);
+            visuals.transform.Rotate(0, 90, -90);
+        }
+
+
+        if (isHolding)
+        {
+            transform.position = nearestObject.transform.position;
+        }
     }
 
     private void FixedUpdate()
@@ -50,6 +87,7 @@ public class PawController : MonoBehaviour
     public void OnRotate(InputAction.CallbackContext input)
     {
         rotateVector = input.ReadValue<Vector2>();
+        Debug.Log(rotateVector);
     }
 
     public void OnGrab(InputAction.CallbackContext input)
@@ -59,15 +97,18 @@ public class PawController : MonoBehaviour
             if (isHolding)
             {
                 isHolding = false;
-                Debug.Log("Not Grabbing");
             }
             else
             {
                 isHolding = true;
-                Debug.Log("Grabbed!");
             }
         }
     }
 
+    public void RaiseLower(InputAction.CallbackContext input)
+    {
+        raiseValue = input.ReadValue<float>() * raiseLowerSpeed;
 
+        
+    }
 }
