@@ -8,6 +8,10 @@ public class PawController : MonoBehaviour
     [SerializeField] PlayerInput playerInput;
     [SerializeField] float moveSpeed = 10;
     [SerializeField] float rotateSpeed = 10f;
+    [SerializeField] float raiseLowerSpeed = 10f;
+    [SerializeField] GameObject visuals;
+    [SerializeField] Rigidbody dummyRigidbody;
+    [SerializeField] Vector3 holdOffset;
     [Range(.5f, 1f)]
     [SerializeField] float damping = 0.7f;
 
@@ -16,22 +20,71 @@ public class PawController : MonoBehaviour
     // Movement Input
     private Vector2 moveVector;
     private Vector2 rotateVector;
+    private float raiseValue;
     private Rigidbody rb;
+    private ConfigurableJoint hinge;
+    //private Quaternion defaultRotation;
+
+    private GameObject nearestObject;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        //defaultRotation = visuals.transform.rotation;
+        hinge = GetComponent<ConfigurableJoint>();
     }
 
     private void Update()
     {
         // Player Movement
-        Vector3 playerVel = new Vector3(moveVector.x, 0, moveVector.y) * moveSpeed;
+        Vector3 playerVel = new Vector3(moveVector.x, raiseValue, moveVector.y) * moveSpeed;
         rb.AddForce(playerVel, ForceMode.Acceleration);
 
         // Player Rotation
-        //Vector3 playerRotation = new Vector3(rotateVector.x, 0, rotateVector.y) * rotateSpeed;
-        //rb.AddTorque(playerRotation, ForceMode.Acceleration);
+        if (!isHolding)
+        {
+            // Should do a spherecast instead of checking every object in the scene due to performance
+
+            //Find all objects with tag "Object"
+            GameObject[] objects = GameObject.FindGameObjectsWithTag("Objects"); // Should make it "Grabbable" instead of "Objects"
+            hinge.connectedBody = dummyRigidbody;
+
+            if (objects.Length == 0)
+                return;
+
+            // Find the nearest object
+            nearestObject = null;
+            float minDistance = Mathf.Infinity;
+            float lookThreshold = 5f;
+            Vector3 currentPosition = transform.position;
+
+            foreach (GameObject obj in objects)
+            {
+                float distance = Vector3.Distance(currentPosition, obj.transform.position);
+
+                if (distance < minDistance)
+                {
+                    minDistance = distance;
+                    nearestObject = obj;
+                }
+            }
+
+            //nearestObject.GetComponentInParent<HingeJoint>().connectedBody = null;
+
+            // If a nearest object is found, make this object look at it
+            if (nearestObject != null && minDistance <= lookThreshold)
+            {
+                transform.LookAt(nearestObject.transform);
+                transform.Rotate(0, 90, -90);
+            }
+        }
+
+        if (isHolding)
+        {
+            transform.position = nearestObject.transform.position + holdOffset;
+            hinge.connectedBody = nearestObject.GetComponentInParent<Rigidbody>();
+            visuals.transform.rotation = nearestObject.transform.rotation;
+        }
     }
 
     private void FixedUpdate()
@@ -50,6 +103,7 @@ public class PawController : MonoBehaviour
     public void OnRotate(InputAction.CallbackContext input)
     {
         rotateVector = input.ReadValue<Vector2>();
+        Debug.Log(rotateVector);
     }
 
     public void OnGrab(InputAction.CallbackContext input)
@@ -59,15 +113,18 @@ public class PawController : MonoBehaviour
             if (isHolding)
             {
                 isHolding = false;
-                Debug.Log("Not Grabbing");
             }
             else
             {
                 isHolding = true;
-                Debug.Log("Grabbed!");
             }
         }
     }
 
+    public void RaiseLower(InputAction.CallbackContext input)
+    {
+        raiseValue = input.ReadValue<float>() * raiseLowerSpeed;
 
+        
+    }
 }
