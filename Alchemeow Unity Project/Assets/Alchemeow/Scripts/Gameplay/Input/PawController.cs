@@ -81,7 +81,7 @@ public class PawController : MonoBehaviour
 
         if (isHolding)
         {
-            transform.position = nearestObject.transform.position + holdOffset;
+            transform.position = nearestObject.transform.position;
             hinge.connectedBody = nearestObject.GetComponentInParent<Rigidbody>();
             visuals.transform.rotation = nearestObject.transform.rotation;
         }
