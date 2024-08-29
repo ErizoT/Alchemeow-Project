@@ -243,10 +243,42 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
+    - target: {fileID: 1061166536370008304, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      propertyPath: m_Drag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061166536370008304, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      propertyPath: m_Mass
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061166536370008304, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      propertyPath: m_AngularDrag
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061166536370008304, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1373722433124157788, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3290513880670985673, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710695
+      objectReference: {fileID: 0}
+    - target: {fileID: 3290513880670985673, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071066
+      objectReference: {fileID: 0}
+    - target: {fileID: 3290513880670985673, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 3423747940640400162, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 6241209282217863916, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3326464

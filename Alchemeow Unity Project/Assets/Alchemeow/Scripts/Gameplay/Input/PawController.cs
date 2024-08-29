@@ -11,6 +11,7 @@ public class PawController : MonoBehaviour
     [SerializeField] float raiseLowerSpeed = 10f;
     [SerializeField] GameObject visuals;
     [SerializeField] Rigidbody dummyRigidbody;
+    [SerializeField] Vector3 holdOffset;
     [Range(.5f, 1f)]
     [SerializeField] float damping = 0.7f;
 
@@ -21,7 +22,7 @@ public class PawController : MonoBehaviour
     private Vector2 rotateVector;
     private float raiseValue;
     private Rigidbody rb;
-    private HingeJoint hinge;
+    private ConfigurableJoint hinge;
     //private Quaternion defaultRotation;
 
     private GameObject nearestObject;
@@ -30,7 +31,7 @@ public class PawController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         //defaultRotation = visuals.transform.rotation;
-        hinge = GetComponent<HingeJoint>();
+        hinge = GetComponent<ConfigurableJoint>();
     }
 
     private void Update()
@@ -73,15 +74,16 @@ public class PawController : MonoBehaviour
             // If a nearest object is found, make this object look at it
             if (nearestObject != null && minDistance <= lookThreshold)
             {
-                visuals.transform.LookAt(nearestObject.transform);
-                visuals.transform.Rotate(0, 90, -90);
+                transform.LookAt(nearestObject.transform);
+                transform.Rotate(0, 90, -90);
             }
         }
 
         if (isHolding)
         {
-            transform.position = nearestObject.transform.position;
+            transform.position = nearestObject.transform.position + holdOffset;
             hinge.connectedBody = nearestObject.GetComponentInParent<Rigidbody>();
+            visuals.transform.rotation = nearestObject.transform.rotation;
         }
     }
 
