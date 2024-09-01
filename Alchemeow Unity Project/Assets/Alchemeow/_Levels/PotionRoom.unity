@@ -339,7 +339,10 @@ PrefabInstance:
     - {fileID: -7857505053687187585, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 912910682272307834, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1111395205}
   m_SourcePrefab: {fileID: 100100000, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
 --- !u!1 &793280492
 GameObject:
@@ -351,9 +354,10 @@ GameObject:
   m_Component:
   - component: {fileID: 793280495}
   - component: {fileID: 793280494}
-  - component: {fileID: 793280493}
   - component: {fileID: 793280496}
   - component: {fileID: 793280497}
+  - component: {fileID: 793280498}
+  - component: {fileID: 793280499}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -361,14 +365,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &793280493
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 793280492}
-  m_Enabled: 1
 --- !u!20 &793280494
 Camera:
   m_ObjectHideFlags: 0
@@ -497,6 +493,86 @@ MonoBehaviour:
   maxZoom: 0
   zoomLimiter: 50
   offset: {x: 0, y: 3.7, z: -3.8}
+--- !u!114 &793280498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793280492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+--- !u!114 &793280499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 793280492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1633203412
+      Data2: 1255912070
+      Data3: -94539595
+      Data4: 2059398209
+    Path: event:/music_controller
+  Event: 
+  PlayEvent: 1
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &1111395199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 912910682272307834, guid: 01d82543ecae15846bd813b7fb7fbe9d, type: 3}
+  m_PrefabInstance: {fileID: 609771323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1111395205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111395199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -721049486
+      Data2: 1104676028
+      Data3: -2080689530
+      Data4: -1719356889
+    Path: event:/sfx_pianoriff
+  Event: 
+  PlayEvent: 13
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1171835251
 GameObject:
   m_ObjectHideFlags: 0
