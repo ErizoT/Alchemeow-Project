@@ -557,11 +557,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -721049486
-      Data2: 1104676028
-      Data3: -2080689530
-      Data4: -1719356889
-    Path: event:/sfx_pianoriff
+      Data1: 346752956
+      Data2: 1073896019
+      Data3: -155438661
+      Data4: 774281649
+    Path: event:/gum
   Event: 
   PlayEvent: 13
   StopEvent: 0
