@@ -383,7 +383,6 @@ GameObject:
   - component: {fileID: 9208606044530037577}
   - component: {fileID: 5529179515131860957}
   - component: {fileID: 2264973674236971839}
-  - component: {fileID: 7495354214939189129}
   m_Layer: 0
   m_Name: PawController
   m_TagString: Player
@@ -691,21 +690,3 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 0.00001
   m_ConnectedMassScale: 1
---- !u!114 &7495354214939189129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4758212547997966723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 3
-  outlineColor: {r: 0.08025503, g: 0, b: 1, a: 1}
-  outlineWidth: 7
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
