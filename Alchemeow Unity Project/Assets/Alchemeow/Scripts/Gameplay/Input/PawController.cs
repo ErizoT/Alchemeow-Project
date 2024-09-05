@@ -16,16 +16,12 @@ public class PawController : MonoBehaviour
     [SerializeField] float damping = 0.7f;
 
     private bool isHolding;
-
-    // Movement Input
     private Vector2 moveVector;
     private Vector2 rotateVector;
     private float raiseValue;
     private Rigidbody rb;
     private ConfigurableJoint hinge;
     private Quaternion defaultRotation;
-    //private Quaternion defaultRotation;
-
     private GameObject nearestObject;
 
     private void Start()
@@ -47,7 +43,7 @@ public class PawController : MonoBehaviour
             // Should do a spherecast instead of checking every object in the scene due to performance
             animator.SetBool("Holding", false);
             //Find all objects with tag "Object"
-            GameObject[] objects = GameObject.FindGameObjectsWithTag("Objects"); // Should make it "Grabbable" instead of "Objects"
+            GameObject[] objects = GameObject.FindGameObjectsWithTag("Holdable"); // Should make it "Grabbable" instead of "Objects"
             hinge.connectedBody = dummyRigidbody;
 
             if (objects.Length == 0)
