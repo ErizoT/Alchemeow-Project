@@ -23,19 +23,27 @@ public class PawController : MonoBehaviour
     private ConfigurableJoint hinge;
     private Quaternion defaultRotation;
     private GameObject nearestObject;
+    private Camera mainCamera;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         defaultRotation = transform.rotation;
         hinge = GetComponent<ConfigurableJoint>();
+        
+        // Finding main camera and adding this object to it
+        mainCamera = Camera.main;
+        GameObject mainCamObject = mainCamera.gameObject;
+        MultipleTargetCamera camScript = mainCamObject.GetComponent<MultipleTargetCamera>();
+        camScript.targets.Add(transform);
+        
     }
 
     private void Update()
     {
         // Player Movement
         Vector3 playerVel = new Vector3(moveVector.x, raiseValue, moveVector.y) * moveSpeed;
-        rb.AddForce(playerVel, ForceMode.Acceleration);
+        rb.AddForce(playerVel*Time.deltaTime, ForceMode.Acceleration);
 
         // Player Rotation
         if (!isHolding)
@@ -77,11 +85,13 @@ public class PawController : MonoBehaviour
             }
         }
         
+        
         if (isHolding && Vector3.Distance(transform.position, nearestObject.transform.position) <= grabRange)
         {
             transform.position = nearestObject.transform.position;
             hinge.connectedBody = nearestObject.GetComponentInParent<Rigidbody>();
             visuals.transform.rotation = nearestObject.transform.rotation;
+            visuals.transform.position = nearestObject.transform.position;
             animator.SetBool("Holding", true);
         }
     }

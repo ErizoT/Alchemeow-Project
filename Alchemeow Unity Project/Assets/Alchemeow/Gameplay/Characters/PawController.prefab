@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 8800434092929163034}
   - component: {fileID: 5477295932068764815}
   - component: {fileID: 820075173961847455}
+  - component: {fileID: 6610569372261753164}
   m_Layer: 0
   m_Name: Visuals
   m_TagString: Untagged
@@ -370,6 +371,29 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &6610569372261753164
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753066886768650826}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.4
+  m_Height: 1.56
+  m_Direction: 0
+  m_Center: {x: 0.34, y: 0, z: 0}
 --- !u!1 &4758212547997966723
 GameObject:
   m_ObjectHideFlags: 0
@@ -384,7 +408,6 @@ GameObject:
   - component: {fileID: 9208606044530037577}
   - component: {fileID: 5529179515131860957}
   - component: {fileID: 2264973674236971839}
-  - component: {fileID: 2192830792707839888}
   m_Layer: 0
   m_Name: PawController
   m_TagString: Player
@@ -449,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 5529179515131860957}
-  moveSpeed: 20
+  moveSpeed: 2000
   raiseLowerSpeed: 2
   grabRange: 3
   animator: {fileID: 1120478026037640333}
@@ -692,29 +715,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 0.00001
   m_ConnectedMassScale: 1
---- !u!136 &2192830792707839888
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4758212547997966723}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Radius: 0.4
-  m_Height: 1.56
-  m_Direction: 0
-  m_Center: {x: 0.34, y: 0, z: 0}
 --- !u!1001 &6230147855700783474
 PrefabInstance:
   m_ObjectHideFlags: 0
