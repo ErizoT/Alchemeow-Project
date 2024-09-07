@@ -6,17 +6,22 @@ public class Crushable : MonoBehaviour
 {
     public bool inBowl;
 
-    [SerializeField] GameObject[] prefabToSpawn;
+    [SerializeField] GameObject prefabToSpawn;
 
-    private void OnCollisionEnter(Collision collision)
+    private bool hasBeenCrushed;
+
+    public void Crush()
     {
-        if (!inBowl) return;
-
-        else if (inBowl) // AND that the pestel is moving at the correct speed // Will have to check collision layers
+        if (inBowl && !hasBeenCrushed)
         {
+            //Debug.Log("Instantiated 1 Block");
             // Emit a big af particle effect
+            // Play a sound
             // Delete the current gameobject
             // Spawn prefabToSpawn in its place
+            hasBeenCrushed = true;
+            Instantiate(prefabToSpawn, transform.position, transform.rotation);
+            Destroy(gameObject);
         }
     }
 }

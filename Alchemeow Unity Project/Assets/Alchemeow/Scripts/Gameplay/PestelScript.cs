@@ -5,6 +5,7 @@ using UnityEngine;
 public class PestelScript : MonoBehaviour
 {
     private Rigidbody rb;
+    private bool canCrush;
 
     private void Start()
     {
@@ -21,12 +22,21 @@ public class PestelScript : MonoBehaviour
             // Check if the velocity in the y direction is negative
             if (velocity.y < -3f)
             {
-                Debug.Log("The object is moving downwards.");
+                canCrush = true;
             }
             else
             {
-                Debug.Log("The object is not moving downwards.");
+                canCrush = false;
             }
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.TryGetComponent<Crushable>(out Crushable objToCrush) && canCrush)
+        {
+            Debug.Log("Crushing...");
+            objToCrush.Crush();
         }
     }
 }
