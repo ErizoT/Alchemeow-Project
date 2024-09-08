@@ -42,7 +42,11 @@ MonoBehaviour:
   Path: Assets/FMod_Assets/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< Updated upstream
   lastModified: 638611516414578062
+=======
+  lastModified: 638609101066092994
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &-3863516706604160324
@@ -87,7 +91,11 @@ MonoBehaviour:
   Path: Assets/FMod_Assets/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< Updated upstream
   lastModified: 638611516414588080
+=======
+  lastModified: 638609101066092994
+>>>>>>> Stashed changes
   FileSizes:
   - Name: 
     Value: 1118
@@ -107,7 +115,11 @@ MonoBehaviour:
   Path: Assets/FMod_Assets/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
+<<<<<<< Updated upstream
   lastModified: 638611516414817670
+=======
+  lastModified: 638609101066328285
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &-898538492210751755
@@ -125,7 +137,11 @@ MonoBehaviour:
   Path: Assets/FMod_Assets/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
+<<<<<<< Updated upstream
   lastModified: 638611516414807696
+=======
+  lastModified: 638609101066308288
+>>>>>>> Stashed changes
   FileSizes: []
   Exists: 1
 --- !u!114 &11400000
@@ -158,7 +174,11 @@ MonoBehaviour:
   - {fileID: -5404150070570458152}
   StringsBanks:
   - {fileID: -1901674944777542402}
+<<<<<<< Updated upstream
   cacheTime: 638611516414817670
+=======
+  cacheTime: 638609101066328285
+>>>>>>> Stashed changes
   cacheVersion: 131619
 --- !u!114 &115860198507687744
 MonoBehaviour:
