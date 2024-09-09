@@ -84,8 +84,8 @@ public class PawController : MonoBehaviour
                 transform.rotation = defaultRotation;
             }
         }
-        
-        
+
+
         if (isHolding && Vector3.Distance(transform.position, nearestObject.transform.position) <= grabRange)
         {
             transform.position = nearestObject.transform.position;
@@ -94,6 +94,7 @@ public class PawController : MonoBehaviour
             visuals.transform.position = nearestObject.transform.position;
             animator.SetBool("Holding", true);
         }
+        else return;
     }
 
     private void FixedUpdate()
