@@ -38,14 +38,7 @@ public class audio_impactsound : MonoBehaviour
             impactInstance.setParameterByName("impact_velocity", impactSpeed);
             
         }
-        else
-        {
-
-        }
-
-
-
-
+        
 
     }
 }
