@@ -1,14 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Crushable : MonoBehaviour
 {
     public bool inBowl;
-
-    [SerializeField] GameObject prefabToSpawn;
-
+    private float impactVelocity;
+   [SerializeField] GameObject prefabToSpawn;
+   [SerializeField] FMODUnity.EventReference crushSound;
     private bool hasBeenCrushed;
+    
 
     public void Crush()
     {
@@ -19,9 +21,11 @@ public class Crushable : MonoBehaviour
             // Play a sound
             // Delete the current gameobject
             // Spawn prefabToSpawn in its place
+            FMODUnity.RuntimeManager.PlayOneShot(crushSound);
             hasBeenCrushed = true;
             Instantiate(prefabToSpawn, transform.position, transform.rotation);
             Destroy(gameObject);
+            
         }
     }
 }

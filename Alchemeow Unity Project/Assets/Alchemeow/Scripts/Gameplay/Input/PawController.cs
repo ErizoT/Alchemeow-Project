@@ -26,6 +26,11 @@ public class PawController : MonoBehaviour
     private GameObject nearestObject;
     private Camera mainCamera;
 
+    //sound for grabbing
+    [SerializeField] FMODUnity.EventReference grabSound;
+    private FMOD.Studio.EventInstance grabInstance;
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -131,6 +136,9 @@ public class PawController : MonoBehaviour
             {
                 isHolding = true;
                 animator.SetTrigger("Grab");
+                //play sound
+                grabInstance = FMODUnity.RuntimeManager.CreateInstance(grabSound);
+                grabInstance.start();
             }
         }
     }

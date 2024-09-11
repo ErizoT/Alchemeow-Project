@@ -267,6 +267,13 @@ MonoBehaviour:
   visuals: {fileID: 4753066886768650826}
   dummyRigidbody: {fileID: 5810281254281777087}
   damping: 0.7
+  grabSound:
+    Guid:
+      Data1: 1963660221
+      Data2: 1123707509
+      Data3: -971438146
+      Data4: -1749766481
+    Path: event:/sfx_paw_grab
 --- !u!114 &9208606044530037577
 MonoBehaviour:
   m_ObjectHideFlags: 0
