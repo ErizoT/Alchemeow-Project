@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PawController : MonoBehaviour
 {
@@ -139,5 +140,14 @@ public class PawController : MonoBehaviour
         raiseValue = input.ReadValue<float>() * raiseLowerSpeed;
 
         
+    }
+
+    public void ResetScene(InputAction.CallbackContext input)
+    {
+        // Get the currently active scene
+        Scene currentScene = SceneManager.GetActiveScene();
+
+        // Reload the scene
+        SceneManager.LoadScene(currentScene.name);
     }
 }
