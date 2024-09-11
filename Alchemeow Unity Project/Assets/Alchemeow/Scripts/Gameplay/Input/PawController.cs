@@ -137,6 +137,7 @@ public class PawController : MonoBehaviour
                 isHolding = true;
                 animator.SetTrigger("Grab");
                 //play sound
+                print(animator.GetBool("Holding"));
                 grabInstance = FMODUnity.RuntimeManager.CreateInstance(grabSound);
                 grabInstance.start();
             }

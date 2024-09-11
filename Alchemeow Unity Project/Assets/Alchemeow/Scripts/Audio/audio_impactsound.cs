@@ -11,7 +11,8 @@ public class audio_impactsound : MonoBehaviour
 
 
     // OBJECT IMPACTED AGAINST
-    [SerializeField] private string collisionObject;
+    [SerializeField] private GameObject[] collisionObjects;
+    int objectNumber = 0;
 
 
     // SOUND BEING MADE
@@ -22,21 +23,23 @@ public class audio_impactsound : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        //
-        if (collision.gameObject.name == collisionObject)
+        for(objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
+            if (collision.gameObject.transform == collisionObjects[objectNumber].transform)
+            {
 
-            impactInstance = FMODUnity.RuntimeManager.CreateInstance(impactEvent);
+                impactInstance = FMODUnity.RuntimeManager.CreateInstance(impactEvent);
 
-            impactSpeed = collision.relativeVelocity.magnitude;
+                impactSpeed = collision.relativeVelocity.magnitude;
 
-            // SETS VELOCITY BETWEEN VALUE 0-1
-            Mathf.Clamp(impactSpeed, 0, 3);
-            impactSpeed = (impactSpeed / 3);
+                // SETS VELOCITY BETWEEN VALUE 0-1
+                Mathf.Clamp(impactSpeed, 0, 3);
+                impactSpeed = (impactSpeed / 3);
 
-            impactInstance.start();
-            impactInstance.setParameterByName("impact_velocity", impactSpeed);
-            
+                impactInstance.start();
+                impactInstance.setParameterByName("impact_velocity", impactSpeed);
+
+            }
         }
         
 
