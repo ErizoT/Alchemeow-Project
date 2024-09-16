@@ -35,7 +35,7 @@ public class PestelScript : MonoBehaviour
     {
         if (collision.gameObject.TryGetComponent<Crushable>(out Crushable objToCrush) && canCrush)
         {
-            Debug.Log("Crushing...");
+            //Debug.Log("Crushing...");
             objToCrush.Crush();
         }
     }

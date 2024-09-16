@@ -54,10 +54,9 @@ public class PawController : MonoBehaviour
         // Player Rotation
         if (!isHolding)
         {
-            // Should do a spherecast instead of checking every object in the scene due to performance
             animator.SetBool("Holding", false);
             //Find all objects with tag "Object"
-            GameObject[] objects = GameObject.FindGameObjectsWithTag("Holdable"); // Should make it "Grabbable" instead of "Objects"
+            GameObject[] objects = GameObject.FindGameObjectsWithTag("Holdable");
             hinge.connectedBody = dummyRigidbody;
 
             if (objects.Length == 0)
@@ -103,6 +102,11 @@ public class PawController : MonoBehaviour
         else return;
     }
 
+    // Callum request:
+    // Play a sound when you let go of an object, not JUST the air.
+    // - Detect when it is holding an object
+    // - Detect when you let go of said object
+
     private void FixedUpdate()
     {
         // Velocity Damping
@@ -130,16 +134,17 @@ public class PawController : MonoBehaviour
             if (isHolding)
             {
                 isHolding = false;
-                
+                //Debug.Log("Release");
+                grabInstance = FMODUnity.RuntimeManager.CreateInstance(grabSound);
+                grabInstance.start();
             }
             else
             {
                 isHolding = true;
                 animator.SetTrigger("Grab");
                 //play sound
-                print(animator.GetBool("Holding"));
-                grabInstance = FMODUnity.RuntimeManager.CreateInstance(grabSound);
-                grabInstance.start();
+                //print(animator.GetBool("Holding"));
+                
             }
         }
     }
