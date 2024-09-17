@@ -5,6 +5,7 @@ using UnityEngine;
 public class ObjectChecker : MonoBehaviour
 {
     public List<Potion> potions;
+    public Texture2D ballImage;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -40,6 +41,8 @@ public class ObjectChecker : MonoBehaviour
     {
         // Remove the ingredient[0] from the current potion's ingredient list
         // Change the crystal ball's image to the next one
+
+        ballImage = potions[0].ingredients[0].ingIMG;
         // Pan the main camera to the crystal ball
 
         // *If the current potion's ingredient list is at 0*
