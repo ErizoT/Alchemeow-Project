@@ -31,7 +31,7 @@ Material:
     m_Floats:
     - Step1: 1
     - _Gloss: 10
-    - _OutlineWidth: 0
+    - _OutlineWidth: 1
     - _RimPower: 2.2
     - _RimStep: 0
     - _RimStepSmooth: 1
@@ -47,7 +47,7 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0.5018867, g: 0.35510853, b: 0.35510853, a: 1}
     - _HighColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0.01505873, g: 0.10791026, b: 0.16981131, a: 1}
+    - _OutlineColor: {r: 0.3019608, g: 0.21960784, b: 0.29803923, a: 1}
     - _RimColor: {r: 0.17186897, g: 0.2622222, b: 0.381132, a: 1}
     - _SpecularColor: {r: 0.057863954, g: 0.07924521, b: 0.07619075, a: 1}
   m_BuildTextureStacks: []
