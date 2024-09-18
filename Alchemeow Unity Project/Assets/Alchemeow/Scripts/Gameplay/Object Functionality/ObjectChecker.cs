@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class ObjectChecker : MonoBehaviour
 {
+    public GameObject ballPrefab;
     public List<Potion> potions;
-    public Texture2D ballImage;
+    [HideInInspector] public Texture2D ballImage;
 
     private void OnTriggerEnter(Collider other)
     {

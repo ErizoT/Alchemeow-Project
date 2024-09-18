@@ -129,6 +129,7 @@ MonoBehaviour:
       ingIMG: {fileID: 0}
     - ingID: WholeCube
       ingIMG: {fileID: 0}
+  ballImage: {fileID: 0}
 --- !u!1 &1672331064066000441
 GameObject:
   m_ObjectHideFlags: 0
