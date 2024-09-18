@@ -7,7 +7,12 @@ public class ObjectChecker : MonoBehaviour
     public GameObject ballPrefab;
     public List<Potion> potions;
     [HideInInspector] public Texture2D ballImage;
+    public Animator cauldronAnimator;
 
+    private void Start()
+    {
+        cauldronAnimator.GetComponent<Animator>();
+    }
     private void OnTriggerEnter(Collider other)
     {
         //Debug.Log("Destroyed" + other.gameObject);
@@ -21,6 +26,9 @@ public class ObjectChecker : MonoBehaviour
             // Play good particle effect
             // Change cauldron colour to green
             // Play good cauldron animation
+            cauldronAnimator.SetTrigger("AddedIngredient");
+            cauldronAnimator.SetBool("CorrectIngredient", true);
+
             CompleteObjective();
             print("Placed the correct ingredient");
         }
@@ -30,11 +38,15 @@ public class ObjectChecker : MonoBehaviour
             // Play bad particle effect
             // Play bad sound
             // play bad cauldron animation
+            cauldronAnimator.SetTrigger("AddedIngredient");
+            cauldronAnimator.SetBool("CorrectIngredient", false);
+
             print("Placed the wrong ingredient");
         }
 
         Destroy(other.gameObject);
-        
+        cauldronAnimator.SetTrigger("AddedIngredient");
+
         // If it's an essential item, respawn it
     }
 
