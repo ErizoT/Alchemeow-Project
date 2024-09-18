@@ -3,7 +3,17 @@ guid: cb0dd7b0ceab4274896709e01726d0ad
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cauldron_M
+    second: {fileID: 2100000, guid: 094c9ffdf9291114da36e547d787d18c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: defaultPolygonShader1
+    second: {fileID: 2100000, guid: 8ef7e92ff27a5464993bc42812b66780, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
