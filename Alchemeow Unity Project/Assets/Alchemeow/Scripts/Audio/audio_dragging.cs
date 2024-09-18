@@ -20,28 +20,28 @@ public class audio_dragging : MonoBehaviour
     private FMOD.Studio.EventInstance impactInstance;
 
     //BODY OF IMPACT OBJECT
-    [SerializeField] Rigidbody objectBody;
+    [SerializeField]  private Rigidbody objectBody;
     
 
     private float objectVelocity;
     private float objectYVelocity;
-    private bool currentlyColliding = false;
-    
-    
-    
+    private bool currentlyColliding;
+    private int iCollisionPoints;
 
-    private void OnCollisionEnter(Collision collision)
+
+     private void OnCollisionEnter(Collision collision)
     {
-       //CHECKS ARRAY FOR COLLISION 
+            
+        //CHECKS ARRAY FOR COLLISION 
         for (objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
             if (collision.gameObject.transform == collisionObjects[objectNumber].transform)
             {
-                impactInstance.release();
-                currentlyColliding = true;
-
+                print("instance created");
                 impactInstance = FMODUnity.RuntimeManager.CreateInstance(impactEvent);
                 impactInstance.start();
+                currentlyColliding = true;
+                                               
             }
         }
         
@@ -55,34 +55,36 @@ public class audio_dragging : MonoBehaviour
         {
             if (collision.gameObject.transform == collisionObjects[objectNumber].transform)
             {
-                impactInstance.setParameterByName("objectVelocity", 0);
-                impactInstance.release();
+                impactInstance.setParameterByName("objectVelocity", objectVelocity);
                 currentlyColliding = false;
+                print("false");
             }
         }
     }
 
     private void Update()
     {
-        if(currentlyColliding == true)
+       if (currentlyColliding == false || objectVelocity < 0.1 || objectBody.velocity.y > 0.3)
         {
-            //DEBUG
-            objectVelocity = Vector3.Magnitude(objectBody.velocity);
-            if(objectBody.velocity.y > 1)
-            {
-                impactInstance.release();
-                impactInstance.setParameterByName("objectVelocity", 0);
-            }
+                    
+            impactInstance.setParameterByName("objectVelocity", 0);
+        }
+
+       }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        iCollisionPoints = collision.contactCount;
+        objectVelocity = Vector3.Magnitude(objectBody.velocity);
+        iCollisionPoints = Mathf.Clamp(iCollisionPoints, 0, 4);
+
+        if (currentlyColliding == true)
+        {
             
-            //LIMITS VALUES BETWEEN 0 AND 1 FOR FMOD
-            Mathf.Clamp(objectVelocity, 0, 3);
-            objectVelocity = (objectVelocity / 3);
-            impactInstance.setParameterByName("objectVelocity", objectVelocity);
-            
-        } 
-        
+            objectVelocity = Mathf.Clamp(objectVelocity, 0, 3);
+                        objectVelocity = ((objectVelocity * iCollisionPoints) / 12);
+                          impactInstance.setParameterByName("objectVelocity", objectVelocity);
+        }
     }
+
 }
-
-    
-
