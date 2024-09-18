@@ -1220,6 +1220,7 @@ GameObject:
   - component: {fileID: 6077037135505234021}
   - component: {fileID: 7158453277203815087}
   - component: {fileID: 3195540198262789156}
+  - component: {fileID: 3973291807496560120}
   m_Layer: 0
   m_Name: Jar
   m_TagString: Untagged
@@ -2001,6 +2002,27 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &3973291807496560120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123327636624689814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdb8967e8dfe41d4b1cbb6a28fdc6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionObjects: []
+  impactEvent:
+    Guid:
+      Data1: -1325824921
+      Data2: 1164501583
+      Data3: -416222548
+      Data4: 1707731048
+    Path: event:/sfx_jar_drag
+  objectBody: {fileID: 7158453277203815087}
 --- !u!1 &7174275726036627300
 GameObject:
   m_ObjectHideFlags: 0

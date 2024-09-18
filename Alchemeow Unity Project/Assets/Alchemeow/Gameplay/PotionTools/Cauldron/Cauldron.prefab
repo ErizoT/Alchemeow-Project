@@ -131,6 +131,7 @@ MonoBehaviour:
     - ingID: WholeCube
       ingIMG: {fileID: 0}
   ballImage: {fileID: 0}
+  cauldronAnimator: {fileID: 0}
 --- !u!1 &1672331064066000441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5572,6 +5573,8 @@ GameObject:
   - component: {fileID: 5160799699116168223}
   - component: {fileID: 3548500338169000996}
   - component: {fileID: 935215372497785601}
+  - component: {fileID: 831888349091426852}
+  - component: {fileID: 4527834968357265774}
   m_Layer: 0
   m_Name: BubblesParticles
   m_TagString: Untagged
@@ -10403,6 +10406,49 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &831888349091426852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6830612841049560166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b58ba0a9e5d4a90b05239323f31bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4527834968357265774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6830612841049560166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1683413610
+      Data2: 1141581428
+      Data3: -561176136
+      Data4: 1469895114
+    Path: event:/sfx_bubblepop
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &7217553850285290020
 GameObject:
   m_ObjectHideFlags: 0

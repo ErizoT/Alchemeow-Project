@@ -15,19 +15,17 @@ public class audio_impactsound : MonoBehaviour
     private int iCollisionPoints;
     private int currentcollisionpoints = 0;
 
-    // FMOD emitter attached to the object
-    private StudioEventEmitter emitter;
+    // FMOD emitter attached to the object, exposed to Inspector
+    [SerializeField] private StudioEventEmitter emitter; 
 
     private float impactSpeed;
 
     private void Start()
     {
-        // Get the StudioEventEmitter component attached to the object
-        emitter = GetComponent<StudioEventEmitter>();
-
+        // Check if the emitter is assigned, if not, log an error
         if (emitter == null)
         {
-            Debug.LogError("No StudioEventEmitter found on this GameObject.");
+            Debug.LogError("No StudioEventEmitter assigned in the Inspector.");
         }
     }
 
@@ -59,12 +57,9 @@ public class audio_impactsound : MonoBehaviour
             if (collision.gameObject.transform == collisionObjects[objectNumber].transform && emitter != null)
             {
                 iCollisionPoints = collision.contactCount;
-                print(iCollisionPoints);
 
                 if (iCollisionPoints > currentcollisionpoints)
                 {
-                    print("deez");
-
                     // Calculate impact speed based on collision velocity
                     impactSpeed = collision.relativeVelocity.magnitude;
 
@@ -72,11 +67,9 @@ public class audio_impactsound : MonoBehaviour
                     impactSpeed = Mathf.Clamp(impactSpeed, 0, 3) / 3;
 
                     // Start the emitter event if it's not already playing
-                    if (!emitter.IsPlaying())
-                    {
+                    
                         emitter.Play();
-                    }
-
+                   
                     // Set the parameter for impact velocity
                     emitter.SetParameter("impact_velocity", impactSpeed);
                 }

@@ -31,13 +31,14 @@ public class audio_dragging : MonoBehaviour
 
      private void OnCollisionEnter(Collision collision)
     {
-            
+        
         //CHECKS ARRAY FOR COLLISION 
         for (objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
+           
             if (collision.gameObject.transform == collisionObjects[objectNumber].transform)
             {
-                print("instance created");
+                
                 impactInstance = FMODUnity.RuntimeManager.CreateInstance(impactEvent);
                 impactInstance.start();
                 currentlyColliding = true;
@@ -57,14 +58,14 @@ public class audio_dragging : MonoBehaviour
             {
                 impactInstance.setParameterByName("objectVelocity", objectVelocity);
                 currentlyColliding = false;
-                print("false");
+               
             }
         }
     }
 
     private void Update()
     {
-       if (currentlyColliding == false || objectVelocity < 0.1 || objectBody.velocity.y > 0.3)
+       if (currentlyColliding == false || objectVelocity < 0.199f || objectBody.velocity.y > 0.3f)
         {
                     
             impactInstance.setParameterByName("objectVelocity", 0);

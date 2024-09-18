@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 2841738578703704408}
   - component: {fileID: 8743263868936064194}
   - component: {fileID: 7338589001698670739}
+  - component: {fileID: 460473266283092801}
   m_Layer: 0
   m_Name: Mortar
   m_TagString: Untagged
@@ -616,6 +617,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.6304435, y: 0.95439076, z: 0.23820055}
   m_Center: {x: 0.81522137, y: 0.47719538, z: -0.16018876}
+--- !u!114 &460473266283092801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577152561148484796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdb8967e8dfe41d4b1cbb6a28fdc6b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionObjects: []
+  impactEvent:
+    Guid:
+      Data1: -666438746
+      Data2: 1127481660
+      Data3: -1777789558
+      Data4: 168870399
+    Path: event:/sfx_mortar_drag
+  objectBody: {fileID: 8376430466625647645}
 --- !u!1 &4015532118231574269
 GameObject:
   m_ObjectHideFlags: 0

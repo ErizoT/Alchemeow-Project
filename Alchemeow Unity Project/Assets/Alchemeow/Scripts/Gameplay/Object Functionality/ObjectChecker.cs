@@ -9,6 +9,12 @@ public class ObjectChecker : MonoBehaviour
     [HideInInspector] public Texture2D ballImage;
     public Animator cauldronAnimator;
 
+    [SerializeField] FMODUnity.EventReference cauldronHappy;
+    private FMOD.Studio.EventInstance cauldronHappyInstance;
+    [SerializeField] FMODUnity.EventReference cauldronAngry;
+    private FMOD.Studio.EventInstance cauldronAngryInstance;
+
+
     private void Start()
     {
         cauldronAnimator.GetComponent<Animator>();
@@ -23,6 +29,8 @@ public class ObjectChecker : MonoBehaviour
         if (incomingIng.ingID == requiredIng.ingID) // Play when the correct ingredient is put in
         {
             // Play positive sound effect
+            cauldronHappyInstance = FMODUnity.RuntimeManager.CreateInstance(cauldronHappy);
+            cauldronHappyInstance.start();
             // Play good particle effect
             // Change cauldron colour to green
             // Play good cauldron animation
@@ -35,7 +43,9 @@ public class ObjectChecker : MonoBehaviour
         else // When the ingredient is wrong
         {
             // Play bad sound effect
-            // Play bad particle effect
+            cauldronAngryInstance = FMODUnity.RuntimeManager.CreateInstance(cauldronAngry);
+            cauldronAngryInstance.start();
+                        // Play bad particle effect
             // Play bad sound
             // play bad cauldron animation
             cauldronAnimator.SetTrigger("AddedIngredient");
