@@ -16,7 +16,7 @@ public class PawController : MonoBehaviour
     [Range(.5f, 1f)]
     [SerializeField] float damping = 0.7f;
 
-    private bool isHolding;
+    public bool isHolding;
     private Vector2 moveVector;
     private Vector2 rotateVector;
     private float raiseValue;
@@ -55,7 +55,7 @@ public class PawController : MonoBehaviour
         if (!isHolding)
         {
             animator.SetBool("Holding", false);
-            //Find all objects with tag "Object"
+            //Find all objects with tag "Holdable"
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Holdable");
             hinge.connectedBody = dummyRigidbody;
 

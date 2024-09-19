@@ -54,6 +54,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: CrushedCube
+  essential: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
@@ -742,6 +743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: CrushedCube
+  essential: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
@@ -1114,6 +1116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: CrushedCube
+  essential: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
@@ -2118,6 +2121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: CrushedCube
+  essential: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
@@ -4702,6 +4706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: CrushedCube
+  essential: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
@@ -5706,6 +5711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: CrushedCube
+  essential: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
@@ -6078,6 +6084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: CrushedCube
+  essential: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
@@ -7082,6 +7089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: CrushedCube
+  essential: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
