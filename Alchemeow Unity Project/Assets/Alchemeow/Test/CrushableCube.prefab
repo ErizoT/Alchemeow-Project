@@ -804,7 +804,7 @@ MonoBehaviour:
       Data4: -1593655621
     Path: event:/sfx_cube_splash
   Event: 
-  PlayEvent: 2
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0
