@@ -8,7 +8,7 @@ public class audio_PlayFlapSound : MonoBehaviour
     [SerializeField] private StudioEventEmitter emitter;
 
 
-    public void playflapsound()
+    public void Playflapsound()
     {
         Debug.Log ("flap");
     }

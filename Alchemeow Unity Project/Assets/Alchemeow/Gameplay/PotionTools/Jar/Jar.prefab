@@ -1221,6 +1221,7 @@ GameObject:
   - component: {fileID: 7158453277203815087}
   - component: {fileID: 3195540198262789156}
   - component: {fileID: 3973291807496560120}
+  - component: {fileID: 96984866298611559}
   m_Layer: 0
   m_Name: Jar
   m_TagString: Untagged
@@ -1261,6 +1262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 2814017662000290830}
   spawnPoint: {fileID: 0}
+  jarEmitter: {fileID: 96984866298611559}
 --- !u!33 &661236334940437816
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2023,6 +2025,37 @@ MonoBehaviour:
       Data4: 1707731048
     Path: event:/sfx_jar_drag
   objectBody: {fileID: 7158453277203815087}
+--- !u!114 &96984866298611559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123327636624689814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1714216945
+      Data2: 1161717647
+      Data3: 2119640247
+      Data4: 438972583
+    Path: event:/sfx_jar_open
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &7174275726036627300
 GameObject:
   m_ObjectHideFlags: 0

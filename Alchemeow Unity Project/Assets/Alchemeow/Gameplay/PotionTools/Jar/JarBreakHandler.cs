@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class JarBreakHandler : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class JarBreakHandler : MonoBehaviour
     private ConfigurableJoint joint;
     private float breakForce;
     private bool hasBroken = false;
+
+    [SerializeField] private StudioEventEmitter jarEmitter;
 
     private void Start()
     {
@@ -39,6 +42,8 @@ public class JarBreakHandler : MonoBehaviour
                 {
                     Instantiate(prefabToSpawn, spawnPoint.position, spawnPoint.rotation);
                     prefabToSpawn.SetActive(true);
+                    jarEmitter.Play();
+
                 }
                 hasBroken = true;
             }
