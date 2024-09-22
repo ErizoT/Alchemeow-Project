@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PestelScript : MonoBehaviour
@@ -7,9 +8,12 @@ public class PestelScript : MonoBehaviour
     private Rigidbody rb;
     private bool canCrush;
 
+    public ParticleSystem systemToPlay;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        systemToPlay.GetComponent<ParticleSystem>();
     }
 
     private void Update()
@@ -37,6 +41,7 @@ public class PestelScript : MonoBehaviour
         {
             //Debug.Log("Crushing...");
             objToCrush.Crush();
+            systemToPlay.Play();
         }
     }
 }

@@ -12,11 +12,14 @@ public class JarBreakHandler : MonoBehaviour
     private float breakForce;
     private bool hasBroken = false;
 
+    public ParticleSystem systemToPlay;
+
     [SerializeField] private StudioEventEmitter jarEmitter;
 
     private void Start()
     {
         joint = GetComponent<ConfigurableJoint>();
+        systemToPlay.GetComponent<ParticleSystem>();
 
         // Ensure the joint is assigned and set up the break force
         if (joint == null)
@@ -46,6 +49,7 @@ public class JarBreakHandler : MonoBehaviour
 
                 }
                 hasBroken = true;
+                systemToPlay.Play();
             }
         }
     }
