@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 9208606044530037577}
   - component: {fileID: 5529179515131860957}
   - component: {fileID: 2264973674236971839}
+  - component: {fileID: 2254274417383564173}
   m_Layer: 3
   m_Name: PawController
   m_TagString: Player
@@ -372,7 +373,15 @@ MonoBehaviour:
   dummyRigidbody: {fileID: 5810281254281777087}
   damping: 0.7
   isHolding: 0
-  grabSound:
+  grabEmitter: {fileID: 2254274417383564173}
+  entryEvent:
+    Guid:
+      Data1: 249228267
+      Data2: 1304332283
+      Data3: 373755788
+      Data4: -777373598
+    Path: event:/sfx_pawenter
+  grabEvent:
     Guid:
       Data1: 1963660221
       Data2: 1123707509
@@ -631,6 +640,37 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 0.00001
   m_ConnectedMassScale: 1
+--- !u!114 &2254274417383564173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4758212547997966723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1963660221
+      Data2: 1123707509
+      Data3: -971438146
+      Data4: -1749766481
+    Path: event:/sfx_paw_grab
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &7045751196827434789
 PrefabInstance:
   m_ObjectHideFlags: 0

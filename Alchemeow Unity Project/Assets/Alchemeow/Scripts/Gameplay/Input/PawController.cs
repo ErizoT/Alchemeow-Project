@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class PawController : MonoBehaviour
 {
@@ -30,29 +31,36 @@ public class PawController : MonoBehaviour
     private Camera mainCamera;
 
     //sound for grabbing
-    [SerializeField] FMODUnity.EventReference grabSound;
-    private FMOD.Studio.EventInstance grabInstance;
+    [SerializeField] private StudioEventEmitter grabEmitter;
+    private bool playedPop = false;
 
 
     private void Start()
     {
+        
         rb = GetComponent<Rigidbody>();
         defaultRotation = transform.rotation;
         hinge = GetComponent<ConfigurableJoint>();
-        
+
         // Finding main camera and adding this object to it
         mainCamera = Camera.main;
         GameObject mainCamObject = mainCamera.gameObject;
         MultipleTargetCamera camScript = mainCamObject.GetComponent<MultipleTargetCamera>();
         camScript.targets.Add(transform);
-        
+
+      
+        grabEmitter.Play();
+        grabEmitter.SetParameter("GrabState", 3);
+
+
+
     }
 
     private void Update()
     {
         // Player Movement
         Vector3 playerVel = new Vector3(moveVector.x, raiseValue, moveVector.y) * moveSpeed;
-        rb.AddForce(playerVel*Time.deltaTime, ForceMode.Acceleration);
+        rb.AddForce(playerVel * Time.deltaTime, ForceMode.Acceleration);
 
         // Player Rotation
         if (!grabbed)
@@ -130,7 +138,7 @@ public class PawController : MonoBehaviour
     }
 
     public void OnGrab(InputAction.CallbackContext input)
-    {        
+    {
         // DETECTING A SUCCESSFUL GRAB VS NON-SUCCESSFUL GRAB
         // - isHolding will turn true upon the player pressing the grab button, and false when released
         // - When isHolding = true, it will do a GrabCheck(), which will check if the grip point is under the grab range threshold
@@ -139,18 +147,15 @@ public class PawController : MonoBehaviour
 
         if (input.performed)
         {
-            
             if (isHolding)
             {
                 isHolding = false;
 
-                if(grabbed)
+                if (grabbed)
                 {
                     LetGo();
                 }
 
-                //grabInstance = FMODUnity.RuntimeManager.CreateInstance(grabSound);
-                //grabInstance.start();
             }
             else
             {
@@ -161,7 +166,7 @@ public class PawController : MonoBehaviour
         }
     }
 
-    
+
     void GrabCheck()
     {
         // If the distance between the nearest grip point and the paw is within the range threshold...
@@ -176,21 +181,43 @@ public class PawController : MonoBehaviour
 
             objectHeld = nearestObject;
 
-        } else
+            if (playedPop == true)
+            {
+                grabEmitter.Play();
+                grabEmitter.SetParameter("GrabState", 0);
+            }
+            else
+                playedPop = true;
+
+
+        }
+        else
         {
             // Unsuccessful grab
+
+            if (playedPop == true)
+            {
+                grabEmitter.Play();
+                grabEmitter.SetParameter("GrabState", 1);
+            }
+            else
+                playedPop = true;
         }
     }
 
     void LetGo()
     {
         // Happens when you do a successful grab and let go
-        
+
         grabbed = false;
         paw.layer = LayerMask.NameToLayer("Player");
         objectHeld.layer = LayerMask.NameToLayer("Default");
         objectHeld = null;
         // Play a sound
+
+        grabEmitter.Play();
+        grabEmitter.SetParameter("GrabState", 2);
+
     }
 
     public void RaiseLower(InputAction.CallbackContext input)

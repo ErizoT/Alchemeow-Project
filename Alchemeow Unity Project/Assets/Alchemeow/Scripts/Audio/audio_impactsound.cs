@@ -16,14 +16,14 @@ public class audio_impactsound : MonoBehaviour
     private int currentcollisionpoints = 0;
 
     // FMOD emitter attached to the object, exposed to Inspector
-    [SerializeField] private StudioEventEmitter emitter; 
+    [SerializeField] private StudioEventEmitter impactEmitter; 
 
     private float impactSpeed;
 
     private void Start()
     {
         // Check if the emitter is assigned, if not, log an error
-        if (emitter == null)
+        if (impactEmitter == null)
         {
             Debug.LogError("No StudioEventEmitter assigned in the Inspector.");
         }
@@ -33,7 +33,7 @@ public class audio_impactsound : MonoBehaviour
     {
         for (objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
-            if (collision.gameObject.transform == collisionObjects[objectNumber].transform && emitter != null)
+            if (collision.gameObject.transform == collisionObjects[objectNumber].transform && impactEmitter != null)
             {
                 // Calculate impact speed based on collision velocity
                 impactSpeed = collision.relativeVelocity.magnitude;
@@ -42,10 +42,10 @@ public class audio_impactsound : MonoBehaviour
                 impactSpeed = Mathf.Clamp(impactSpeed, 0, 3) / 3;
 
                 // Start the emitter event
-                emitter.Play();
+                impactEmitter.Play();
 
                 // Set the parameter for impact velocity
-                emitter.SetParameter("impact_velocity", impactSpeed);
+                impactEmitter.SetParameter("impact_velocity", impactSpeed);
             }
         }
     }
@@ -54,7 +54,7 @@ public class audio_impactsound : MonoBehaviour
     {
         for (objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
-            if (collision.gameObject.transform == collisionObjects[objectNumber].transform && emitter != null)
+            if (collision.gameObject.transform == collisionObjects[objectNumber].transform && impactEmitter != null)
             {
                 iCollisionPoints = collision.contactCount;
 
@@ -68,10 +68,10 @@ public class audio_impactsound : MonoBehaviour
 
                     // Start the emitter event if it's not already playing
                     
-                        emitter.Play();
+                        impactEmitter.Play();
                    
                     // Set the parameter for impact velocity
-                    emitter.SetParameter("impact_velocity", impactSpeed);
+                    impactEmitter.SetParameter("impact_velocity", impactSpeed);
                 }
 
                 currentcollisionpoints = iCollisionPoints;
