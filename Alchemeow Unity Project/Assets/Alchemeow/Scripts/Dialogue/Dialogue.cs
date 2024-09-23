@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.ProBuilder.MeshOperations;
+using System.Diagnostics.CodeAnalysis;
 
 public class Dialogue : MonoBehaviour
 {
-    
+    [SerializeField]
+    private ObjectChecker objectChecker;
     
     public TextMeshProUGUI textComponent;
     public string[] lines;
@@ -20,7 +22,7 @@ public class Dialogue : MonoBehaviour
     // public AudioSource source;
     // public AudioClip SkippingAudio;
 
-    private int index;
+    public int index;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +37,12 @@ public class Dialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
+            AdvanceText();
+        }
+    }
+
+    void AdvanceText()
+    {
             if (textComponent.text == lines[index] && fadeOut.GetBool("DialogueEnd") == false)
             {
                 NextLine();
@@ -47,7 +55,6 @@ public class Dialogue : MonoBehaviour
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
-        }
     }
 
     void StartDialogue()
@@ -72,18 +79,26 @@ public class Dialogue : MonoBehaviour
         index++;
         textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
-
-        if (index > 3)
+        
+        // To add more points where the dialogue box closes, have the desired line number be empty text, and make a copy of the if function below
+        // referring to that line to close dialogue box.
+        if (index == 4)
         {
             fadeOut.SetBool("DialogueEnd", true);
             fadeOut.SetInteger("DialogueProgression", 1);
             Debug.Log("CLOSE");
         }
         
-        if (index > 7)
+        if (index == 8)
         {
             fadeOut.SetBool("DialogueEnd", true);
             fadeOut.SetInteger("DialogueProgression", 2);
+        }
+
+        if(index == 10)
+        {
+            fadeOut.SetBool("DialogueEnd", true);
+            fadeOut.SetInteger("DialogueProgression", 3);
         }
     }
 }

@@ -14,6 +14,7 @@ public class ObjectChecker : MonoBehaviour
     [SerializeField] FMODUnity.EventReference cauldronAngry;
     private FMOD.Studio.EventInstance cauldronAngryInstance;
 
+    public Dialogue dialogue;
 
     private void Start()
     {
@@ -36,6 +37,9 @@ public class ObjectChecker : MonoBehaviour
             // Play good cauldron animation
             cauldronAnimator.SetTrigger("AddedIngredient");
             cauldronAnimator.SetBool("CorrectIngredient", true);
+
+            // Opens dialogue box
+            dialogue.fadeOut.SetBool(dialogue.DialogueEnd, false);
 
             CompleteObjective();
             print("Placed the correct ingredient");

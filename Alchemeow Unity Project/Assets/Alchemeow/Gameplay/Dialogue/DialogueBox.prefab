@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.7, y: -6}
+  m_AnchoredPosition: {x: 5.699951, y: -6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5586172410947131356
@@ -146,6 +146,7 @@ GameObject:
   - component: {fileID: 5373296408251831061}
   - component: {fileID: 8550588525130495022}
   - component: {fileID: 2918011562122268975}
+  - component: {fileID: 8946606071586287311}
   m_Layer: 5
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -223,8 +224,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ebf3e5521797a4da2c48bf782d0c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectChecker: {fileID: 0}
   textComponent: {fileID: 1338475791749692782}
   lines:
-  - Yippee
-  - Yahoo
-  textSpeed: 0
+  - 
+  - Hello!
+  - 'Please put in:'
+  - Little Cube!
+  - 
+  - Nice work!
+  - 'Now put in:'
+  - Big Cube!
+  - 
+  - Damn, good job!
+  textSpeed: 0.02
+  fadeOut: {fileID: 8946606071586287311}
+  DialogueEnd: DialogueEnd
+  DialogueProgression: 0
+  index: 0
+--- !u!95 &8946606071586287311
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5911386860869325886}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7f1c558f007a5be4e89ca1966109b86b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
