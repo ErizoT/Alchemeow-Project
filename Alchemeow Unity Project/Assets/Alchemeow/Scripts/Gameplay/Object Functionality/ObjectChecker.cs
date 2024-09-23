@@ -7,7 +7,11 @@ public class ObjectChecker : MonoBehaviour
     public GameObject ballPrefab;
     public List<Potion> potions;
     [HideInInspector] public Texture2D ballImage;
+
     public Animator cauldronAnimator;
+
+    public ParticleSystem particleCorrect;
+    public ParticleSystem particleIncorrect;
 
     [SerializeField] FMODUnity.EventReference cauldronHappy;
     private FMOD.Studio.EventInstance cauldronHappyInstance;
@@ -18,6 +22,9 @@ public class ObjectChecker : MonoBehaviour
     private void Start()
     {
         cauldronAnimator.GetComponent<Animator>();
+        
+        particleCorrect.GetComponent<ParticleSystem>();
+        particleIncorrect.GetComponent<ParticleSystem>();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -31,8 +38,10 @@ public class ObjectChecker : MonoBehaviour
             // Play positive sound effect
             cauldronHappyInstance = FMODUnity.RuntimeManager.CreateInstance(cauldronHappy);
             cauldronHappyInstance.start();
+
             // Play good particle effect
-            // Change cauldron colour to green
+            particleCorrect.Play();
+
             // Play good cauldron animation
             cauldronAnimator.SetTrigger("AddedIngredient");
             cauldronAnimator.SetBool("CorrectIngredient", true);
@@ -45,8 +54,10 @@ public class ObjectChecker : MonoBehaviour
             // Play bad sound effect
             cauldronAngryInstance = FMODUnity.RuntimeManager.CreateInstance(cauldronAngry);
             cauldronAngryInstance.start();
-                        // Play bad particle effect
-            // Play bad sound
+            
+            // Play bad particle effect
+            particleIncorrect.Play();
+
             // play bad cauldron animation
             cauldronAnimator.SetTrigger("AddedIngredient");
             cauldronAnimator.SetBool("CorrectIngredient", false);
