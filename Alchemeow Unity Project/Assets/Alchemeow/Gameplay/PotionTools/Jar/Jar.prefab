@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5562873421783749757}
   - component: {fileID: 2889775635804577301}
   - component: {fileID: 1985744488145466663}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prism (1)
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 2417075382649267945}
   - component: {fileID: 1595671559935732044}
   - component: {fileID: 3584867080265620870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Jar_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 7472502477400888577}
   - component: {fileID: 7504049664827462035}
   - component: {fileID: 174522208454100631}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prism (3)
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -724,7 +724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3765314636708655239}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GripPoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -764,7 +764,7 @@ GameObject:
   - component: {fileID: 3172993567673078820}
   - component: {fileID: 5498777462127921991}
   - component: {fileID: 4073773852092821885}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prism (2)
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -1079,7 +1079,7 @@ GameObject:
   - component: {fileID: 971520318159660413}
   - component: {fileID: 3266741357399920891}
   - component: {fileID: 1426740666305682439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jar_Lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1222,7 +1222,7 @@ GameObject:
   - component: {fileID: 3195540198262789156}
   - component: {fileID: 3973291807496560120}
   - component: {fileID: 96984866298611559}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Jar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2070,7 +2070,7 @@ GameObject:
   - component: {fileID: 5350247901359635737}
   - component: {fileID: 4787319844879021102}
   - component: {fileID: 7569203663611701165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prism
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -2380,9 +2380,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5734497041479369414}
     m_Modifications:
+    - target: {fileID: 360483888302485995, guid: 18330926391e0a444881f90216163c5e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 534390061135655963, guid: 18330926391e0a444881f90216163c5e, type: 3}
       propertyPath: m_Name
       value: CrushableCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 534390061135655963, guid: 18330926391e0a444881f90216163c5e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 534390061135655963, guid: 18330926391e0a444881f90216163c5e, type: 3}
       propertyPath: m_IsActive
@@ -2439,6 +2447,18 @@ PrefabInstance:
     - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866682517414796122, guid: 18330926391e0a444881f90216163c5e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5691421073417752283, guid: 18330926391e0a444881f90216163c5e, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6999378878868576592, guid: 18330926391e0a444881f90216163c5e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2518,6 +2538,10 @@ PrefabInstance:
     - target: {fileID: 5568564010199359342, guid: df1ea9d5e079e9349bf563b53baa2263, type: 3}
       propertyPath: m_Name
       value: GripPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568564010199359342, guid: df1ea9d5e079e9349bf563b53baa2263, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

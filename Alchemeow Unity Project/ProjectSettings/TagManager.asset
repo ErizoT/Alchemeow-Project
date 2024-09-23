@@ -10,13 +10,13 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - stuff on top of outline hopefully
-  - 
-  - 
-  - 
+  - GhostPlayer
+  - Objects
+  - Bounds
   - 
   - 
   - 
