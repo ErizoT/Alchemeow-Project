@@ -59,6 +59,69 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1936506283411447923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1524105657587855691}
+  - component: {fileID: 3086258142940964302}
+  m_Layer: 0
+  m_Name: GrabEmitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1524105657587855691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936506283411447923}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.081, y: 0.051, z: -0.009}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3003184256563353009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3086258142940964302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936506283411447923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1963660221
+      Data2: 1123707509
+      Data3: -971438146
+      Data4: -1749766481
+    Path: event:/sfx_paw_grab
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &3423195173398780756
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +429,7 @@ Transform:
   - {fileID: 533305192140723292}
   - {fileID: 5966664780588217615}
   - {fileID: 257874082193587020}
+  - {fileID: 1524105657587855691}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!54 &8180747053569034256
@@ -417,13 +481,7 @@ MonoBehaviour:
   dummyRigidbody: {fileID: 5810281254281777087}
   damping: 0.7
   isHolding: 0
-  grabSound:
-    Guid:
-      Data1: 1963660221
-      Data2: 1123707509
-      Data3: -971438146
-      Data4: -1749766481
-    Path: event:/sfx_paw_grab
+  grabEmitter: {fileID: 0}
 --- !u!114 &9208606044530037577
 MonoBehaviour:
   m_ObjectHideFlags: 0

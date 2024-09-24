@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using Cinemachine;
+using FMODUnity;
 
 public class PawController : MonoBehaviour
 {
@@ -31,8 +32,8 @@ public class PawController : MonoBehaviour
     private Camera mainCamera;
 
     //sound for grabbing
-    [SerializeField] FMODUnity.EventReference grabSound;
-    private FMOD.Studio.EventInstance grabInstance;
+    [SerializeField] private StudioEventEmitter grabEmitter;
+    private bool playedPop = false;
 
 
     private void Start()
@@ -47,7 +48,10 @@ public class PawController : MonoBehaviour
         MultipleTargetCamera camScript = mainCamObject.GetComponent<MultipleTargetCamera>();
         camScript.targets.Add(transform);
 
-        
+        //plays sound on entry
+        grabEmitter.Play();
+        grabEmitter.SetParameter("GrabState", 3);
+
     }
 
     private void Update()
@@ -151,9 +155,7 @@ public class PawController : MonoBehaviour
                     LetGo();
                 }
 
-                //grabInstance = FMODUnity.RuntimeManager.CreateInstance(grabSound);
-                //grabInstance.start();
-            }
+                            }
             else
             {
                 isHolding = true;
@@ -177,10 +179,20 @@ public class PawController : MonoBehaviour
             paw.layer = LayerMask.NameToLayer("GhostPlayer");
 
             objectHeld = nearestObject;
+            //successful grab sound
+            if (playedPop == true)
+            {
+                grabEmitter.Play();
+                grabEmitter.SetParameter("GrabState", 0);
+            }
+            else
+                playedPop = true;
 
         } else
         {
-            // Unsuccessful grab
+            //unsuccessful grab sound
+            grabEmitter.Play();
+            grabEmitter.SetParameter("GrabState", 1);
         }
     }
 
@@ -192,7 +204,10 @@ public class PawController : MonoBehaviour
         paw.layer = LayerMask.NameToLayer("Player");
         objectHeld.layer = LayerMask.NameToLayer("Default");
         objectHeld = null;
-        // Play a sound
+        // Play release sound
+
+        grabEmitter.Play();
+        grabEmitter.SetParameter("GrabState", 2);
     }
 
     public void RaiseLower(InputAction.CallbackContext input)
