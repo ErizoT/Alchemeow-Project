@@ -481,7 +481,7 @@ MonoBehaviour:
   dummyRigidbody: {fileID: 5810281254281777087}
   damping: 0.7
   isHolding: 0
-  grabEmitter: {fileID: 0}
+  grabEmitter: {fileID: 3086258142940964302}
 --- !u!114 &9208606044530037577
 MonoBehaviour:
   m_ObjectHideFlags: 0
