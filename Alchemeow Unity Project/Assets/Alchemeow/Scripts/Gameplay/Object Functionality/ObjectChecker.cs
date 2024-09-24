@@ -30,6 +30,9 @@ public class ObjectChecker : MonoBehaviour
     {
         //Debug.Log("Destroyed" + other.gameObject);
 
+        // make sure that the singleton is in every scene
+        CameraManager.Instance.ChangeCameraState("Cauldron");
+
         Ingredient incomingIng = other.gameObject.GetComponent<IngData>().ingClass;
         Ingredient requiredIng = potions[0].ingredients[0];
 
