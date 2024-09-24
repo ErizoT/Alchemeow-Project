@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Cinemachine;
 
 public class PawController : MonoBehaviour
 {
@@ -45,6 +46,7 @@ public class PawController : MonoBehaviour
         GameObject mainCamObject = mainCamera.gameObject;
         MultipleTargetCamera camScript = mainCamObject.GetComponent<MultipleTargetCamera>();
         camScript.targets.Add(transform);
+
         
     }
 
