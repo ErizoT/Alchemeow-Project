@@ -36,7 +36,21 @@ public class CameraManager : MonoBehaviour
         currentCameraState = CameraStateName;
     }
 
+    public IEnumerator WrongIngredient()
+    {
+        Debug.Log("Called the thing");
+        ChangeCameraState("Cauldron");
+        yield return new WaitForSeconds(2);  // Example delay of 2 seconds
+        ChangeCameraState("Player");
+    }
 
-
-
+    public IEnumerator CorrectIngredient()
+    {
+        Debug.Log("Called the thing");
+        ChangeCameraState("Cauldron");
+        yield return new WaitForSeconds(2);  // Example delay of 2 seconds
+        ChangeCameraState("CrystalBall");
+        yield return new WaitForSeconds(2);
+        ChangeCameraState("Player");
+    }
 }
