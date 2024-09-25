@@ -28,10 +28,10 @@ public class ObjectChecker : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        //Debug.Log("Destroyed" + other.gameObject);
+        // WHEN AN INGREDIENT IS PUT INSIDE THE CAULDRON
 
-        // make sure that the singleton is in every scene
-        CameraManager.Instance.ChangeCameraState("Cauldron");
+        // Access CameraManager to change the cameraAngle to the cauldron
+        //CameraManager.Instance.ChangeCameraState("Cauldron");
 
         Ingredient incomingIng = other.gameObject.GetComponent<IngData>().ingClass;
         Ingredient requiredIng = potions[0].ingredients[0];
@@ -43,14 +43,19 @@ public class ObjectChecker : MonoBehaviour
             cauldronHappyInstance.start();
 
             // Play good particle effect
-            particleCorrect.Play();
+            //particleCorrect.Play();           // Disabled for the meantime because the good animation wouldnt play
 
             // Play good cauldron animation
             cauldronAnimator.SetTrigger("AddedIngredient");
             cauldronAnimator.SetBool("CorrectIngredient", true);
 
-            CompleteObjective();
+            // Call CameraManager to do the CorrectIngredient camera moveent
+            StartCoroutine(CameraManager.Instance.CorrectIngredient());
+
+            // Mark complete objective
             print("Placed the correct ingredient");
+            CompleteObjective();
+            
         }
         else // When the ingredient is wrong
         {
@@ -64,6 +69,9 @@ public class ObjectChecker : MonoBehaviour
             // play bad cauldron animation
             cauldronAnimator.SetTrigger("AddedIngredient");
             cauldronAnimator.SetBool("CorrectIngredient", false);
+
+            // Call CameraManager to do the WrongIngredient camera moveent
+            StartCoroutine(CameraManager.Instance.WrongIngredient());
 
             print("Placed the wrong ingredient");
         }
