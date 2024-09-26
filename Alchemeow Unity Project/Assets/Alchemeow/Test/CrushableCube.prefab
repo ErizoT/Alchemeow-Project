@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8432506504378135149}
   - component: {fileID: 2058538140536842983}
   - component: {fileID: 8697642050818428029}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prism
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   - component: {fileID: 3385622808675459161}
   - component: {fileID: 236561251495342256}
   - component: {fileID: 690535389371981992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: CrushableCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 3223175933124511344}
   - component: {fileID: 7563005816408686808}
   - component: {fileID: 4982155337839443760}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prism (3)
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -1144,7 +1144,7 @@ GameObject:
   - component: {fileID: 4972926739361365921}
   - component: {fileID: 6015917543104346726}
   - component: {fileID: 7246064137412315702}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prism (1)
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -1460,7 +1460,7 @@ GameObject:
   - component: {fileID: 3455145867197277024}
   - component: {fileID: 4489481795433142204}
   - component: {fileID: 3207413856265145339}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prism (2)
   m_TagString: Holdable
   m_Icon: {fileID: 0}

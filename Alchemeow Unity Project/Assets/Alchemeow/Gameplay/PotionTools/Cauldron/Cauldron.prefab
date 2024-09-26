@@ -123,15 +123,28 @@ MonoBehaviour:
   - ingredients:
     - ingID: CrushedCube
       ingIMG: {fileID: 0}
-  - ingredients:
-    - ingID: WholeCube
+    - ingID: CrushedCube
       ingIMG: {fileID: 0}
     - ingID: CrushedCube
       ingIMG: {fileID: 0}
-    - ingID: WholeCube
-      ingIMG: {fileID: 0}
   ballImage: {fileID: 0}
   cauldronAnimator: {fileID: 0}
+  particleCorrect: {fileID: 0}
+  particleIncorrect: {fileID: 0}
+  cauldronHappy:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  cauldronAngry:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1672331064066000441
 GameObject:
   m_ObjectHideFlags: 0

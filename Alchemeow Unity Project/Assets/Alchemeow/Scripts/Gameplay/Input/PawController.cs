@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using Cinemachine;
+using FMODUnity;
 
 public class PawController : MonoBehaviour
 {
     [SerializeField] PlayerInput playerInput;
+    [SerializeField] GameObject paw;
     [SerializeField] float moveSpeed = 10;
     [SerializeField] float raiseLowerSpeed = 10f;
     [SerializeField] float grabRange = 3f;
@@ -17,6 +20,7 @@ public class PawController : MonoBehaviour
     [SerializeField] float damping = 0.7f;
 
     public bool isHolding;
+    private bool grabbed;
     private Vector2 moveVector;
     private Vector2 rotateVector;
     private float raiseValue;
@@ -24,11 +28,12 @@ public class PawController : MonoBehaviour
     private ConfigurableJoint hinge;
     private Quaternion defaultRotation;
     private GameObject nearestObject;
+    private GameObject objectHeld;
     private Camera mainCamera;
 
     //sound for grabbing
-    [SerializeField] FMODUnity.EventReference grabSound;
-    private FMOD.Studio.EventInstance grabInstance;
+    [SerializeField] private StudioEventEmitter grabEmitter;
+    private bool playedPop = false;
 
 
     private void Start()
@@ -42,7 +47,11 @@ public class PawController : MonoBehaviour
         GameObject mainCamObject = mainCamera.gameObject;
         MultipleTargetCamera camScript = mainCamObject.GetComponent<MultipleTargetCamera>();
         camScript.targets.Add(transform);
-        
+
+        //plays sound on entry
+        grabEmitter.Play();
+        grabEmitter.SetParameter("GrabState", 3);
+
     }
 
     private void Update()
@@ -52,12 +61,13 @@ public class PawController : MonoBehaviour
         rb.AddForce(playerVel*Time.deltaTime, ForceMode.Acceleration);
 
         // Player Rotation
-        if (!isHolding)
+        if (!grabbed)
         {
             animator.SetBool("Holding", false);
+            hinge.connectedBody = dummyRigidbody;
+
             //Find all objects with tag "Holdable"
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Holdable");
-            hinge.connectedBody = dummyRigidbody;
 
             if (objects.Length == 0)
                 return;
@@ -90,8 +100,7 @@ public class PawController : MonoBehaviour
             }
         }
 
-
-        if (isHolding && Vector3.Distance(transform.position, nearestObject.transform.position) <= grabRange)
+        if (grabbed)
         {
             transform.position = nearestObject.transform.position;
             hinge.connectedBody = nearestObject.GetComponentInParent<Rigidbody>();
@@ -99,7 +108,6 @@ public class PawController : MonoBehaviour
             visuals.transform.position = nearestObject.transform.position;
             animator.SetBool("Holding", true);
         }
-        else return;
     }
 
     // Callum request:
@@ -128,32 +136,83 @@ public class PawController : MonoBehaviour
     }
 
     public void OnGrab(InputAction.CallbackContext input)
-    {
+    {        
+        // DETECTING A SUCCESSFUL GRAB VS NON-SUCCESSFUL GRAB
+        // - isHolding will turn true upon the player pressing the grab button, and false when released
+        // - When isHolding = true, it will do a GrabCheck(), which will check if the grip point is under the grab range threshold
+        // - If it's in the correct range, grabbed will be set to true. Otherwise, it will be an unsuccessful grab
+        // - Upon a successful grab and is released, LetGo() will be called
+
         if (input.performed)
         {
+            
             if (isHolding)
             {
                 isHolding = false;
-                //Debug.Log("Release");
-                grabInstance = FMODUnity.RuntimeManager.CreateInstance(grabSound);
-                grabInstance.start();
-            }
+
+                if(grabbed)
+                {
+                    LetGo();
+                }
+
+                            }
             else
             {
                 isHolding = true;
                 animator.SetTrigger("Grab");
-                //play sound
-                //print(animator.GetBool("Holding"));
-                
+                GrabCheck();
             }
         }
+    }
+
+    
+    void GrabCheck()
+    {
+        // If the distance between the nearest grip point and the paw is within the range threshold...
+        // set grabbed to true
+        // Set player physics layer to "Ghost" player layer
+        // Assign objectHeld and change its physics layer to GhostObject
+
+        if (Vector3.Distance(transform.position, nearestObject.transform.position) <= grabRange)
+        {
+            grabbed = true;
+            paw.layer = LayerMask.NameToLayer("GhostPlayer");
+
+            objectHeld = nearestObject;
+            //successful grab sound
+            if (playedPop == true)
+            {
+                grabEmitter.Play();
+                grabEmitter.SetParameter("GrabState", 0);
+            }
+            else
+                playedPop = true;
+
+        } else
+        {
+            //unsuccessful grab sound
+            grabEmitter.Play();
+            grabEmitter.SetParameter("GrabState", 1);
+        }
+    }
+
+    void LetGo()
+    {
+        // Happens when you do a successful grab and let go
+        
+        grabbed = false;
+        paw.layer = LayerMask.NameToLayer("Player");
+        objectHeld.layer = LayerMask.NameToLayer("Default");
+        objectHeld = null;
+        // Play release sound
+
+        grabEmitter.Play();
+        grabEmitter.SetParameter("GrabState", 2);
     }
 
     public void RaiseLower(InputAction.CallbackContext input)
     {
         raiseValue = input.ReadValue<float>() * raiseLowerSpeed;
-
-        
     }
 
     public void ResetScene(InputAction.CallbackContext input)

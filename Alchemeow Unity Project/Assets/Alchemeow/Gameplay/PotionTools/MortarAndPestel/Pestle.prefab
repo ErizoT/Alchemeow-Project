@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6377643195837542915}
   - component: {fileID: 7150556857958185077}
   - component: {fileID: 1786023151474581159}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pestle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -952,6 +952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279de7704ae99d8499edd8fb3ff1ba74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  systemToPlay: {fileID: 0}
 --- !u!23 &819201129910463916
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1064,6 +1065,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279de7704ae99d8499edd8fb3ff1ba74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  systemToPlay: {fileID: 0}
 --- !u!1 &8036616072891283748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,7 +1077,7 @@ GameObject:
   - component: {fileID: 3524759753699915562}
   - component: {fileID: 9001441150896612776}
   - component: {fileID: 8763867968341749438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GripPoint
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -1129,7 +1131,7 @@ GameObject:
   - component: {fileID: 7925586620144045632}
   - component: {fileID: 1450657250290038629}
   - component: {fileID: 5306292202320682910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1282,9 +1284,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6653997386665500031, guid: c82a02bc5a803b049aff51ae109fcf2b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -922298507608188831, guid: c82a02bc5a803b049aff51ae109fcf2b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 134623389121824584, guid: c82a02bc5a803b049aff51ae109fcf2b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 422517144392066205, guid: c82a02bc5a803b049aff51ae109fcf2b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c82a02bc5a803b049aff51ae109fcf2b, type: 3}
       propertyPath: m_Name
       value: mortar and pestle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c82a02bc5a803b049aff51ae109fcf2b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3385709483914587750, guid: c82a02bc5a803b049aff51ae109fcf2b, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6938989544625562735, guid: c82a02bc5a803b049aff51ae109fcf2b, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
