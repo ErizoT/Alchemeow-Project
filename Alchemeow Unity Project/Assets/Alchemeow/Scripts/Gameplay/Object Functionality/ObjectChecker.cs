@@ -40,6 +40,8 @@ public class ObjectChecker : MonoBehaviour
             cauldronHappyInstance.start();
 
             // Play good particle effect
+            particleIncorrect.Stop();
+            particleCorrect.Stop();
             particleCorrect.Play();
 
             // Play good cauldron animation
@@ -54,8 +56,10 @@ public class ObjectChecker : MonoBehaviour
             // Play bad sound effect
             cauldronAngryInstance = FMODUnity.RuntimeManager.CreateInstance(cauldronAngry);
             cauldronAngryInstance.start();
-            
+
             // Play bad particle effect
+            particleCorrect.Stop();
+            particleIncorrect.Stop();
             particleIncorrect.Play();
 
             // play bad cauldron animation
