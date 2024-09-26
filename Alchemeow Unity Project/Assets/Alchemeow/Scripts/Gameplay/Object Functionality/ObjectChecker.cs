@@ -8,6 +8,7 @@ public class ObjectChecker : MonoBehaviour
     public List<Potion> potions;
     [HideInInspector] public Texture2D ballImage;
 
+    public Dialogue dialogue;
     public Animator cauldronAnimator;
 
     public ParticleSystem particleCorrect;
@@ -47,6 +48,9 @@ public class ObjectChecker : MonoBehaviour
             particleCorrect.Stop();
             particleCorrect.Play();
             //particleCorrect.Play();           // Disabled for the meantime because the good animation wouldnt play
+
+            //Open dialogue box
+            dialogue.fadeOut.SetBool(dialogue.DialogueEnd, false);
 
             // Play good cauldron animation
             cauldronAnimator.SetTrigger("AddedIngredient");

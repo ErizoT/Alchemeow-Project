@@ -27,7 +27,7 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fadeOut = GetComponent<Animator>();
+        //fadeOut = GetComponent<Animator>();
         textComponent.text = string.Empty;
         StartDialogue();
     }
@@ -41,7 +41,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
-    void AdvanceText()
+    public void AdvanceText()
     {
             if (textComponent.text == lines[index] && fadeOut.GetBool("DialogueEnd") == false)
             {
@@ -101,4 +101,6 @@ public class Dialogue : MonoBehaviour
             fadeOut.SetInteger("DialogueProgression", 3);
         }
     }
+
+
 }
