@@ -2,88 +2,90 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
-
 public class audio_dragging : MonoBehaviour
 {
     /// <summary>
-    /// GENERAL SCRIPT FOR DRAGGING SOUNDS BETWEEN ONE OBJECT AND ANOTHER USING OBJECT VELOCITY PARAMETER
+    /// GENERAL SCRIPT FOR DRAGGIN SOUNDS BETWEEN ONE OBJECT AN ANOTHER USING OBJECT VELOCITY PARAMETER
     /// </summary>
+    ///
+
 
     // OBJECTS IMPACTED AGAINST
     [SerializeField] private GameObject[] collisionObjects;
     int objectNumber = 0;
 
-    // SOUND BEING MADE
-    [SerializeField] private StudioEventEmitter dragEmitter;
 
-    // BODY OF IMPACT OBJECT
-    [SerializeField] private Rigidbody objectBody;
+    // SOUND BEING MADE
+    [SerializeField] FMODUnity.EventReference impactEvent;
+    private FMOD.Studio.EventInstance impactInstance;
+
+    //BODY OF IMPACT OBJECT
+    [SerializeField]  private Rigidbody objectBody;
+    
 
     private float objectVelocity;
+    private float objectYVelocity;
     private bool currentlyColliding;
     private int iCollisionPoints;
 
-    private void Start()
-    {
-        // Initialization if needed
-    }
 
-    private bool IsCollisionWithTrackedObject(Collision collision)
+     private void OnCollisionEnter(Collision collision)
     {
-        // Loop through the collisionObjects array and check if the collided object is in the array
-        foreach (GameObject obj in collisionObjects)
+        
+        //CHECKS ARRAY FOR COLLISION 
+        for (objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
-            if (collision.gameObject == obj)
+           
+            if (collision.gameObject.transform == collisionObjects[objectNumber].transform)
             {
-                return true;
+                
+                impactInstance = FMODUnity.RuntimeManager.CreateInstance(impactEvent);
+                impactInstance.start();
+                currentlyColliding = true;
+                                               
             }
         }
-        return false;
-    }
+        
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (IsCollisionWithTrackedObject(collision))
-        {
-            dragEmitter.Play();
-            currentlyColliding = true;
-            Debug.Log("audio started");
-        }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if (IsCollisionWithTrackedObject(collision))
+        //CHECKS ARRAY FOR COLLISION 
+        for (objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
-            dragEmitter.SetParameter("objectVelocity", objectVelocity);
-            currentlyColliding = false;
-            Debug.Log("audio stopped");
+            if (collision.gameObject.transform == collisionObjects[objectNumber].transform)
+            {
+                impactInstance.setParameterByName("objectVelocity", objectVelocity);
+                currentlyColliding = false;
+               
+            }
         }
     }
 
     private void Update()
     {
-        // Ensure parameters are within bounds before applying sound adjustments
-        if (!currentlyColliding || objectVelocity < 0.199f || objectBody.velocity.y > 0.3f)
+       if (currentlyColliding == false || objectVelocity < 0.199f || objectBody.velocity.y > 0.3f)
         {
-            Debug.Log("high parameters not met");
-            dragEmitter.SetParameter("objectVelocity", 0);
+                    
+            impactInstance.setParameterByName("objectVelocity", 0);
         }
-    }
+
+       }
 
     private void OnCollisionStay(Collision collision)
     {
-        if (IsCollisionWithTrackedObject(collision))
+        iCollisionPoints = collision.contactCount;
+        objectVelocity = Vector3.Magnitude(objectBody.velocity);
+        iCollisionPoints = Mathf.Clamp(iCollisionPoints, 0, 4);
+
+        if (currentlyColliding == true)
         {
-            iCollisionPoints = collision.contactCount;
-            iCollisionPoints = Mathf.Clamp(iCollisionPoints, 0, 4); // Limit collision points to a max of 4
-
-            objectVelocity = Vector3.Magnitude(objectBody.velocity);
-            objectVelocity = Mathf.Clamp(objectVelocity, 0, 3); // Clamp velocity to a max of 3
-            objectVelocity = (objectVelocity * iCollisionPoints) / 12;
-
-            dragEmitter.SetParameter("objectVelocity", objectVelocity);
-            Debug.Log("currently playing audio at " + objectVelocity);
+            
+            objectVelocity = Mathf.Clamp(objectVelocity, 0, 3);
+                        objectVelocity = ((objectVelocity * iCollisionPoints) / 12);
+                          impactInstance.setParameterByName("objectVelocity", objectVelocity);
         }
     }
+
 }
