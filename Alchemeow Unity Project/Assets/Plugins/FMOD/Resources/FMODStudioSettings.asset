@@ -478,6 +478,12 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+<<<<<<< Updated upstream
+=======
+  - Bank A
+  - Music
+  - NULLBANK
+>>>>>>> Stashed changes
   - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
