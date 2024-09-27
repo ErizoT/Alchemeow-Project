@@ -6125,6 +6125,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 498372357}
+  - component: {fileID: 498372359}
   - component: {fileID: 498372358}
   m_Layer: 0
   m_Name: DialogueManager
@@ -6157,25 +6158,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 498372356}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d9bd6906701f94b8f4fe2da6263b40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientDialogueList:
+  - ingredientName: Ingredient 1
+    dialogueEntries:
+    - characterExpressions: {fileID: 0}
+      dialogueArray: 
+    - characterExpressions: {fileID: 0}
+      dialogueArray: 
+    - characterExpressions: {fileID: 0}
+      dialogueArray: 
+    - characterExpressions: {fileID: 0}
+      dialogueArray: 
+  disalogueDisplay: {fileID: 498372359}
+--- !u!114 &498372359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498372356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e2ebf3e5521797a4da2c48bf782d0c86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectChecker: {fileID: 1223322777}
   textComponent: {fileID: 2010205677}
   lines:
-  - 
-  - Hello
-  - Put in
-  - small cube!
-  - 
-  - Good
-  - now put in
-  - big cube!
-  - 
-  - Nice!
+  - Test line 1
+  - Test line 2
+  - Test line 3
+  - Test line 4
   textSpeed: 0
   fadeOut: {fileID: 1682081264}
-  DialogueEnd: DialogueEnd
+  DialogueEnd: 
   DialogueProgression: 0
   index: 0
 --- !u!1001 &519440565

@@ -4,14 +4,14 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.ProBuilder.MeshOperations;
 using System.Diagnostics.CodeAnalysis;
+using System;
 
-public class Dialogue : MonoBehaviour
+public class DialogueDisplay : MonoBehaviour
 {
-    [SerializeField]
-    private ObjectChecker objectChecker;
+    [SerializeField] private ObjectChecker objectChecker;
     
     public TextMeshProUGUI textComponent;
-    public string[] lines;
+    public List<string> lines;
     public float textSpeed;
 
     public Animator fadeOut;
@@ -43,24 +43,31 @@ public class Dialogue : MonoBehaviour
 
     public void AdvanceText()
     {
+        if (lines != null) 
+        {
+            // For when the player proceeds at the end of a sentence
             if (textComponent.text == lines[index] && fadeOut.GetBool("DialogueEnd") == false)
             {
                 NextLine();
-                Debug.Log(lines[index]);
             }
-            else
+            else // For when a player presses skip mid-sentence
             {
                 // source.clip = SkippingAudio;
                 // source.Play();
                 StopAllCoroutines();
                 textComponent.text = lines[index];
             }
+        }
     }
 
     void StartDialogue()
     {
-        index = 0;
-        StartCoroutine(TypeLine());
+        if (lines != null)
+        {
+            //lines = new List<string>(dialogueList);
+            index = 0;
+            StartCoroutine(TypeLine());
+        }
     }
 
     IEnumerator TypeLine()
@@ -79,27 +86,35 @@ public class Dialogue : MonoBehaviour
         index++;
         textComponent.text = string.Empty;
         StartCoroutine(TypeLine());
-        
+
+        if (index == lines.Count)
+        {
+            fadeOut.SetBool("DialogueEnd", true);
+            Debug.Log("CLOSE");
+            lines = null;
+        }
+
+        /*
         // To add more points where the dialogue box closes, have the desired line number be empty text, and make a copy of the if function below
         // referring to that line to close dialogue box.
         if (index == 4)
         {
             fadeOut.SetBool("DialogueEnd", true);
-            fadeOut.SetInteger("DialogueProgression", 1);
+            //fadeOut.SetInteger("DialogueProgression", 1);
             Debug.Log("CLOSE");
         }
         
         if (index == 8)
         {
             fadeOut.SetBool("DialogueEnd", true);
-            fadeOut.SetInteger("DialogueProgression", 2);
+            //fadeOut.SetInteger("DialogueProgression", 2);
         }
 
         if(index == 10)
         {
             fadeOut.SetBool("DialogueEnd", true);
-            fadeOut.SetInteger("DialogueProgression", 3);
-        }
+            //fadeOut.SetInteger("DialogueProgression", 3);
+        }*/
     }
 
 
