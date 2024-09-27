@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e229b33366e00f4699d40b3b31bb43c
+guid: 5d1ebf54667e0d646964f7f1580fbda1
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_DragonScale
-    second: {fileID: 2100000, guid: 4d27ec9ca3ecf2446a0154f0e3786029, type: 2}
+      name: M_Dirt
+    second: {fileID: 2100000, guid: 7f840438eb087bc4dbad7b23b4db390a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Pot
+    second: {fileID: 2100000, guid: a9bf36bdc7cab4e4c8e5e54b4564ecf9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

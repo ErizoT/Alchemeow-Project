@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e229b33366e00f4699d40b3b31bb43c
+guid: 9c6f7f7103c59984a87452dd127c9b47
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_DragonScale
-    second: {fileID: 2100000, guid: 4d27ec9ca3ecf2446a0154f0e3786029, type: 2}
+      name: M_Bean
+    second: {fileID: 2100000, guid: 030d2afd8ab185b4e89e44e83e56293b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Knife
+    second: {fileID: 2100000, guid: d4d48adfcf7130849bbbe17a971a526c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Paw
+    second: {fileID: 2100000, guid: a46d69512cc9b9443beea932b33034c7, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

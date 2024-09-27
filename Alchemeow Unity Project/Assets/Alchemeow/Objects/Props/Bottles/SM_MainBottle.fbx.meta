@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e229b33366e00f4699d40b3b31bb43c
+guid: 5673f12bcff91bc4cba5cdae8f1104e0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_DragonScale
-    second: {fileID: 2100000, guid: 4d27ec9ca3ecf2446a0154f0e3786029, type: 2}
+      name: M_MainBottle
+    second: {fileID: 2100000, guid: 3046baa8fea522948877bcb6b5bc3c39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_MainCork
+    second: {fileID: 2100000, guid: 380502a24ddd14e4bb1671aabf23bb8c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

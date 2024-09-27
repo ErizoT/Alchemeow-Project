@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e229b33366e00f4699d40b3b31bb43c
+guid: e8035b3473cde514b9fe9af7f6cc5acb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: M_DragonScale
-    second: {fileID: 2100000, guid: 4d27ec9ca3ecf2446a0154f0e3786029, type: 2}
+      name: M_Star
+    second: {fileID: 2100000, guid: cfb5b6037779b434a8ba0b6bfc5aca4c, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

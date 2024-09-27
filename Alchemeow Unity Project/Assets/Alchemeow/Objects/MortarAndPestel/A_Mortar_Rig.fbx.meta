@@ -3,7 +3,17 @@ guid: 877679cff258ef543ab975fad1e9e68a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Mortar1
+    second: {fileID: 2100000, guid: f61ac56a5b2f9aa409a128de346b5263, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Mortar2
+    second: {fileID: 2100000, guid: d9cfecd0b6e3806449b3b7fd3ce0a831, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
