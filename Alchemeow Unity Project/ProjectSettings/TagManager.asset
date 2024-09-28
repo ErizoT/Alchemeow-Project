@@ -3,20 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Holdable
-  - Objects
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
-  - stuff on top of outline hopefully
-  - GhostPlayer
-  - Objects
-  - Bounds
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
