@@ -25,7 +25,7 @@ public class DialogueDisplay : MonoBehaviour
     public int index;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //fadeOut = GetComponent<Animator>();
         textComponent.text = string.Empty;
