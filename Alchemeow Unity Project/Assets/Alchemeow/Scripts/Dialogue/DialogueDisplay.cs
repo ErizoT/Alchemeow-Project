@@ -29,7 +29,7 @@ public class DialogueDisplay : MonoBehaviour
     {
         //fadeOut = GetComponent<Animator>();
         textComponent.text = string.Empty;
-        StartDialogue();
+        
     }
 
     // Update is called once per frame
@@ -60,11 +60,12 @@ public class DialogueDisplay : MonoBehaviour
         }
     }
 
-    void StartDialogue()
+    public void StartDialogue(List<string> dialogueList)
     {
         if (lines != null)
         {
-            //lines = new List<string>(dialogueList);
+            fadeOut.SetBool("DialogueEnd", false);
+            lines = new List<string>(dialogueList);
             index = 0;
             StartCoroutine(TypeLine());
         }
@@ -92,29 +93,8 @@ public class DialogueDisplay : MonoBehaviour
             fadeOut.SetBool("DialogueEnd", true);
             Debug.Log("CLOSE");
             lines = null;
+            StartCoroutine(CameraManager.Instance.BackToPlayer());
         }
-
-        /*
-        // To add more points where the dialogue box closes, have the desired line number be empty text, and make a copy of the if function below
-        // referring to that line to close dialogue box.
-        if (index == 4)
-        {
-            fadeOut.SetBool("DialogueEnd", true);
-            //fadeOut.SetInteger("DialogueProgression", 1);
-            Debug.Log("CLOSE");
-        }
-        
-        if (index == 8)
-        {
-            fadeOut.SetBool("DialogueEnd", true);
-            //fadeOut.SetInteger("DialogueProgression", 2);
-        }
-
-        if(index == 10)
-        {
-            fadeOut.SetBool("DialogueEnd", true);
-            //fadeOut.SetInteger("DialogueProgression", 3);
-        }*/
     }
 
 

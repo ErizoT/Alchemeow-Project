@@ -8,7 +8,7 @@ public class DialogueArray : MonoBehaviour
     public static DialogueArray Instance => _instance;
     
     public List<IngredientDialogue> ingredientDialogueList;
-    [SerializeField] DialogueDisplay disalogueDisplay;
+    [SerializeField] DialogueDisplay dialogueDisplay;
 
     private void Awake()
     {
@@ -22,17 +22,37 @@ public class DialogueArray : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    private void Start()
+    {
+        StartNextDialogue();
+    }
+
+    public void StartNextDialogue()
+    {
+        Debug.Log("Called The next dialogue");
+        List<string> stringList = ingredientDialogueList[0].dialogueEntries;
+        dialogueDisplay.StartDialogue(stringList);
+    }
+
+    public void ClearIngredient()
+    {
+        ingredientDialogueList.RemoveAt(0);
+    }
 }
 
 [System.Serializable]
 public class IngredientDialogue
 {
     [SerializeField] string ingredientName;
-    public List<DialogueEntry> dialogueEntries;
-}
-[System.Serializable]
-public class DialogueEntry
-{
-    public Sprite characterExpressions;
-    public string dialogueArray;
+    public List<Sprite> characterExpressions;
+    public List<string> dialogueEntries;
+    
+    public void CheckEntries(IngredientDialogue ingD) // Little check to see if both expression and dialogue lists are the same
+    {
+        if (characterExpressions.Count != dialogueEntries.Count)
+        {
+            Debug.LogError("Number of expressions don't match number of dialogue lines in" + ingD);
+        }
+    }
 }

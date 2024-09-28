@@ -6,7 +6,7 @@ public class ObjectChecker : MonoBehaviour
 {
     public GameObject ballPrefab;
     public List<Potion> potions;
-    [HideInInspector] public Texture2D ballImage;
+    public Texture2D ballImage;
 
     public DialogueDisplay dialogue;
     public Animator cauldronAnimator;
@@ -19,6 +19,12 @@ public class ObjectChecker : MonoBehaviour
     [SerializeField] FMODUnity.EventReference cauldronAngry;
     private FMOD.Studio.EventInstance cauldronAngryInstance;
 
+    [Header("Crystal Ball Things")]
+    [SerializeField] GameObject crystalBallImage;
+    [SerializeField] ParticleSystem crystalBallParticle;
+
+
+
 
     private void Start()
     {
@@ -26,6 +32,9 @@ public class ObjectChecker : MonoBehaviour
         
         particleCorrect.GetComponent<ParticleSystem>();
         particleIncorrect.GetComponent<ParticleSystem>();
+
+        ballImage = potions[0].ingredients[0].ingIMG;
+        crystalBallImage.GetComponent<MeshRenderer>().material.SetTexture("_Texture", ballImage);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -48,8 +57,8 @@ public class ObjectChecker : MonoBehaviour
             particleCorrect.Stop();
             particleCorrect.Play();
 
-            //Open dialogue box
-            dialogue.fadeOut.SetBool(dialogue.DialogueEnd, false);
+            //ballImage = potions[0].ingredients[0].ingIMG;
+            //StartCoroutine(SwitchImage(ballImage));
 
             // Play good cauldron animation
             cauldronAnimator.SetTrigger("AddedIngredient");
@@ -57,6 +66,9 @@ public class ObjectChecker : MonoBehaviour
 
             // Call CameraManager to do the CorrectIngredient camera moveent
             StartCoroutine(CameraManager.Instance.CorrectIngredient());
+
+            // Call DialogueArray to cycle to next ingredient dialogue list
+            DialogueArray.Instance.ClearIngredient();
 
             // Mark complete objective
             print("Placed the correct ingredient");
@@ -92,16 +104,11 @@ public class ObjectChecker : MonoBehaviour
 
     private void CompleteObjective()
     {
-        // Remove the ingredient[0] from the current potion's ingredient list
-        // Change the crystal ball's image to the next one
-
-        ballImage = potions[0].ingredients[0].ingIMG;
-        // Pan the main camera to the crystal ball
-
-        // *If the current potion's ingredient list is at 0*
-        // CompleteQuest();
-
         potions[0].ingredients.RemoveAt(0);
+        ballImage = potions[0].ingredients[0].ingIMG;
+        StartCoroutine(SwitchImage(ballImage));
+
+
         print("Removed an ingredient");
         
         
@@ -119,6 +126,15 @@ public class ObjectChecker : MonoBehaviour
 
         print("Moved to new potion");
         potions.RemoveAt(0);
+    }
+
+    IEnumerator SwitchImage(Texture2D image)
+    {
+        Debug.Log("triggered");
+        yield return new WaitForSeconds(2);
+        crystalBallImage.GetComponent<MeshRenderer>().material.SetTexture("_Texture", image);
+        crystalBallParticle.Play();
+
     }
 
 }
