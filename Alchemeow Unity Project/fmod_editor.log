@@ -6,7 +6,7 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x30d72a808 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x32cff2a08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,70 +15,968 @@
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 58208
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 4992
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x16b8667f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x379e58528
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x379e585f8
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x379e58634
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x379e58704
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x37b6ec0c8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Grabbing -001-001', format=5, channels=2, frequency=48000, lengthbytes=7456, lengthpcm=37440, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.177255.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-009', format=5, channels=2, frequency=48000, lengthbytes=1440, lengthpcm=5034, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.320458.
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
-[LOG] SystemI::createSoundInternal             : exinfo->length             = 58208
-[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 4992
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x16b8667f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x379e58528
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x379e585f8
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x379e58634
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x379e58704
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x37b6da4d8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
-[LOG] SystemI::createSoundInternal             : Sample 0/1: name='NOT GRABBING', format=5, channels=2, frequency=48000, lengthbytes=16832, lengthpcm=79680, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.120780.
-[LOG] SoundI::release                          :  (0x30c8b1438)
-[LOG] SoundI::release                          :     Grabbing -001-001 (0x30c8ae388)
-[LOG] SoundI::release                          :  (0x37b6daaa8)
-[LOG] SoundI::release                          :     NOT GRABBING (0x37b6dac18)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-010', format=5, channels=2, frequency=48000, lengthbytes=1344, lengthpcm=5245, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.319528.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-004', format=5, channels=2, frequency=48000, lengthbytes=1312, lengthpcm=4177, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.273490.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-002', format=5, channels=2, frequency=48000, lengthbytes=1312, lengthpcm=4840, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.297862.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-003', format=5, channels=2, frequency=48000, lengthbytes=992, lengthpcm=3932, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.315044.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-005', format=5, channels=2, frequency=48000, lengthbytes=960, lengthpcm=3743, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.289121.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-007', format=5, channels=2, frequency=48000, lengthbytes=1952, lengthpcm=5937, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.277018.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-008', format=5, channels=2, frequency=48000, lengthbytes=1408, lengthpcm=5479, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.370917.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-001', format=5, channels=2, frequency=48000, lengthbytes=1056, lengthpcm=3176, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.289934.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x159f483e8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_butterfly_flap-006', format=5, channels=2, frequency=48000, lengthbytes=1184, lengthpcm=4647, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.305760.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 2231744
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 40192
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3147e27f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x39ddf0528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x39ddf05f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x39ddf0634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x39ddf0704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x15b892538
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='TEMPsfx_objectdrag', format=5, channels=2, frequency=48000, lengthbytes=9216, lengthpcm=44539, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.630956.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-FeffeW/hotswap_417.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-FeffeW/hotswap_417.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
-[ERR] assert                                   : assertion: 'gSystemInitCount == 0' failed
+[LOG] SoundI::release                          :  (0x3802b68f8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-022 (0x38022f628)
+[LOG] SoundI::release                          :  (0x3802b3478)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-021 (0x3802f34b8)
+[LOG] SoundI::release                          :  (0x380235878)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-020 (0x3802f4988)
+[LOG] SoundI::release                          :  (0x3802c8a28)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-019 (0x31e7cd768)
+[LOG] SoundI::release                          :  (0x3802cd6b8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-018 (0x38023c888)
+[LOG] SoundI::release                          :  (0x380a80e18)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-017 (0x380a80f88)
+[LOG] SoundI::release                          :  (0x3802fb2d8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-016 (0x38028af98)
+[LOG] SoundI::release                          :  (0x31e7e8678)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-015 (0x380260fd8)
+[LOG] SoundI::release                          :  (0x38269ae68)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-014 (0x38269a948)
+[LOG] SoundI::release                          :  (0x31e7e88c8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-013 (0x3802f3038)
+[LOG] SoundI::release                          :  (0x3802c4088)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-012 (0x31e7f0d58)
+[LOG] SoundI::release                          :  (0x380a82098)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-011 (0x380a82208)
+[LOG] SoundI::release                          :  (0x382187588)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-010 (0x382188238)
+[LOG] SoundI::release                          :  (0x380a804f8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-009 (0x380a80668)
+[LOG] SoundI::release                          :  (0x3802bf6b8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-008 (0x31e79fb98)
+[LOG] SoundI::release                          :  (0x380a80068)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-007 (0x380a801d8)
+[LOG] SoundI::release                          :  (0x3802855f8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-036 (0x3802eadf8)
+[LOG] SoundI::release                          :  (0x380a82548)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-035 (0x380a826b8)
+[LOG] SoundI::release                          :  (0x380a812a8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-034 (0x380a81418)
+[LOG] SoundI::release                          :  (0x3802f21d8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-033 (0x3802b2c38)
+[LOG] SoundI::release                          :  (0x380a7fbd8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-032 (0x380a7fd48)
+[LOG] SoundI::release                          :  (0x380a7f748)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-031 (0x380a7f8b8)
+[LOG] SoundI::release                          :  (0x31e717178)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-030 (0x31e7e3988)
+[LOG] SoundI::release                          :  (0x3802a1b68)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-029 (0x3802f8328)
+[LOG] SoundI::release                          :  (0x380a81be8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-028 (0x380a81d58)
+[LOG] SoundI::release                          :  (0x3802e4278)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-027 (0x38026ff38)
+[LOG] SoundI::release                          :  (0x31e70ca18)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-026 (0x31e7ddcc8)
+[LOG] SoundI::release                          :  (0x3802e0db8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-025 (0x380253cd8)
+[LOG] SoundI::release                          :  (0x380a80988)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-023 (0x380a80af8)
+[LOG] SoundI::release                          :  (0x38264eb88)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-001 (0x38264ecf8)
+[LOG] SoundI::release                          :  (0x38264cb98)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-003 (0x38264cd08)
+[LOG] SoundI::release                          :  (0x38264c708)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-004 (0x38264c878)
+[LOG] SoundI::release                          :  (0x38264d028)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-005 (0x38264db68)
+[LOG] SoundI::release                          :  (0x3808c3c68)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-006 (0x3808c3dd8)
+[LOG] SoundI::release                          :  (0x38264e268)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-007 (0x38264e3d8)
+[LOG] SoundI::release                          :  (0x38264e6f8)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-008 (0x38264e868)
+[LOG] SoundI::release                          :  (0x13b695918)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-009 (0x31e77e838)
+[LOG] SoundI::release                          :  (0x13b651088)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-010 (0x31e7124d8)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-022.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-022.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=271002, lengthpcm=45167, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-021.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-021.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=282882, lengthpcm=47147, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-020.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-020.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=310086, lengthpcm=51681, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-019.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-019.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=272004, lengthpcm=45334, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-018.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-018.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=353604, lengthpcm=58934, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-017.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-017.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=418884, lengthpcm=69814, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-016.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-016.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=315522, lengthpcm=52587, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-015.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-015.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=293760, lengthpcm=48960, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-014.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-014.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=451524, lengthpcm=75254, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-013.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-013.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=288324, lengthpcm=48054, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-012.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-012.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=402564, lengthpcm=67094, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-011.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-011.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=326406, lengthpcm=54401, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-010.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-010.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=462402, lengthpcm=77067, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-009.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-009.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=456966, lengthpcm=76161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-008.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-008.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=489606, lengthpcm=81601, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-007.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-007.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=456966, lengthpcm=76161, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-006.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_birdchirp-006.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=474372, lengthpcm=79062, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_waterstream.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_waterstream.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=26717754, lengthpcm=4452959, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_eveningbirdsandcrickets.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_eveningbirdsandcrickets.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=17546562, lengthpcm=2924427, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_bell.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_bell.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=3176892, lengthpcm=529482, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-036.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-036.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=1127346, lengthpcm=187891, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-035.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-035.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=810444, lengthpcm=135074, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-034.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-034.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=885774, lengthpcm=147629, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-033.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-033.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=1026690, lengthpcm=171115, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-032.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-032.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=1077018, lengthpcm=179503, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-031.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-031.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=1205802, lengthpcm=200967, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-030.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-030.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=443544, lengthpcm=73924, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-029.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-029.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=261708, lengthpcm=43618, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-028.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-028.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=716142, lengthpcm=119357, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-027.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-027.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=362364, lengthpcm=60394, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-026.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-026.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=482190, lengthpcm=80365, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-025.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-025.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=452952, lengthpcm=75492, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-024.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-024.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=382494, lengthpcm=63749, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-023.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_buildingcreak-023.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=390486, lengthpcm=65081, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_softwindandbirds.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_softwindandbirds.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=7151226, lengthpcm=1191871, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/Fireplace_Constant_CU_Flames_Whoosh_OCP-1037-050.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/Fireplace_Constant_CU_Flames_Whoosh_OCP-1037-050.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=2, channels=2, frequency=48000, lengthbytes=18835456, lengthpcm=4708864, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_windheavy.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_ambience_windheavy.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=17574972, lengthpcm=2929162, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_cauldron_bubble.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_cauldron_bubble.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=32737356, lengthpcm=5456226, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-009.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-009.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=27750, lengthpcm=4625, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-008.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-008.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=30204, lengthpcm=5034, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-007.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-007.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=32730, lengthpcm=5455, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-006.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-006.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=25620, lengthpcm=4270, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=23028, lengthpcm=3838, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=21678, lengthpcm=3613, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-001.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-001.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=17508, lengthpcm=2918, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=26682, lengthpcm=4447, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=20634, lengthpcm=3439, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-010.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_butterfly_flap-010.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=28914, lengthpcm=4819, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/TEMPsfx_objectdrag.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/TEMPsfx_objectdrag.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=245526, lengthpcm=40921, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/Comfort.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/Comfort.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=5, channels=2, frequency=48000, lengthbytes=122880000, lengthpcm=15360000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/Jubilance .wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/Jubilance .wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=5, channels=2, frequency=48000, lengthbytes=90931200, lengthpcm=11366400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/Wonder.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/Wonder.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=5, channels=2, frequency=48000, lengthbytes=88045712, lengthpcm=11005714, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0x3802cb8b8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-006 (0x380205528)
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[WRN] SoundSourceInstrumentInstance::startChannelIfReady : Loading delay exceeded, sound may play at incorrect time
+[LOG] SoundI::release                          : Comfort (0x31e7eb4d8)
+[LOG] SoundI::release                          :     Comfort (0x31e7ec4e8)
+[LOG] SoundI::release                          :     Comfort (0x31e7d2c48)
+[LOG] SoundI::release                          : sfx_cauldron_bubble (0x31e7d96b8)
+[LOG] SoundI::release                          :     sfx_cauldron_bubble (0x380a7ef28)
+[LOG] SoundI::release                          :     sfx_cauldron_bubble (0x380a7f1d8)
+[LOG] SoundI::release                          : sfx_ambience_windheavy (0x380292e18)
+[LOG] SoundI::release                          :     sfx_ambience_windheavy (0x13fdb8aa8)
+[LOG] SoundI::release                          :     sfx_ambience_windheavy (0x3213f1a48)
+[LOG] SoundI::release                          : Fireplace_Constant_CU_Flames_Whoosh_OCP-1037-050 (0x3802c0638)
+[LOG] SoundI::release                          :     Fireplace_Constant_CU_Flames_Whoosh_OCP-1037-050 (0x37d1f8f08)
+[LOG] SoundI::release                          :     Fireplace_Constant_CU_Flames_Whoosh_OCP-1037-050 (0x38069bcb8)
+[LOG] SoundI::release                          : sfx_ambience_softwindandbirds (0x3802e21b8)
+[LOG] SoundI::release                          :     sfx_ambience_softwindandbirds (0x37d11c8f8)
+[LOG] SoundI::release                          :     sfx_ambience_softwindandbirds (0x15af4daf8)
+[LOG] SoundI::release                          : sfx_ambience_bell (0x3802df238)
+[LOG] SoundI::release                          :     sfx_ambience_bell (0x3822376d8)
+[LOG] SoundI::release                          :     sfx_ambience_bell (0x382699af8)
+[LOG] SoundI::release                          : sfx_ambience_eveningbirdsandcrickets (0x3802c87f8)
+[LOG] SoundI::release                          :     sfx_ambience_eveningbirdsandcrickets (0x3806137f8)
+[LOG] SoundI::release                          :     sfx_ambience_eveningbirdsandcrickets (0x380625cf8)
+[LOG] SoundI::release                          : sfx_ambience_waterstream (0x3802c74c8)
+[LOG] SoundI::release                          :     sfx_ambience_waterstream (0x37d199048)
+[LOG] SoundI::release                          :     sfx_ambience_waterstream (0x37d1e27e8)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_jar_drag.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_jar_drag.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=3134646, lengthpcm=522441, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=71238, lengthpcm=11873, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=77598, lengthpcm=12933, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=58848, lengthpcm=9808, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=63720, lengthpcm=10620, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=61038, lengthpcm=10173, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=53772, lengthpcm=8962, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=51660, lengthpcm=8610, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=68892, lengthpcm=11482, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=114954, lengthpcm=19159, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=112026, lengthpcm=18671, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=106968, lengthpcm=17828, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=105522, lengthpcm=17587, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-001.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-001.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=109926, lengthpcm=18321, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          :  (0x380a81738)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-024 (0x380a818a8)
+[LOG] SoundI::release                          :  (0x159f18378)
+[LOG] SoundI::release                          :     sfx_butterfly_flap-002 (0x38026cfb8)
+[LOG] SoundI::release                          :  (0x31e724f08)
+[LOG] SoundI::release                          :     TEMPsfx_objectdrag (0x31e725078)
+[LOG] SoundI::release                          : sfx_grab_release-005.wav (0x38085d528)
+[LOG] SoundI::release                          : sfx_grab_release-004.wav (0x38283a3c8)
+[LOG] SoundI::release                          : sfx_grab_release-003.wav (0x31e7239d8)
+[LOG] SoundI::release                          : sfx_grab_release-002.wav (0x31e723788)
+[LOG] SoundI::release                          : sfx_grab_release-001.wav (0x31e71b3a8)
+[LOG] SoundI::release                          : sfx_paw_grab-002.wav (0x31e706268)
+[LOG] SoundI::release                          : sfx_paw_grab-003.wav (0x3803f0878)
+[LOG] SoundI::release                          : sfx_paw_enter-007.wav (0x31e722e78)
+[LOG] SoundI::release                          : sfx_paw_enter-006.wav (0x3828576d8)
+[LOG] SoundI::release                          : sfx_paw_enter-004.wav (0x382604968)
+[LOG] SoundI::release                          : sfx_grab_fail-005.wav (0x3803e65b8)
+[LOG] SoundI::release                          : sfx_grab_fail-004.wav (0x382605408)
+[LOG] SoundI::release                          : sfx_grab_fail-003.wav (0x3826058a8)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=71238, lengthpcm=11873, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=77598, lengthpcm=12933, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=58848, lengthpcm=9808, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=63720, lengthpcm=10620, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=61038, lengthpcm=10173, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=53772, lengthpcm=8962, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=51660, lengthpcm=8610, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=68892, lengthpcm=11482, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=114954, lengthpcm=19159, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=112026, lengthpcm=18671, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=106968, lengthpcm=17828, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_bubble_pop.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_bubble_pop.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=37464, lengthpcm=6244, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_grab_release-005.wav (0x3803e65b8)
+[LOG] SoundI::release                          : sfx_grab_release-004.wav (0x3803f0878)
+[LOG] SoundI::release                          : sfx_grab_release-003.wav (0x38085d528)
+[LOG] SoundI::release                          : sfx_grab_release-002.wav (0x3828b8b28)
+[LOG] SoundI::release                          : sfx_grab_release-001.wav (0x31e722e78)
+[LOG] SoundI::release                          : sfx_paw_grab-002.wav (0x31e71b3a8)
+[LOG] SoundI::release                          : sfx_paw_grab-003.wav (0x3803d91f8)
+[LOG] SoundI::release                          : sfx_paw_enter-007.wav (0x3803d4628)
+[LOG] SoundI::release                          : sfx_paw_enter-006.wav (0x3803c1e88)
+[LOG] SoundI::release                          : sfx_paw_enter-004.wav (0x31e723788)
+[LOG] SoundI::release                          : sfx_grab_fail-005.wav (0x3803af218)
+[LOG] SoundI::release                          : sfx_grab_fail-004.wav (0x3828576d8)
+[LOG] SoundI::release                          : sfx_grab_fail-003.wav (0x38039e598)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=71238, lengthpcm=11873, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=77598, lengthpcm=12933, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=58848, lengthpcm=9808, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=63720, lengthpcm=10620, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=61038, lengthpcm=10173, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=53772, lengthpcm=8962, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=51660, lengthpcm=8610, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=68892, lengthpcm=11482, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=114954, lengthpcm=19159, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=112026, lengthpcm=18671, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=106968, lengthpcm=17828, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_grab_release-005.wav (0x38039e598)
+[LOG] SoundI::release                          : sfx_grab_release-004.wav (0x31b9ce978)
+[LOG] SoundI::release                          : sfx_grab_release-003.wav (0x31e707998)
+[LOG] SoundI::release                          : sfx_grab_release-002.wav (0x382771018)
+[LOG] SoundI::release                          : sfx_grab_release-001.wav (0x3803c1e88)
+[LOG] SoundI::release                          : sfx_paw_grab-002.wav (0x3803d91f8)
+[LOG] SoundI::release                          : sfx_paw_grab-003.wav (0x3803f0878)
+[LOG] SoundI::release                          : sfx_paw_enter-007.wav (0x3803e65b8)
+[LOG] SoundI::release                          : sfx_paw_enter-006.wav (0x31b9cfd18)
+[LOG] SoundI::release                          : sfx_paw_enter-004.wav (0x31e718678)
+[LOG] SoundI::release                          : sfx_grab_fail-005.wav (0x31b9d1088)
+[LOG] SoundI::release                          : sfx_grab_fail-004.wav (0x382770d18)
+[LOG] SoundI::release                          : sfx_grab_fail-003.wav (0x39f022d48)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=71238, lengthpcm=11873, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=77598, lengthpcm=12933, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=58848, lengthpcm=9808, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=63720, lengthpcm=10620, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=61038, lengthpcm=10173, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=53772, lengthpcm=8962, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=51660, lengthpcm=8610, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=68892, lengthpcm=11482, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=114954, lengthpcm=19159, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=112026, lengthpcm=18671, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=106968, lengthpcm=17828, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SoundI::release                          : sfx_grab_release-005.wav (0x382771018)
+[LOG] SoundI::release                          : sfx_grab_release-004.wav (0x31e707998)
+[LOG] SoundI::release                          : sfx_grab_release-003.wav (0x31e718678)
+[LOG] SoundI::release                          : sfx_grab_release-002.wav (0x3803e65b8)
+[LOG] SoundI::release                          : sfx_grab_release-001.wav (0x3827498c8)
+[LOG] SoundI::release                          : sfx_paw_grab-002.wav (0x382749e98)
+[LOG] SoundI::release                          : sfx_paw_grab-003.wav (0x3803f0878)
+[LOG] SoundI::release                          : sfx_paw_enter-007.wav (0x38274a028)
+[LOG] SoundI::release                          : sfx_paw_enter-006.wav (0x382748538)
+[LOG] SoundI::release                          : sfx_paw_enter-004.wav (0x38274a4c8)
+[LOG] SoundI::release                          : sfx_grab_fail-005.wav (0x31b9d1088)
+[LOG] SoundI::release                          : sfx_grab_fail-004.wav (0x31b9cfd18)
+[LOG] SoundI::release                          : sfx_grab_fail-003.wav (0x38274aca8)
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=71238, lengthpcm=11873, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=77598, lengthpcm=12933, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=58848, lengthpcm=9808, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=63720, lengthpcm=10620, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_release-001.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=61038, lengthpcm=10173, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-002.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=53772, lengthpcm=8962, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_grab-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=51660, lengthpcm=8610, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-007.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=68892, lengthpcm=11482, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-006.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_paw_enter-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=95700, lengthpcm=15950, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-005.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=114954, lengthpcm=19159, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-004.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=112026, lengthpcm=18671, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
+[LOG] SystemI::createSoundInternal             : Create name='fmod:///remote//Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav', mode=0x0200C202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Desktop/AlchemeowFMODNEW/Assets/sfx_grab_fail-003.wav'
+[LOG] SystemI::createSoundInternal             : Sample 0/0: name='(null)', format=3, channels=2, frequency=44100, lengthbytes=106968, lengthpcm=17828, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.000000.
