@@ -4,8 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Alchemeow/_Levels/MasterRoom.unity
-    guid: 2e89aee8e0c6bd04b8bf8735d4a946be
+  m_Scenes: []
   m_configObjects: {}
