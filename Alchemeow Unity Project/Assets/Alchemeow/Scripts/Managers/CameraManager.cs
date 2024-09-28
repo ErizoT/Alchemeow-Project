@@ -50,7 +50,15 @@ public class CameraManager : MonoBehaviour
         ChangeCameraState("Cauldron");
         yield return new WaitForSeconds(2);  // Example delay of 2 seconds
         ChangeCameraState("CrystalBall");
-        yield return new WaitForSeconds(2);
+        DialogueArray.Instance.StartNextDialogue();// Call dialogue to play
+        yield return new WaitForSeconds(1);
+
+        //ChangeCameraState("Player");
+    }
+
+    public IEnumerator BackToPlayer()
+    {
         ChangeCameraState("Player");
+        yield return null;
     }
 }

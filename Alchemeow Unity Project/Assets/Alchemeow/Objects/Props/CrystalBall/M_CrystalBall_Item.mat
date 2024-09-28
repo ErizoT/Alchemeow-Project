@@ -21,8 +21,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: M_CrystalBall_Item
-  m_Shader: {fileID: -6465566751694194690, guid: 4c83e3f1116b93240b1c597369ea7313,
-    type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 4c83e3f1116b93240b1c597369ea7313, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -106,6 +105,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 1
+    - _AlphaClipping: 0.5
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
