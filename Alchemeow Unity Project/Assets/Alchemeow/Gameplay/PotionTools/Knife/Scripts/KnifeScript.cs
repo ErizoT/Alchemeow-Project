@@ -11,8 +11,11 @@ public class KnifeScript : MonoBehaviour
     [SerializeField] float cuttingSpeed = 3f;
 
     private Rigidbody rb;
-    private bool canCut;
+    public bool canCut;
     private ParticleSystem systemToPlay;
+
+    // Dev
+    public Vector3 velocity;
 
     private void Start()
     {
@@ -22,13 +25,15 @@ public class KnifeScript : MonoBehaviour
 
     private void Update()
     {
+        velocity = rb.velocity;
+
         if (rb != null)
         {
             // Get the velocity vector
             Vector3 velocity = rb.velocity;
 
             // Check if the velocity in the y direction is negative
-            if (velocity.y < cuttingSpeed)
+            if (velocity.y < cuttingSpeed * -1)
             {
                 canCut = true;
             }
