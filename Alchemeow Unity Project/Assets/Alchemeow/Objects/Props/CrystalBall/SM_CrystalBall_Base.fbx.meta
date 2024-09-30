@@ -3,7 +3,12 @@ guid: fe4efde9f284e1742b1e3491c8d48e61
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_CrystalBallStand
+    second: {fileID: 2100000, guid: dfb5357583400c743a9d5bdd2c8ab4f6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

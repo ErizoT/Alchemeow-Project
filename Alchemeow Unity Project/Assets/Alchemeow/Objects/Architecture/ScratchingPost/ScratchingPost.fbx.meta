@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 2e229b33366e00f4699d40b3b31bb43c
+guid: 7f2fe54449ed44f4fa65c68632b7fb5f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_ScratchingPost
+    second: {fileID: 2100000, guid: 8a6f1930d615fb142a81ecce1d4c8a75, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
