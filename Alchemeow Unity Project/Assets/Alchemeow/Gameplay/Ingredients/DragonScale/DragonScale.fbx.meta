@@ -3,12 +3,7 @@ guid: 2e229b33366e00f4699d40b3b31bb43c
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: M_DragonScale
-    second: {fileID: 2100000, guid: 4d27ec9ca3ecf2446a0154f0e3786029, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

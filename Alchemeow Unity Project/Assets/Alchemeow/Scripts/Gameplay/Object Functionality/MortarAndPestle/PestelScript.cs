@@ -24,7 +24,7 @@ public class PestelScript : MonoBehaviour
             Vector3 velocity = rb.velocity;
 
             // Check if the velocity in the y direction is negative
-            if (velocity.y < -3f)
+            if (velocity.y < -1f)
             {
                 canCrush = true;
             }

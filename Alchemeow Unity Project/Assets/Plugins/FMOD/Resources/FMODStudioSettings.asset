@@ -417,6 +417,7 @@ MonoBehaviour:
   Banks:
   - Bank A
   - Music
+  - NULLBANK
   - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264

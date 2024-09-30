@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using FMODUnity;
 using UnityEngine.ProBuilder.MeshOperations;
 using System.Diagnostics.CodeAnalysis;
 using System;
@@ -18,14 +19,13 @@ public class DialogueDisplay : MonoBehaviour
     public string DialogueEnd;
     public int DialogueProgression;
 
-    // public AudioClip PrintingAudio;
-    // public AudioSource source;
-    // public AudioClip SkippingAudio;
+    [SerializeField] private StudioEventEmitter dialogueEmitter;
+    
 
     public int index;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         //fadeOut = GetComponent<Animator>();
         textComponent.text = string.Empty;
@@ -76,8 +76,7 @@ public class DialogueDisplay : MonoBehaviour
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
-            // source.clip = PrintingAudio;
-            // source.Play();
+            dialogueEmitter.Play();
             yield return new WaitForSeconds(textSpeed);
         }
     }
