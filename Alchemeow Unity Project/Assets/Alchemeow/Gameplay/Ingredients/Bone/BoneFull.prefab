@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 7114254717664758209}
   - component: {fileID: 5210072226440018628}
   - component: {fileID: 6809930091457270149}
+  - component: {fileID: 6436476875909864044}
   m_Layer: 8
   m_Name: BoneFull
   m_TagString: Untagged
@@ -187,6 +188,23 @@ CapsuleCollider:
   m_Height: 0.42
   m_Direction: 2
   m_Center: {x: 0, y: 0.93, z: 0}
+--- !u!114 &6436476875909864044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4889739491724353107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: BoneFull
+  essential: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
 --- !u!1 &7707822600489094548
 GameObject:
   m_ObjectHideFlags: 0

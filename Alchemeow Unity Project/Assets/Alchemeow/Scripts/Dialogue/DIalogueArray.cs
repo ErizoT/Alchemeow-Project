@@ -25,7 +25,7 @@ public class DialogueArray : MonoBehaviour
 
     private void Start()
     {
-        StartNextDialogue();
+        //StartNextDialogue();
     }
 
     public void StartNextDialogue()
@@ -38,6 +38,11 @@ public class DialogueArray : MonoBehaviour
     public void ClearIngredient()
     {
         ingredientDialogueList.RemoveAt(0);
+    }
+
+    public void NextLine()
+    {
+        dialogueDisplay.AdvanceText();
     }
 }
 

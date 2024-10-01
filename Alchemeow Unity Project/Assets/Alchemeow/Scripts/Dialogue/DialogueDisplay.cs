@@ -35,10 +35,10 @@ public class DialogueDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        /*if (Input.GetKeyDown(KeyCode.F))
         {
             AdvanceText();
-        }
+        }*/
     }
 
     public void AdvanceText()
@@ -62,13 +62,11 @@ public class DialogueDisplay : MonoBehaviour
 
     public void StartDialogue(List<string> dialogueList)
     {
-        if (lines != null)
-        {
-            fadeOut.SetBool("DialogueEnd", false);
-            lines = new List<string>(dialogueList);
-            index = 0;
-            StartCoroutine(TypeLine());
-        }
+        Debug.Log("Started Dialogue");
+        fadeOut.SetBool("DialogueEnd", false);
+        lines = new List<string>(dialogueList);
+        index = 0;
+        StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine()

@@ -109,7 +109,7 @@ public class ObjectChecker : MonoBehaviour
         StartCoroutine(SwitchImage(ballImage));
 
 
-        print("Removed an ingredient");
+        //print("Removed an ingredient");
         
         
         if(potions[0].ingredients.Count == 0)

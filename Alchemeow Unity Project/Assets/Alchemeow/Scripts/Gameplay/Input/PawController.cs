@@ -215,6 +215,15 @@ public class PawController : MonoBehaviour
         raiseValue = input.ReadValue<float>() * raiseLowerSpeed;
     }
 
+    public void AdvanceText(InputAction.CallbackContext input)
+    {
+        if(input.performed)
+        {
+            DialogueArray.Instance.NextLine();
+        }
+
+    }
+
     public void ResetScene(InputAction.CallbackContext input)
     {
         // Get the currently active scene

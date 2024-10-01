@@ -38,7 +38,6 @@ public class CameraManager : MonoBehaviour
 
     public IEnumerator WrongIngredient()
     {
-        Debug.Log("Called the thing");
         ChangeCameraState("Cauldron");
         yield return new WaitForSeconds(2);  // Example delay of 2 seconds
         ChangeCameraState("Player");
@@ -46,7 +45,6 @@ public class CameraManager : MonoBehaviour
 
     public IEnumerator CorrectIngredient()
     {
-        Debug.Log("Called the thing");
         ChangeCameraState("Cauldron");
         yield return new WaitForSeconds(2);  // Example delay of 2 seconds
         ChangeCameraState("CrystalBall");
