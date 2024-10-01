@@ -428,6 +428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knife
       objectReference: {fileID: 0}
+    - target: {fileID: 229457688694867450, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4d48adfcf7130849bbbe17a971a526c, type: 2}
     - target: {fileID: 1716811125915714409, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -634,6 +638,10 @@ PrefabInstance:
     - target: {fileID: 2765695862800014977, guid: 0136d01891e4f3545a4dea594f5b7e91, type: 3}
       propertyPath: VelocityModule.speedModifier.scalar
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5623096164933144070, guid: 0136d01891e4f3545a4dea594f5b7e91, type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6620446829652297667, guid: 0136d01891e4f3545a4dea594f5b7e91, type: 3}
       propertyPath: m_Name
@@ -19034,11 +19042,11 @@ RectTransform:
   - {fileID: 2010205676}
   m_Father: {fileID: 274181390}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 125}
-  m_SizeDelta: {x: 0, y: 250}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 25}
+  m_SizeDelta: {x: 1776, y: 356}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!95 &1682081264
 Animator:
   serializedVersion: 5
@@ -19073,14 +19081,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7259008, g: 0.76493865, b: 0.7987421, a: 0.4862745}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6cadc5e0a14daeb43a987d4d6d502226, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20702,8 +20710,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Chimken
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 25a51d4a78ff58f4d896fc0ebb5be807, type: 2}
+  m_sharedMaterial: {fileID: -2088975382707315145, guid: 25a51d4a78ff58f4d896fc0ebb5be807, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20727,13 +20735,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -20763,7 +20771,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -1339.574, w: 0}
+  m_margin: {x: 97.24928, y: 58.926575, z: -1517.1063, w: -218.81337}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20952,7 +20960,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.5
+      value: 11.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20990,6 +20998,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4189993744207907056, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 29d6fdb3c4478db44b86e71932e925f0, type: 2}
+    - target: {fileID: -4189993744207907056, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: cfb5b6037779b434a8ba0b6bfc5aca4c, type: 2}
     - target: {fileID: 919132149155446097, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
       propertyPath: m_Name
       value: Environment
@@ -20998,6 +21014,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1867966908156990812, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef2900471aba3e34a88c8ef4398ae38a, type: 2}
+    - target: {fileID: 2011990802977441518, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7f840438eb087bc4dbad7b23b4db390a, type: 2}
+    - target: {fileID: 2011990802977441518, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 688df0e830e9a1c4d845ff809328053f, type: 2}
+    - target: {fileID: 2426021393983837803, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef2900471aba3e34a88c8ef4398ae38a, type: 2}
+    - target: {fileID: 6368895804042533983, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef2900471aba3e34a88c8ef4398ae38a, type: 2}
+    - target: {fileID: 8297067346663559967, guid: 1577c096d671ef1439ec3a2dab8fbb46, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ef2900471aba3e34a88c8ef4398ae38a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
