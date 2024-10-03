@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Cuttable : MonoBehaviour
 {
     [SerializeField] GameObject prefabToSpawn;
+    [SerializeField] StudioEventEmitter cutEmitter;
 
     private bool hasBeenCut;
 
@@ -13,6 +15,7 @@ public class Cuttable : MonoBehaviour
         if (!hasBeenCut)
         {
             hasBeenCut = true;
+            cutEmitter.Play();
             Instantiate(prefabToSpawn, transform.position, transform.rotation);
             Destroy(gameObject);
         }
