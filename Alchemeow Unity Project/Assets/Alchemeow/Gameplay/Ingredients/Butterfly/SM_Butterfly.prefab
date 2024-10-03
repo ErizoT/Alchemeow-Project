@@ -290,11 +290,11 @@ MonoBehaviour:
   prefabToSpawn: {fileID: 7942304123366789545, guid: e8a40761a72f20b4a915b0de1b0000da, type: 3}
   crushSound:
     Guid:
-      Data1: 346752956
-      Data2: 1073896019
-      Data3: -155438661
-      Data4: 774281649
-    Path: event:/sfx_cube_crush
+      Data1: -1375405473
+      Data2: 1150307958
+      Data3: 373638056
+      Data4: 1638864989
+    Path: event:/sfx_butterfly_squash
 --- !u!54 &7302973283674667279
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -359,11 +359,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -721049486
-      Data2: 1104676028
-      Data3: -2080689530
-      Data4: -1719356889
-    Path: event:/sfx_pianoriff
+      Data1: -465380591
+      Data2: 1291369954
+      Data3: -170998622
+      Data4: -932642934
+    Path: event:/sfx_butterfly_flap
   Event: 
   PlayEvent: 0
   StopEvent: 0

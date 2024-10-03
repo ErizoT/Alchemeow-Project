@@ -1,5 +1,131 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2272202501679056178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8062132601402351315}
+  - component: {fileID: 1340878931866270012}
+  m_Layer: 0
+  m_Name: audio_starimpact (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8062132601402351315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272202501679056178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.36720842, y: -0.3590794, z: -0.15628809, w: 0.84367883}
+  m_LocalPosition: {x: 2.6, y: -4.1, z: -3.1}
+  m_LocalScale: {x: 34.06343, y: 34.06343, z: 34.06343}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1877272773417612583}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1340878931866270012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2272202501679056178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -75534979
+      Data2: 1285928796
+      Data3: -375695176
+      Data4: 1532132548
+    Path: event:/sfx_poppingstar_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &2330459138185361082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 377399041256761304}
+  - component: {fileID: 3502193555686135993}
+  m_Layer: 0
+  m_Name: audio_starimpact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &377399041256761304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330459138185361082}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2495295, y: -2.6, z: 3.6}
+  m_LocalScale: {x: 34.063427, y: 34.063427, z: 34.063427}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3920567114757638798}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3502193555686135993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330459138185361082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -75534979
+      Data2: 1285928796
+      Data3: -375695176
+      Data4: 1532132548
+    Path: event:/sfx_poppingstar_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &3929891008136386430
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,6 +160,69 @@ Transform:
   - {fileID: 1877272773417612583}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8762400049603455793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7699276192559469401}
+  - component: {fileID: 4500200497558711134}
+  m_Layer: 0
+  m_Name: audio_starimpact (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7699276192559469401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8762400049603455793}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.3719741, z: -0, w: 0.9282431}
+  m_LocalPosition: {x: 1, y: 1.4, z: 4.4}
+  m_LocalScale: {x: 34.063427, y: 34.063427, z: 34.063427}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8220692663788787627}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4500200497558711134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8762400049603455793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -75534979
+      Data2: 1285928796
+      Data3: -375695176
+      Data4: 1532132548
+    Path: event:/sfx_poppingstar_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1885952494268888310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169,6 +358,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4185538542834766192}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8062132601402351315}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
@@ -179,6 +371,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3899796005179510445}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1273440895819336904}
   m_SourcePrefab: {fileID: 100100000, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
 --- !u!1 &1244885794190127005 stripped
 GameObject:
@@ -250,6 +445,20 @@ MonoBehaviour:
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+--- !u!114 &1273440895819336904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244885794190127005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionObjects: []
+  impactEmitter: {fileID: 1340878931866270012}
 --- !u!4 &1877272773417612583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
@@ -328,6 +537,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6399926148322729846}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 377399041256761304}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
@@ -338,6 +550,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4144457042473047793}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 104928792091949475}
   m_SourcePrefab: {fileID: 100100000, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
 --- !u!4 &3920567114757638798 stripped
 Transform:
@@ -414,6 +629,20 @@ MonoBehaviour:
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+--- !u!114 &104928792091949475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4405496425203716148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionObjects: []
+  impactEmitter: {fileID: 3502193555686135993}
 --- !u!1001 &6015576041253544411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -735,6 +964,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5730760477997517532}
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7699276192559469401}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
@@ -745,6 +977,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8692604357199197331}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7093837023735095534}
   m_SourcePrefab: {fileID: 100100000, guid: e8035b3473cde514b9fe9af7f6cc5acb, type: 3}
 --- !u!4 &8220692663788787627 stripped
 Transform:
@@ -821,6 +1056,20 @@ MonoBehaviour:
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+--- !u!114 &7093837023735095534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8745450344126483729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionObjects: []
+  impactEmitter: {fileID: 4500200497558711134}
 --- !u!1001 &8713093095445854960
 PrefabInstance:
   m_ObjectHideFlags: 0

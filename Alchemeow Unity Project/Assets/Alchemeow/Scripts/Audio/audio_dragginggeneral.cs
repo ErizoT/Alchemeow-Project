@@ -16,8 +16,7 @@ public class audio_dragging : MonoBehaviour
 
 
     // SOUND BEING MADE
-    [SerializeField] FMODUnity.EventReference impactEvent;
-    private FMOD.Studio.EventInstance impactInstance;
+    [SerializeField] StudioEventEmitter draggingEmitter;
 
     //BODY OF IMPACT OBJECT
     [SerializeField]  private Rigidbody objectBody;
@@ -38,9 +37,8 @@ public class audio_dragging : MonoBehaviour
            
             if (collision.gameObject.transform == collisionObjects[objectNumber].transform)
             {
-                
-                impactInstance = FMODUnity.RuntimeManager.CreateInstance(impactEvent);
-                impactInstance.start();
+
+                draggingEmitter.Play();
                 currentlyColliding = true;
                                                
             }
@@ -56,7 +54,7 @@ public class audio_dragging : MonoBehaviour
         {
             if (collision.gameObject.transform == collisionObjects[objectNumber].transform)
             {
-                impactInstance.setParameterByName("objectVelocity", objectVelocity);
+                draggingEmitter.SetParameter("objectVelocity", objectVelocity);
                 currentlyColliding = false;
                
             }
@@ -68,7 +66,7 @@ public class audio_dragging : MonoBehaviour
        if (currentlyColliding == false || objectVelocity < 0.199f || objectBody.velocity.y > 0.3f)
         {
                     
-            impactInstance.setParameterByName("objectVelocity", 0);
+            draggingEmitter.SetParameter("objectVelocity", 0);
         }
 
        }
@@ -83,8 +81,8 @@ public class audio_dragging : MonoBehaviour
         {
             
             objectVelocity = Mathf.Clamp(objectVelocity, 0, 3);
-                        objectVelocity = ((objectVelocity * iCollisionPoints) / 12);
-                          impactInstance.setParameterByName("objectVelocity", objectVelocity);
+            objectVelocity = ((objectVelocity * iCollisionPoints) / 12);
+            draggingEmitter.SetParameter("objectVelocity", objectVelocity);
         }
     }
 
