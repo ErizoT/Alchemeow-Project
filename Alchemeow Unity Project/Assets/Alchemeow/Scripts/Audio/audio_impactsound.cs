@@ -10,13 +10,13 @@ public class audio_impactsound : MonoBehaviour
     /// </summary>
 
     // OBJECT IMPACTED AGAINST
-    [SerializeField] private GameObject[] collisionObjects;
+    public static GameObject[] collisionObjects;
     int objectNumber = 0;
     private int iCollisionPoints;
     private int currentcollisionpoints = 0;
 
     // FMOD emitter attached to the object, exposed to Inspector
-    [SerializeField] private StudioEventEmitter impactEmitter; 
+    [SerializeField] private StudioEventEmitter impactEmitter;
 
     private float impactSpeed;
 
@@ -27,13 +27,25 @@ public class audio_impactsound : MonoBehaviour
         {
             Debug.LogError("No StudioEventEmitter assigned in the Inspector.");
         }
+
+
+        if (collisionObjects == null || collisionObjects.Length == 0)
+        {
+            collisionObjects = new GameObject[3]; // Define the size of the array (change as needed)
+            collisionObjects[0] = GameObject.Find("TableBase");
+            collisionObjects[1] = GameObject.Find("TableBack");
+            collisionObjects[2] = GameObject.Find("Mortar");
+
+        }
+
+       
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         for (objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
-            if (collision.gameObject.transform == collisionObjects[objectNumber].transform && impactEmitter != null)
+            if (collision.gameObject.transform == collisionObjects[objectNumber].transform && impactEmitter != null && gameObject != null)
             {
                 // Calculate impact speed based on collision velocity
                 impactSpeed = collision.relativeVelocity.magnitude;
@@ -54,7 +66,7 @@ public class audio_impactsound : MonoBehaviour
     {
         for (objectNumber = 0; objectNumber < collisionObjects.Length; objectNumber++)
         {
-            if (collision.gameObject.transform == collisionObjects[objectNumber].transform && impactEmitter != null)
+            if (collision.gameObject.transform == collisionObjects[objectNumber].transform && impactEmitter != null && gameObject != null)
             {
                 iCollisionPoints = collision.contactCount;
 
@@ -67,9 +79,9 @@ public class audio_impactsound : MonoBehaviour
                     impactSpeed = Mathf.Clamp(impactSpeed, 0, 3) / 3;
 
                     // Start the emitter event if it's not already playing
-                    
-                        impactEmitter.Play();
-                   
+
+                    impactEmitter.Play();
+
                     // Set the parameter for impact velocity
                     impactEmitter.SetParameter("impact_velocity", impactSpeed);
                 }

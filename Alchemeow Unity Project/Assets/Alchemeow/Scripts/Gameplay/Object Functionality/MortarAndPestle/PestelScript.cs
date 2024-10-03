@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using FMODUnity; 
 
 public class PestelScript : MonoBehaviour
 {
@@ -9,11 +10,15 @@ public class PestelScript : MonoBehaviour
     private bool canCrush;
 
     public ParticleSystem systemToPlay;
+    public StudioEventEmitter smokesoundEmitter;
+
+ 
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         systemToPlay.GetComponent<ParticleSystem>();
+        smokesoundEmitter.GetComponent<StudioEventEmitter>();
     }
 
     private void Update()
@@ -42,6 +47,7 @@ public class PestelScript : MonoBehaviour
             //Debug.Log("Crushing...");
             objToCrush.Crush();
             systemToPlay.Play();
+            smokesoundEmitter.Play();
         }
     }
 }
