@@ -136,11 +136,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColor: {r: 0.072267644, g: 0.10238256, b: 0.36477977, a: 1}
+    - _BottomColor: {r: 0, g: 0.14154513, b: 0.20754719, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0.13625807, g: 0.19681714, b: 0.704, a: 1}
-    - _Rim_Color: {r: 1, g: 1, b: 1, a: 1}
+    - _FoamColor: {r: 0.0036525317, g: 0.013814663, b: 0.10188681, a: 1}
+    - _Rim_Color: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _TopColor: {r: 0.07227186, g: 0.10224175, b: 0.3662527, a: 1}
+    - _TopColor: {r: 0, g: 0.0737429, b: 0.21509439, a: 1}
   m_BuildTextureStacks: []

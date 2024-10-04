@@ -139,7 +139,7 @@ PrefabInstance:
     - target: {fileID: 4504937393795050347, guid: 328f1386d2c306a459f8d3c4748d04a8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: a46d69512cc9b9443beea932b33034c7, type: 2}
+      objectReference: {fileID: 2100000, guid: b74d08e5f6488cd4491b5959fcdd568b, type: 2}
     - target: {fileID: 4969050661627733890, guid: 328f1386d2c306a459f8d3c4748d04a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: -36.43398
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 2
   outlineColor: {r: 0.007843138, g: 0.10588236, b: 0.16862746, a: 1}
   outlineWidth: 7
   precomputeOutline: 0

@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 690187132824672425}
   - component: {fileID: 8148831336270546039}
   - component: {fileID: 2705471762067065395}
+  - component: {fileID: 7358150798199005547}
   m_Layer: 0
   m_Name: SM_MainPotion
   m_TagString: Untagged
@@ -168,6 +169,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &7358150798199005547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718979544555259157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0, g: 0, b: 0, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &9059028290001373191
 GameObject:
   m_ObjectHideFlags: 0
