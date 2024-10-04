@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 971520318159660413}
   - component: {fileID: 3266741357399920891}
   - component: {fileID: 1426740666305682439}
+  - component: {fileID: 2787734035275082103}
   m_Layer: 8
   m_Name: Jar_Lid
   m_TagString: Untagged
@@ -284,6 +285,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2787734035275082103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270261025236402522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: PopStarJarLid
+  essential: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
 --- !u!1 &7123327636624689814
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +322,7 @@ GameObject:
   - component: {fileID: 3195540198262789156}
   - component: {fileID: 96984866298611559}
   - component: {fileID: 2422727060905410124}
+  - component: {fileID: 4587855579606131804}
   m_Layer: 8
   m_Name: Jar_03
   m_TagString: Untagged
@@ -632,8 +651,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionObjects: []
   impactEmitter: {fileID: 6810470578360909642}
+--- !u!114 &4587855579606131804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123327636624689814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: PopStarJarBody
+  essential: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
 --- !u!1 &7803352244894257535
 GameObject:
   m_ObjectHideFlags: 0

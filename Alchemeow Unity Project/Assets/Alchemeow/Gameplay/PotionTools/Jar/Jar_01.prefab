@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2408679815787295001
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6185765068977558845}
+  m_Layer: 0
+  m_Name: Jar_01_SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6185765068977558845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2408679815787295001}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.151, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5734497041479369414}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3080741341627874387
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,6 +163,7 @@ GameObject:
   - component: {fileID: 971520318159660413}
   - component: {fileID: 3266741357399920891}
   - component: {fileID: 1426740666305682439}
+  - component: {fileID: 4509547398375990018}
   m_Layer: 8
   m_Name: Jar_Lid
   m_TagString: Untagged
@@ -253,6 +285,86 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &4509547398375990018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6270261025236402522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: SlimeBallJarLid
+  essential: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+--- !u!1 &6983115844401435303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7813256107676346782}
+  - component: {fileID: 4459731342105017655}
+  m_Layer: 0
+  m_Name: audio_jarimpact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7813256107676346782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983115844401435303}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.07, y: 0.147, z: 0.04}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5734497041479369414}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4459731342105017655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983115844401435303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 414044146
+      Data2: 1136519775
+      Data3: 1702986685
+      Data4: -1812247582
+    Path: event:/sfx_jar_impacts
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &7123327636624689814
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,6 +385,7 @@ GameObject:
   - component: {fileID: 3195540198262789156}
   - component: {fileID: 3973291807496560120}
   - component: {fileID: 96984866298611559}
+  - component: {fileID: 580907791327827897}
   m_Layer: 8
   m_Name: Jar_01
   m_TagString: Untagged
@@ -296,7 +409,8 @@ Transform:
   - {fileID: 2417075382649267945}
   - {fileID: 3765314636708655239}
   - {fileID: 2262506125369626036}
-  - {fileID: 3481639129797175412}
+  - {fileID: 6185765068977558845}
+  - {fileID: 7813256107676346782}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6719574578296252340
@@ -311,8 +425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2625a70fd42732a42bb9d61b55a24f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 2814017662000290830}
-  spawnPoint: {fileID: 0}
+  prefabToSpawn: {fileID: 5269189241647827896, guid: c7c2785b1fdea4c4c91672681eb9178a, type: 3}
+  spawnPoint: {fileID: 6185765068977558845}
   systemToPlay: {fileID: 0}
   jarEmitter: {fileID: 96984866298611559}
 --- !u!33 &661236334940437816
@@ -570,13 +684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionObjects: []
-  impactEvent:
-    Guid:
-      Data1: -1325824921
-      Data2: 1164501583
-      Data3: -416222548
-      Data4: 1707731048
-    Path: event:/sfx_jar_drag
+  draggingEmitter: {fileID: 0}
   objectBody: {fileID: 7158453277203815087}
 --- !u!114 &96984866298611559
 MonoBehaviour:
@@ -609,109 +717,23 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
---- !u!1001 &2335097485754542101
-PrefabInstance:
+--- !u!114 &580907791327827897
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 5734497041479369414}
-    m_Modifications:
-    - target: {fileID: 360483888302485995, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 534390061135655963, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_Name
-      value: CrushableCube
-      objectReference: {fileID: 0}
-    - target: {fileID: 534390061135655963, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 534390061135655963, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5893103
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5893103
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5893103
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.021228
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.095
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0032664
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2866682517414796122, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5691421073417752283, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6999378878868576592, guid: 18330926391e0a444881f90216163c5e, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 18330926391e0a444881f90216163c5e, type: 3}
---- !u!1 &2814017662000290830 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 534390061135655963, guid: 18330926391e0a444881f90216163c5e, type: 3}
-  m_PrefabInstance: {fileID: 2335097485754542101}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &3481639129797175412 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1168308745003303009, guid: 18330926391e0a444881f90216163c5e, type: 3}
-  m_PrefabInstance: {fileID: 2335097485754542101}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123327636624689814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: SlimeBallJarBody
+  essential: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
 --- !u!1001 &2403279753564340281
 PrefabInstance:
   m_ObjectHideFlags: 0

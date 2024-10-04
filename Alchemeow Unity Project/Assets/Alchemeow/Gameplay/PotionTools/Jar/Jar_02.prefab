@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 3195540198262789156}
   - component: {fileID: 96984866298611559}
   - component: {fileID: 2350468767352327350}
-  - component: {fileID: 2399460299406614816}
+  - component: {fileID: 4957627185969562183}
   m_Layer: 8
   m_Name: Jar_02
   m_TagString: Untagged
@@ -714,9 +714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionObjects: []
   impactEmitter: {fileID: 6998115640984011310}
---- !u!114 &2399460299406614816
+--- !u!114 &4957627185969562183
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
