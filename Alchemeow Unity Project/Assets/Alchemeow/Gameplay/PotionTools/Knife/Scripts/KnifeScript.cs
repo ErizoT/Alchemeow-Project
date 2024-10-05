@@ -12,7 +12,7 @@ public class KnifeScript : MonoBehaviour
 
     private Rigidbody rb;
     public bool canCut;
-    private ParticleSystem systemToPlay;
+    public ParticleSystem systemToPlay;
 
     // Dev
     public Vector3 velocity;
