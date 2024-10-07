@@ -2394,7 +2394,7 @@ PrefabInstance:
       objectReference: {fileID: 1919387431}
     - target: {fileID: 5734497041479369414, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.221001
+      value: -12.525
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2402,7 +2402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.125
+      value: -18.607
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2719,7 +2719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 5f8854072002c7b4c907d554b1156aa3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.187256
+      value: -13.6
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 5f8854072002c7b4c907d554b1156aa3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2727,7 +2727,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 5f8854072002c7b4c907d554b1156aa3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.398563
+      value: -16.77
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 5f8854072002c7b4c907d554b1156aa3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3348,45 +3348,63 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     dialogueEntries:
-    - This is the first bit of dialogue!
-    - You have to put in the...
-    - Something pink...
+    - Hellooooooooooo my delightfully devilish rascal!
+    - "Today I come to you with my biggest request\u2026"
+    - "What do you mean \u201CNo thanks.\u201D? Have you seen the state of the town
+      recently?"
+    - Your arcane studies ask much of you, Hermit Cat. This much I do know, but please
+      hear me out!
+    - "Thank you oh thank you, you\u2019re the only one for the job, as I\u2019m
+      sure you\u2019ll understand\u2026"
+    - "You see\u2026 the village has gone proper mad!"
+    - "The High Horses have all gone bald! They\u2019re feeling very unSTABLE! Pardon
+      me..."
+    - The Dolphino Family and the Alley Cats are fighting on the streets like little
+      bambini!
+    - The gym rats are- okay you get the picture.
+    - "Leave it to me to peddle that potion to all the villagers, for an exorbitant
+      price of course\u2026"
+    - "And I\u2019ll leave it to you to get me that cure-all potion!"
+    - "You\u2019ll of course, be handsomely rewarded\u2026 toodloo!"
+    - Anyhow... it looks like the Crystal Ball is telling me the cauldron needs...
+    - Crushed... pink... things?
+    - I'm sure the mortar and pestle can help out with that.
   - ingredientName: Crushed Bones
     characterExpressions:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     dialogueEntries:
-    - Excellent! You put in the correct ingredient!
-    - Now you have to put in the...
-    - Dusty and white!
+    - Hey, that seemed to do the trick!
+    - Looks like something dusty, white and broken now...
+    - Right, let's get to work!
   - ingredientName: Popping Star
     characterExpressions:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     dialogueEntries:
-    - Holy crap, this dialogue system seems to be working...
-    - Now you have to put in the...
-    - Squishy, from the sky!
+    - Splendid!
+    - Now it's asking for...
+    - Popping Stars? Thankfully I just got some from the merchant.
   - ingredientName: Dragon Scale
     characterExpressions:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     dialogueEntries:
-    - Holy crap, this dialogue system seems to be working...
-    - Now you have to put in the...
-    - Individual, but fiery!
+    - Wonderful!
+    - Oh dear, is that what I think it is?
+    - I hope I don't burn my paw too badly...
   - ingredientName: Fish Head
     characterExpressions:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     dialogueEntries:
-    - Holy crap, this dialogue system seems to be working...
-    - Now you have to put in the...
-    - The head of something that flies...
+    - Phew! What a fiery individual...
+    - Oooo! A flying fish head!
+    - I'm keeping the body to myself, mmmm...
   - ingredientName: End of Playtest
     characterExpressions:
     - {fileID: 0}
@@ -19128,7 +19146,7 @@ PrefabInstance:
       objectReference: {fileID: 1919387431}
     - target: {fileID: 5734497041479369414, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.68
+      value: -10.952
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19136,7 +19154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.214
+      value: -18.155
       objectReference: {fileID: 0}
     - target: {fileID: 5734497041479369414, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23683,7 +23701,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chimken
+  m_text: Boiyoiyoiyoiyoingggg
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 25a51d4a78ff58f4d896fc0ebb5be807, type: 2}
   m_sharedMaterial: {fileID: -2088975382707315145, guid: 25a51d4a78ff58f4d896fc0ebb5be807, type: 2}
@@ -23746,7 +23764,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 97.24928, y: 58.926575, z: -1517.1063, w: -218.81337}
+  m_margin: {x: 249.07286, y: 49.055595, z: -1375.4945, w: -218.81337}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
