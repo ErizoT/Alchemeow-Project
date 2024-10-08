@@ -323,6 +323,69 @@ MonoBehaviour:
     ingID: 
     ingIMG: {fileID: 0}
   hasRespawned: 0
+--- !u!1 &6497417654831013483
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3802864325442940131}
+  - component: {fileID: 6360433589505035915}
+  m_Layer: 0
+  m_Name: audio_jardragging
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3802864325442940131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497417654831013483}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.266, y: -0.303, z: -0.127}
+  m_LocalScale: {x: 0.5542316, y: 0.5542316, z: 0.5542316}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5734497041479369414}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6360433589505035915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6497417654831013483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1325824921
+      Data2: 1164501583
+      Data3: -416222548
+      Data4: 1707731048
+    Path: event:/sfx_jar_drag
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6983115844401435303
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +467,6 @@ GameObject:
   - component: {fileID: 2878908529100480830}
   - component: {fileID: 7158453277203815087}
   - component: {fileID: 3195540198262789156}
-  - component: {fileID: 3973291807496560120}
   - component: {fileID: 96984866298611559}
   - component: {fileID: 580907791327827897}
   m_Layer: 8
@@ -432,6 +494,7 @@ Transform:
   - {fileID: 2262506125369626036}
   - {fileID: 6185765068977558845}
   - {fileID: 7813256107676346782}
+  - {fileID: 3802864325442940131}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6719574578296252340
@@ -692,21 +755,6 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
---- !u!114 &3973291807496560120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7123327636624689814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fdb8967e8dfe41d4b1cbb6a28fdc6b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionObjects: []
-  draggingEmitter: {fileID: 0}
-  objectBody: {fileID: 7158453277203815087}
 --- !u!114 &96984866298611559
 MonoBehaviour:
   m_ObjectHideFlags: 0
