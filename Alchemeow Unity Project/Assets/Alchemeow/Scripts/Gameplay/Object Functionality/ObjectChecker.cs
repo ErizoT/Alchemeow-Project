@@ -40,10 +40,8 @@ public class ObjectChecker : MonoBehaviour
     {
         // WHEN AN INGREDIENT IS PUT INSIDE THE CAULDRON
 
-        // Access CameraManager to change the cameraAngle to the cauldron
-        //CameraManager.Instance.ChangeCameraState("Cauldron");
-
-        Ingredient incomingIng = other.gameObject.GetComponent<IngData>().ingClass;
+        IngData ingredientData = other.GetComponent<IngData>();
+        Ingredient incomingIng = ingredientData.ingClass;
         Ingredient requiredIng = potions[0].ingredients[0];
 
         if (incomingIng.ingID == requiredIng.ingID) // Play when the correct ingredient is put in
@@ -96,10 +94,15 @@ public class ObjectChecker : MonoBehaviour
             print("Placed the wrong ingredient");
         }
 
-        Destroy(other.gameObject);
+        if (ingredientData.canRespawn)
+        {
+            ingredientData.Respawn();
+        }
+        else
+        {
+            Destroy(other.gameObject);
+        }
         cauldronAnimator.SetTrigger("AddedIngredient");
-
-        // If it's an essential item, respawn it
     }
 
     private void CompleteObjective()

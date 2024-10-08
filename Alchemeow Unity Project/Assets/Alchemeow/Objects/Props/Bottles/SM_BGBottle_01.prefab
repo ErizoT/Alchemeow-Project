@@ -341,10 +341,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: Potion_01
-  essential: 0
+  canRespawn: 1
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!114 &8408137665134095184
 MonoBehaviour:
   m_ObjectHideFlags: 0

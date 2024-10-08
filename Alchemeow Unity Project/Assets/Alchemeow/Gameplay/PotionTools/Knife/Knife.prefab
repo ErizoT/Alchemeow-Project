@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4959902982032647564}
   - component: {fileID: 4277942977795748069}
   - component: {fileID: 2410804811645373670}
+  - component: {fileID: 1175022100373298650}
   m_Layer: 8
   m_Name: Knife
   m_TagString: Untagged
@@ -399,8 +400,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionObjects: []
   impactEmitter: {fileID: 9137812164841218355}
+--- !u!114 &1175022100373298650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173995811483350027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: Knife
+  canRespawn: 1
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &672592360963063846
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,6 +596,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuttingSpeed: 3
   canCut: 0
+  systemToPlay: {fileID: 0}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!33 &2461168204870346623
 MeshFilter:

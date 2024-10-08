@@ -318,10 +318,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: SlimeBallJarLid
-  essential: 0
+  canRespawn: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &6983115844401435303
 GameObject:
   m_ObjectHideFlags: 0
@@ -750,10 +751,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: SlimeBallJarBody
-  essential: 0
+  canRespawn: 1
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1001 &2403279753564340281
 PrefabInstance:
   m_ObjectHideFlags: 0

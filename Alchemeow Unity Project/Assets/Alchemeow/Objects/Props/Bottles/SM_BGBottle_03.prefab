@@ -258,10 +258,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: P
-  essential: 0
+  canRespawn: 1
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!114 &56970276354732605
 MonoBehaviour:
   m_ObjectHideFlags: 0

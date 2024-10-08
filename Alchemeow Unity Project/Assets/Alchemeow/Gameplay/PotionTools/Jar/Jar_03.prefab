@@ -318,10 +318,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: PopStarJarLid
-  essential: 0
+  canRespawn: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &7123327636624689814
 GameObject:
   m_ObjectHideFlags: 0
@@ -685,10 +686,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: PopStarJarBody
-  essential: 0
+  canRespawn: 1
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &7803352244894257535
 GameObject:
   m_ObjectHideFlags: 0

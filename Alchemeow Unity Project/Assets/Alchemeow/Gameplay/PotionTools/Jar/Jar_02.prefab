@@ -318,10 +318,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: DragonScaleJarLid
-  essential: 0
+  canRespawn: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &6831235740298124538
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,10 +749,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: DragonScaleJarBody
-  essential: 0
+  canRespawn: 1
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1001 &2354189842287708840
 PrefabInstance:
   m_ObjectHideFlags: 0

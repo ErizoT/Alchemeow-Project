@@ -774,7 +774,7 @@ PrefabInstance:
       objectReference: {fileID: 707299671}
     - target: {fileID: 3573824398953272434, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_VersionIndex
-      value: 1959
+      value: 1977
       objectReference: {fileID: 0}
     - target: {fileID: 3790993508428126594, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -786,7 +786,7 @@ PrefabInstance:
       objectReference: {fileID: 1138215159}
     - target: {fileID: 5191724424671424125, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_VersionIndex
-      value: 3303
+      value: 3321
       objectReference: {fileID: 0}
     - target: {fileID: 5837057443504749167, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_Mesh
@@ -798,7 +798,7 @@ PrefabInstance:
       objectReference: {fileID: 34657746}
     - target: {fileID: 5864416595170662931, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_VersionIndex
-      value: 1959
+      value: 1977
       objectReference: {fileID: 0}
     - target: {fileID: 6895292681732006539, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -20775,6 +20775,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: 8c558e9dcfcc9dc469a529035f3a9a6f, type: 2}
     - target: {fileID: 1786023151474581159, guid: 5eb3142d59ccca947a41b2098d364fd4, type: 3}
+      propertyPath: systemToPlay
+      value: 
+      objectReference: {fileID: 783008301}
+    - target: {fileID: 1786023151474581159, guid: 5eb3142d59ccca947a41b2098d364fd4, type: 3}
       propertyPath: smokesoundEmitter
       value: 
       objectReference: {fileID: 1671031284}
@@ -20840,7 +20844,7 @@ PrefabInstance:
       objectReference: {fileID: 1931126309}
     - target: {fileID: 5730797323079262265, guid: 5eb3142d59ccca947a41b2098d364fd4, type: 3}
       propertyPath: m_VersionIndex
-      value: 2626
+      value: 2650
       objectReference: {fileID: 0}
     - target: {fileID: 6789269334820099906, guid: 5eb3142d59ccca947a41b2098d364fd4, type: 3}
       propertyPath: systemToPlay
@@ -31100,6 +31104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Butterfly
       objectReference: {fileID: 0}
+    - target: {fileID: 4739321548486924786, guid: fe2bea17507567a43b3b0d43ec893aa6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5031535404364163147, guid: fe2bea17507567a43b3b0d43ec893aa6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -31274,6 +31282,10 @@ PrefabInstance:
     - target: {fileID: 3769423249067052511, guid: e8a40761a72f20b4a915b0de1b0000da, type: 3}
       propertyPath: m_Name
       value: SM_CrushedWings
+      objectReference: {fileID: 0}
+    - target: {fileID: 3769423249067052511, guid: e8a40761a72f20b4a915b0de1b0000da, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3945266932030052965, guid: e8a40761a72f20b4a915b0de1b0000da, type: 3}
       propertyPath: m_AngularDrag
@@ -31519,6 +31531,10 @@ PrefabInstance:
     - target: {fileID: 6881045365348799855, guid: 062e2c2192ad3324d862e53c92f61717, type: 3}
       propertyPath: m_Name
       value: SM_JooJooFruit_Whole
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881045365348799855, guid: 062e2c2192ad3324d862e53c92f61717, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

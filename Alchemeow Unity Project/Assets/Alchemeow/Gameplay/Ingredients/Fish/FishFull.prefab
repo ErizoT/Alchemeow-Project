@@ -266,7 +266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collisionObjects: []
   impactEmitter: {fileID: 2986720898202932021}
 --- !u!114 &6173748818281232150
 MonoBehaviour:
@@ -296,10 +295,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: FishFull
-  essential: 0
+  canRespawn: 1
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &4587727144461078848
 GameObject:
   m_ObjectHideFlags: 0
