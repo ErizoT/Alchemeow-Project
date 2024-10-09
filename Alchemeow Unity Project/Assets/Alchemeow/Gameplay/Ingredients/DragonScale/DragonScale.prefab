@@ -122,6 +122,7 @@ Transform:
   - {fileID: 7721066348733529956}
   - {fileID: 9102935883066381810}
   - {fileID: 4655388858752344050}
+  - {fileID: 4774186685258696422}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1359714999098150781
@@ -164,10 +165,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: DragonScale
-  essential: 0
+  canRespawn: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!64 &2253149491599882816
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -203,6 +205,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactEmitter: {fileID: 9044066484005987597}
+--- !u!1 &7012513510026305536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4774186685258696422}
+  - component: {fileID: 8435144187161521338}
+  m_Layer: 0
+  m_Name: audio_idle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4774186685258696422
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012513510026305536}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.4, y: -4.2, z: 8.9}
+  m_LocalScale: {x: 32.5836, y: 32.5836, z: 32.5836}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5606595988082741534}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8435144187161521338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012513510026305536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 510155927
+      Data2: 1097355080
+      Data3: -278945348
+      Data4: -1954840451
+    Path: event:/Ingredients/sfx_dragonscale_idle
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8789193907762941087
 GameObject:
   m_ObjectHideFlags: 0

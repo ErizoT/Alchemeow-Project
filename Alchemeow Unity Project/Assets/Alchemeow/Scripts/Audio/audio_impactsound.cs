@@ -31,10 +31,12 @@ public class audio_impactsound : MonoBehaviour
 
         if (collisionObjects == null || collisionObjects.Length == 0)
         {
-            collisionObjects = new GameObject[3]; // Define the size of the array (change as needed)
+            collisionObjects = new GameObject[5]; // Define the size of the array (change as needed)
             collisionObjects[0] = GameObject.Find("TableBase");
             collisionObjects[1] = GameObject.Find("TableBack");
-            collisionObjects[2] = GameObject.Find("Mortar");
+            collisionObjects[2] = GameObject.Find("MortarParent");
+            collisionObjects[3] = GameObject.Find("SM_Bookcase_Left");
+            collisionObjects[4] = GameObject.Find("SM_Bookcase_Right");
 
         }
 
