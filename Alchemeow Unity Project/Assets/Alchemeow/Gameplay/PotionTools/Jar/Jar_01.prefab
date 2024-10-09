@@ -374,7 +374,7 @@ MonoBehaviour:
       Data2: 1164501583
       Data3: -416222548
       Data4: 1707731048
-    Path: event:/sfx_jar_drag
+    Path: event:/Tools/sfx_jar_drag
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -437,7 +437,7 @@ MonoBehaviour:
       Data2: 1136519775
       Data3: 1702986685
       Data4: -1812247582
-    Path: event:/sfx_jar_impacts
+    Path: event:/Tools/sfx_jar_impacts
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -468,6 +468,7 @@ GameObject:
   - component: {fileID: 7158453277203815087}
   - component: {fileID: 3195540198262789156}
   - component: {fileID: 96984866298611559}
+  - component: {fileID: 1160769584253903860}
   - component: {fileID: 580907791327827897}
   m_Layer: 8
   m_Name: Jar_01
@@ -665,7 +666,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.5, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -3.4816072, z: 0}
+  m_ConnectedAnchor: {x: 0, y: 4.7818003, z: 0}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -774,7 +775,7 @@ MonoBehaviour:
       Data2: 1161717647
       Data3: 2119640247
       Data4: 438972583
-    Path: event:/sfx_jar_open
+    Path: event:/Tools/sfx_jar_open
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -786,6 +787,19 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1160769584253903860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123327636624689814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEmitter: {fileID: 4459731342105017655}
 --- !u!114 &580907791327827897
 MonoBehaviour:
   m_ObjectHideFlags: 0
