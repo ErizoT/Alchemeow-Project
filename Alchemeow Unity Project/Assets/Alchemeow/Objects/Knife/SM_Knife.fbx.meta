@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: M_Bean
-    second: {fileID: 2100000, guid: 030d2afd8ab185b4e89e44e83e56293b, type: 2}
+    second: {fileID: 2100000, guid: a300bbaab9d892149a499846bc1bfa6d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -18,7 +18,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: M_Paw
-    second: {fileID: 2100000, guid: a46d69512cc9b9443beea932b33034c7, type: 2}
+    second: {fileID: 2100000, guid: dfd364e7a03a55242b9736dd0a835650, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
