@@ -780,6 +780,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: dfd364e7a03a55242b9736dd0a835650, type: 2}
+    - target: {fileID: 4277942977795748069, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
+      propertyPath: m_Mass
+      value: 0.0000001
+      objectReference: {fileID: 0}
     - target: {fileID: 5191724424671424125, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -799,6 +803,30 @@ PrefabInstance:
     - target: {fileID: 5864416595170662931, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_VersionIndex
       value: 1980
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526327299049404762, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
+      propertyPath: m_Mass
+      value: 0.0000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526327299049404762, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526327299049404762, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526327299049404762, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
+      propertyPath: m_Constraints
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526327299049404762, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6526327299049404762, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6895292681732006539, guid: 567b4ef08de7e7840b0676ccc71d40f1, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2380,6 +2408,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 938010315}
     m_Modifications:
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Tools/sfx_dragonscalejar_open
+      objectReference: {fileID: 0}
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -616932535
+      objectReference: {fileID: 0}
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1210515711
+      objectReference: {fileID: 0}
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -986270550
+      objectReference: {fileID: 0}
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -1831226752
+      objectReference: {fileID: 0}
     - target: {fileID: 2350468767352327350, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: collisionObjects.Array.size
       value: 2
@@ -19136,6 +19184,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 938010315}
     m_Modifications:
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/Tools/sfx_dragonscalejar_open
+      objectReference: {fileID: 0}
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -616932535
+      objectReference: {fileID: 0}
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1210515711
+      objectReference: {fileID: 0}
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: -986270550
+      objectReference: {fileID: 0}
+    - target: {fileID: 96984866298611559, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: -1831226752
+      objectReference: {fileID: 0}
     - target: {fileID: 2350468767352327350, guid: 06ef0363fc8f8d544a3723577da5aa9d, type: 3}
       propertyPath: collisionObjects.Array.size
       value: 2
