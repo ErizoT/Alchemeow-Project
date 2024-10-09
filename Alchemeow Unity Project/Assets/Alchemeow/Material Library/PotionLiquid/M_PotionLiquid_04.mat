@@ -114,7 +114,7 @@ Material:
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
     - _FoamWidth: 0.384
-    - _Foam_Smoothness: 2.7
+    - _Foam_Smoothness: 11.27
     - _Frequency: 2
     - _GlossMapScale: 0
     - _Glossiness: 0
@@ -125,7 +125,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Rim_Power: 0.95
+    - _Rim_Power: 1.86
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -136,11 +136,11 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColor: {r: 0.675, g: 0.24773937, b: 0, a: 1}
+    - _BottomColor: {r: 0.36670494, g: 0.031372547, b: 0.50980395, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0.507177, g: 0.10928125, b: 0.538, a: 1}
-    - _Rim_Color: {r: 0.7735849, g: 0.104604095, b: 0.1444791, a: 1}
+    - _FoamColor: {r: 0.9811321, g: 0, b: 0.04900767, a: 1}
+    - _Rim_Color: {r: 1, g: 0, b: 0.41492462, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _TopColor: {r: 0.46946868, g: 0.10115625, b: 0.498, a: 1}
+    - _TopColor: {r: 0.8679245, g: 0, b: 0.02254371, a: 1}
   m_BuildTextureStacks: []
