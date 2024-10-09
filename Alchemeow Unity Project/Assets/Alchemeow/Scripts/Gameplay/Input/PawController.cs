@@ -177,8 +177,9 @@ public class PawController : MonoBehaviour
         {
             grabbed = true;
             paw.layer = LayerMask.NameToLayer("GhostPlayer");
-
             objectHeld = nearestObject;
+            objectHeld.GetComponent<GripPoint>().Gripped();
+
             //successful grab sound
             if (playedPop == true)
             {
@@ -203,6 +204,7 @@ public class PawController : MonoBehaviour
         grabbed = false;
         paw.layer = LayerMask.NameToLayer("Player");
         objectHeld.layer = LayerMask.NameToLayer("Default");
+        objectHeld.GetComponent<GripPoint>().Ungripped();
         objectHeld = null;
         // Play release sound
 

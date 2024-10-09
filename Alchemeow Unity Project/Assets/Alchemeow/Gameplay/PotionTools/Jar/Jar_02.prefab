@@ -407,6 +407,7 @@ GameObject:
   - component: {fileID: 96984866298611559}
   - component: {fileID: 2350468767352327350}
   - component: {fileID: 4957627185969562183}
+  - component: {fileID: 3180928098061726083}
   m_Layer: 8
   m_Name: Jar_02
   m_TagString: Untagged
@@ -686,7 +687,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 500
+  m_BreakForce: 180
   m_BreakTorque: Infinity
   m_EnableCollision: 1
   m_EnablePreprocessing: 1
@@ -754,6 +755,21 @@ MonoBehaviour:
     ingID: 
     ingIMG: {fileID: 0}
   hasRespawned: 0
+--- !u!114 &3180928098061726083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123327636624689814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c9c019a7b6d7489ab15947d893366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
+  holds: 0
+  cooperativeHold: 0
 --- !u!1001 &2354189842287708840
 PrefabInstance:
   m_ObjectHideFlags: 0

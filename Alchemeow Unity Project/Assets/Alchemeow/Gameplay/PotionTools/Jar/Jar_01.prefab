@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 2408679815787295001}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalPosition: {x: 0, y: 0.474, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -469,6 +469,7 @@ GameObject:
   - component: {fileID: 3195540198262789156}
   - component: {fileID: 96984866298611559}
   - component: {fileID: 580907791327827897}
+  - component: {fileID: 8268920381242393533}
   m_Layer: 8
   m_Name: Jar_01
   m_TagString: Untagged
@@ -509,7 +510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2625a70fd42732a42bb9d61b55a24f2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 5269189241647827896, guid: c7c2785b1fdea4c4c91672681eb9178a, type: 3}
+  prefabToSpawn: {fileID: 3301650561246754143, guid: 829397cc5cd28a049a6406f88ec6c475, type: 3}
   spawnPoint: {fileID: 6185765068977558845}
   systemToPlay: {fileID: 2354553591473833758}
   jarEmitter: {fileID: 96984866298611559}
@@ -749,7 +750,7 @@ ConfigurableJoint:
   m_ProjectionAngle: 180
   m_ConfiguredInWorldSpace: 0
   m_SwapBodies: 0
-  m_BreakForce: 500
+  m_BreakForce: 180
   m_BreakTorque: Infinity
   m_EnableCollision: 1
   m_EnablePreprocessing: 1
@@ -804,6 +805,21 @@ MonoBehaviour:
     ingID: 
     ingIMG: {fileID: 0}
   hasRespawned: 0
+--- !u!114 &8268920381242393533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123327636624689814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c9c019a7b6d7489ab15947d893366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
+  holds: 0
+  cooperativeHold: 0
 --- !u!1001 &2403279753564340281
 PrefabInstance:
   m_ObjectHideFlags: 0

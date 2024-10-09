@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 7823803644117139277}
   - component: {fileID: 6173748818281232150}
   - component: {fileID: 6211204430199943294}
+  - component: {fileID: 4485999389525745677}
   m_Layer: 8
   m_Name: FishFull
   m_TagString: Untagged
@@ -300,6 +301,19 @@ MonoBehaviour:
     ingID: 
     ingIMG: {fileID: 0}
   hasRespawned: 0
+--- !u!114 &4485999389525745677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3967568579352100208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c9c019a7b6d7489ab15947d893366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
 --- !u!1 &4587727144461078848
 GameObject:
   m_ObjectHideFlags: 0

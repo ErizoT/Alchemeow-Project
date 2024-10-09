@@ -9,10 +9,12 @@ public class KnifeScript : MonoBehaviour
     //[SerializeField] BoxCollider cuttingEdge;
     [Tooltip("Downwards velocity required to cut an object (Default: 3)")]
     [SerializeField] float cuttingSpeed = 3f;
-
-    private Rigidbody rb;
-    public bool canCut;
     public ParticleSystem systemToPlay;
+    
+    private Rigidbody rb;
+    private bool canCut;
+    private GripHandler gripHandler;
+    
 
     // Dev
     public Vector3 velocity;
@@ -21,6 +23,7 @@ public class KnifeScript : MonoBehaviour
     {
         rb = GetComponentInParent<Rigidbody>();
         systemToPlay.GetComponent<ParticleSystem>();
+        gripHandler = GetComponentInParent<GripHandler>();
     }
 
     private void Update()
@@ -33,7 +36,7 @@ public class KnifeScript : MonoBehaviour
             Vector3 velocity = rb.velocity;
 
             // Check if the velocity in the y direction is negative
-            if (velocity.y < cuttingSpeed * -1)
+            if (velocity.y < cuttingSpeed * -1 && gripHandler.cooperativeHold)
             {
                 canCut = true;
             }

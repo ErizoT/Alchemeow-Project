@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4277942977795748069}
   - component: {fileID: 2410804811645373670}
   - component: {fileID: 1175022100373298650}
+  - component: {fileID: 6555183917681979514}
   m_Layer: 8
   m_Name: Knife
   m_TagString: Untagged
@@ -419,6 +420,21 @@ MonoBehaviour:
     ingID: 
     ingIMG: {fileID: 0}
   hasRespawned: 0
+--- !u!114 &6555183917681979514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173995811483350027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c9c019a7b6d7489ab15947d893366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
+  holds: 0
+  cooperativeHold: 0
 --- !u!1 &672592360963063846
 GameObject:
   m_ObjectHideFlags: 0

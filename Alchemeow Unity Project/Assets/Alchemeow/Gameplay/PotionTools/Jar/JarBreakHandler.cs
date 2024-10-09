@@ -7,12 +7,14 @@ public class JarBreakHandler : MonoBehaviour
 {
     [SerializeField] GameObject prefabToSpawn;
     [SerializeField] Transform spawnPoint;
+    public ParticleSystem systemToPlay;
 
     private ConfigurableJoint joint;
     private float breakForce;
     private bool hasBroken = false;
+    private GripHandler gP;
 
-    public ParticleSystem systemToPlay;
+    
 
     [SerializeField] private StudioEventEmitter jarEmitter;
 
@@ -20,6 +22,7 @@ public class JarBreakHandler : MonoBehaviour
     {
         joint = GetComponent<ConfigurableJoint>();
         systemToPlay.GetComponent<ParticleSystem>();
+        gP = GetComponent<GripHandler>();
 
         // Ensure the joint is assigned and set up the break force
         if (joint == null)
@@ -30,7 +33,7 @@ public class JarBreakHandler : MonoBehaviour
         }
 
         breakForce = joint.breakForce;
-        spawnPoint = transform;
+        //spawnPoint = transform;
     }
 
     private void Update()
@@ -51,6 +54,16 @@ public class JarBreakHandler : MonoBehaviour
                 hasBroken = true;
                 systemToPlay.Play();
             }
+        }
+
+        if (gP.cooperativeHold)
+        {
+            joint.breakForce = breakForce;
+            Debug.Log(joint.currentForce);
+        }
+        else
+        {
+            joint.breakForce = Mathf.Infinity;
         }
     }
 
