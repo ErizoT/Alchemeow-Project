@@ -38,9 +38,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 6184062692140662371}
   - {fileID: 5761640332601174896}
   - {fileID: 2765508134207412661}
-  - {fileID: 6184062692140662371}
   - {fileID: 1397275121755635349}
   - {fileID: 895688005283758092}
   - {fileID: 6114941238037276667}
@@ -612,6 +612,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cuttingSpeed: 3
   systemToPlay: {fileID: 0}
+  gripHandler: {fileID: 6555183917681979514}
+  rb: {fileID: 4277942977795748069}
   velocity: {x: 0, y: 0, z: 0}
 --- !u!33 &2461168204870346623
 MeshFilter:

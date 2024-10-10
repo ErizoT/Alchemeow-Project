@@ -10,11 +10,14 @@ public class PlayerJoinHandler : MonoBehaviour
     [SerializeField] Transform playerTwoSpawn;
     [SerializeField] CinemachineTargetGroup group;
 
+    private PlayerInput playerOne;
+
     // This method is called whenever a player joins
     public void OnPlayerJoined(PlayerInput playerInput)
     {
         Debug.Log(playerInput.ToString() + "has joined");
 
+        
         // Get the transform of the new player
         Transform playerTransform = playerInput.transform;
 
@@ -23,11 +26,20 @@ public class PlayerJoinHandler : MonoBehaviour
         if (PlayerInput.all.Count == 1)
         {
             playerInput.transform.position = playerOneSpawn.position;
-            DialogueArray.Instance.StartNextDialogue();
-
+            playerInput.DeactivateInput();
+            playerOne = playerInput;
         } else
         {
             playerInput.transform.position = playerTwoSpawn.position;
+            DialogueArray.Instance.StartNextDialogue();
+            playerOne.ActivateInput();
+            CameraManager.Instance.ChangeCameraState("CrystalBall");
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(playerOneSpawn.position, .5f);
+        Gizmos.DrawSphere(playerTwoSpawn.position, .5f);
     }
 }

@@ -10,20 +10,19 @@ public class KnifeScript : MonoBehaviour
     [Tooltip("Downwards velocity required to cut an object (Default: 3)")]
     [SerializeField] float cuttingSpeed = 3f;
     public ParticleSystem systemToPlay;
-    
-    private Rigidbody rb;
+    [SerializeField] GripHandler gripHandler; // Super unfortunate i had to do it this way, but it just wouldn't find the GripHandler for some reason
+    [SerializeField] Rigidbody rb;
+
     private bool canCut;
-    private GripHandler gripHandler;
-    
 
     // Dev
     public Vector3 velocity;
 
     private void Start()
     {
-        rb = GetComponentInParent<Rigidbody>();
+        //rb = GetComponentInParent<Rigidbody>();
         systemToPlay.GetComponent<ParticleSystem>();
-        gripHandler = GetComponentInParent<GripHandler>();
+        //gripHandler = GetComponentInParent<GripHandler>();
     }
 
     private void Update()
