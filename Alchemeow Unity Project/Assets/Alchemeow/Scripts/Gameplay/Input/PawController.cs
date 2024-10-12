@@ -18,6 +18,8 @@ public class PawController : MonoBehaviour
     [SerializeField] Rigidbody dummyRigidbody;
     [Range(.5f, 1f)]
     [SerializeField] float damping = 0.7f;
+    [SerializeField] SkinnedMeshRenderer pawToChange;
+    //[SerializeField] Material playerTwoMat;
 
     public bool isHolding;
     private bool grabbed;
@@ -51,7 +53,6 @@ public class PawController : MonoBehaviour
         //plays sound on entry
         grabEmitter.Play();
         grabEmitter.SetParameter("GrabState", 3);
-
     }
 
     private void Update()
@@ -224,6 +225,11 @@ public class PawController : MonoBehaviour
             DialogueArray.Instance.NextLine();
         }
 
+    }
+
+    public void InitialisePlayerTwo(Material matToChangeTo)
+    {
+        pawToChange.material = matToChangeTo;
     }
 
     public void ResetScene(InputAction.CallbackContext input)

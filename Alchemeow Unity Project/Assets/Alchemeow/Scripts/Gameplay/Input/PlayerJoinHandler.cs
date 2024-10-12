@@ -8,7 +8,10 @@ public class PlayerJoinHandler : MonoBehaviour
 {
     [SerializeField] Transform playerOneSpawn;
     [SerializeField] Transform playerTwoSpawn;
+    [SerializeField] GameObject playerOneText;
+    [SerializeField] GameObject playerTwoText;
     [SerializeField] CinemachineTargetGroup group;
+    [SerializeField] Material playerTwoMat;
 
     private PlayerInput playerOne;
 
@@ -28,12 +31,15 @@ public class PlayerJoinHandler : MonoBehaviour
             playerInput.transform.position = playerOneSpawn.position;
             playerInput.DeactivateInput();
             playerOne = playerInput;
+            playerOneText.SetActive(false);
         } else
         {
             playerInput.transform.position = playerTwoSpawn.position;
+            playerInput.gameObject.GetComponent<PawController>().InitialisePlayerTwo(playerTwoMat);
             DialogueArray.Instance.StartNextDialogue();
             playerOne.ActivateInput();
             CameraManager.Instance.ChangeCameraState("CrystalBall");
+            playerTwoText.SetActive(false);
         }
     }
 

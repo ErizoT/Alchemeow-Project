@@ -480,6 +480,7 @@ MonoBehaviour:
   visuals: {fileID: 4753066886768650826}
   dummyRigidbody: {fileID: 5810281254281777087}
   damping: 0.7
+  pawToChange: {fileID: 6864411428337062990}
   isHolding: 0
   grabEmitter: {fileID: 3086258142940964302}
 --- !u!114 &9208606044530037577
@@ -1028,6 +1029,11 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!137 &6864411428337062990 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 4504937393795050347, guid: 328f1386d2c306a459f8d3c4748d04a8, type: 3}
+  m_PrefabInstance: {fileID: 7045751196827434789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7371601076120967374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 328f1386d2c306a459f8d3c4748d04a8, type: 3}
