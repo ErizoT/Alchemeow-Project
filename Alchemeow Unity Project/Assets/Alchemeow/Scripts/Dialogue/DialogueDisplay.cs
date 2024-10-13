@@ -20,7 +20,8 @@ public class DialogueDisplay : MonoBehaviour
     public int DialogueProgression;
 
     [SerializeField] private StudioEventEmitter dialogueEmitter;
-    
+    [SerializeField] private StudioEventEmitter nextEmitter;
+
 
     public int index;
 
@@ -48,6 +49,7 @@ public class DialogueDisplay : MonoBehaviour
             // For when the player proceeds at the end of a sentence
             if (textComponent.text == lines[index] && fadeOut.GetBool("DialogueEnd") == false)
             {
+                nextEmitter.Play();
                 NextLine();
             }
             else // For when a player presses skip mid-sentence

@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1786023151474581159}
   - component: {fileID: 613962942428370059}
   - component: {fileID: 1277286907494977594}
+  - component: {fileID: 5893733150430269310}
   m_Layer: 8
   m_Name: Pestle
   m_TagString: Untagged
@@ -43,6 +44,7 @@ Transform:
   - {fileID: 4496283460839463646}
   - {fileID: 493078586716920696}
   - {fileID: 6009206000182172563}
+  - {fileID: 2629664707682979164}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5730797323079262265
@@ -1102,6 +1104,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   impactEmitter: {fileID: 7610258036396505301}
+--- !u!114 &5893733150430269310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2892446443064758035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b6f805e97a143a892f73acbe2fcc98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEmitter: {fileID: 9108694582803668377}
 --- !u!1 &6550771198158991021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1143,7 @@ Transform:
   m_GameObject: {fileID: 6550771198158991021}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.461, y: 0.874, z: 0.463}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1219,6 +1234,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gripHandler: {fileID: 0}
+--- !u!1 &9101909832232986155
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2629664707682979164}
+  - component: {fileID: 9108694582803668377}
+  m_Layer: 0
+  m_Name: audio_mortarimpact
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2629664707682979164
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101909832232986155}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.98861396, z: -0, w: -0.15047398}
+  m_LocalPosition: {x: 37.037746, y: -318.47913, z: -162.08209}
+  m_LocalScale: {x: 0.496952, y: 0.67590433, z: 0.496952}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2315301769643440167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9108694582803668377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9101909832232986155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 335743458
+      Data2: 1328101726
+      Data3: -503684187
+      Data4: 1700929497
+    Path: event:/Tools/sfx_mortarpestle_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &9220507427253628973
 GameObject:
   m_ObjectHideFlags: 0
