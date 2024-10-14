@@ -3,7 +3,12 @@ guid: 0d5c786ce4f26894d887ba89c787af4f
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_SlimeBall
+    second: {fileID: 2100000, guid: 9e24321babb035f4391805c722346b9a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

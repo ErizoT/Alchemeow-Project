@@ -18,7 +18,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   outlineSettings:
-    outlineColor: {r: 0.048769068, g: 0.006343884, b: 0.12452829, a: 1}
+    outlineColor: {r: 0.06415099, g: 0.028860822, b: 0.011982916, a: 1}
     outlineScale: 1
     depthThreshold: 2.9
     robertsCrossMultiplier: 100
@@ -28,7 +28,7 @@ MonoBehaviour:
     colorFormat: 0
     depthBufferBits: 0
     filterMode: 0
-    backgroundColor: {r: 0, g: 0, b: 0, a: 0}
+    backgroundColor: {r: 0.15471691, g: 0.06538979, b: 0.020726228, a: 0}
     perObjectData: 0
     enableDynamicBatching: 0
     enableInstancing: 0
