@@ -2400,11 +2400,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1613662709137350566, guid: 406dd3ec65bfdb44a860cf693e13097c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4485002
+      value: -3.419
       objectReference: {fileID: 0}
     - target: {fileID: 1613662709137350566, guid: 406dd3ec65bfdb44a860cf693e13097c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.275101
+      value: 8.422
       objectReference: {fileID: 0}
     - target: {fileID: 1613662709137350566, guid: 406dd3ec65bfdb44a860cf693e13097c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23296,6 +23296,20 @@ MonoBehaviour:
       Data3: 1745099662
       Data4: 2134325077
     Path: event:/Player/sfx_player_join
+  waitingforplayerone:
+    Guid:
+      Data1: 1103999239
+      Data2: 1182803132
+      Data3: 308200629
+      Data4: 1568436091
+    Path: event:/Player/ui_pressanybutton_playerone
+  waitingforplayertwo:
+    Guid:
+      Data1: -1743760008
+      Data2: 1101295146
+      Data3: 1749946527
+      Data4: -1073719782
+    Path: event:/Player/ui_pressanybutton_playertwo
   startingSnapshot:
     Guid:
       Data1: 2050769430

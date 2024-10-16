@@ -348,7 +348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  impactEmitter: {fileID: 0}
+  impactEmitter: {fileID: 3903882711654548804}
 --- !u!1 &3568995763127245461
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,11 +396,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 335743458
-      Data2: 1328101726
-      Data3: -503684187
-      Data4: 1700929497
-    Path: event:/Tools/sfx_mortarpestle_impact
+      Data1: 313348388
+      Data2: 1238494204
+      Data3: -1587613293
+      Data4: 1027476878
+    Path: event:/Tools/sfx_mortar_impact
   Event: 
   PlayEvent: 0
   StopEvent: 0

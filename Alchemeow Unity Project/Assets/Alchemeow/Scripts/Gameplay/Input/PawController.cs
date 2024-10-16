@@ -34,8 +34,11 @@ public class PawController : MonoBehaviour
     private Camera mainCamera;
 
     //sound for grabbing
-    [SerializeField] private StudioEventEmitter grabEmitter;
-    
+    [SerializeField] private StudioEventEmitter grabsuccessEmitter;
+    [SerializeField] private StudioEventEmitter grabfailEmitter;
+    [SerializeField] private StudioEventEmitter grabreleaseEmitter;
+
+
 
 
     private void Start()
@@ -149,6 +152,9 @@ public class PawController : MonoBehaviour
 
                 if(grabbed)
                 {
+                    // Play release sound
+                       grabreleaseEmitter.Play();
+
                     LetGo();
                 }
 
@@ -172,20 +178,23 @@ public class PawController : MonoBehaviour
 
         if (Vector3.Distance(transform.position, nearestObject.transform.position) <= grabRange)
         {
+          
+            //successful grab sound
+            grabsuccessEmitter.Play();
+
             grabbed = true;
             paw.layer = LayerMask.NameToLayer("GhostPlayer");
             objectHeld = nearestObject;
             objectHeld.GetComponent<GripPoint>().Gripped();
 
-            //successful grab sound
-                            grabEmitter.Play();
-                grabEmitter.SetParameter("GrabState", 0);
+            
+                
             }
            else
         {
             //unsuccessful grab sound
-            grabEmitter.Play();
-            grabEmitter.SetParameter("GrabState", 1);
+            grabfailEmitter.Play();
+            
         }
     }
 
@@ -198,10 +207,8 @@ public class PawController : MonoBehaviour
         objectHeld.layer = LayerMask.NameToLayer("Default");
         objectHeld.GetComponent<GripPoint>().Ungripped();
         objectHeld = null;
-        // Play release sound
-
-        grabEmitter.Play();
-        grabEmitter.SetParameter("GrabState", 2);
+        
+        
     }
 
     public void RaiseLower(InputAction.CallbackContext input)

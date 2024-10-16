@@ -16,6 +16,10 @@ public class PlayerJoinHandler : MonoBehaviour
 
     //joining sounds and snapshot changes (mutes and unmutes SFX)
     [SerializeField] private EventReference joiningSound;
+    [SerializeField] private EventReference waitingforplayerone;
+    [SerializeField] private EventReference waitingforplayertwo;
+    [SerializeField] private FMOD.Studio.EventInstance waitingforplayeroneINSTANCE;
+    [SerializeField] private FMOD.Studio.EventInstance waitingforplayertwoINSTANCE;
     [SerializeField] private EventReference startingSnapshot;
     [SerializeField] private EventReference maingameSnapshot;
     private FMOD.Studio.EventInstance startingsnapshotInstance;
@@ -26,10 +30,27 @@ public class PlayerJoinHandler : MonoBehaviour
 
     private void Start()
     {
+        //loads audio snapshots
         startingsnapshotInstance = FMODUnity.RuntimeManager.CreateInstance(startingSnapshot);
         maingamesnapshotInstance = FMODUnity.RuntimeManager.CreateInstance(maingameSnapshot);
+        waitingforplayeroneINSTANCE = FMODUnity.RuntimeManager.CreateInstance(waitingforplayerone);
+        waitingforplayertwoINSTANCE = FMODUnity.RuntimeManager.CreateInstance(waitingforplayertwo);
         startingsnapshotInstance.start();
+        
+        StartCoroutine(PlayDelayedSounds());
+
     }
+
+    private IEnumerator PlayDelayedSounds()
+    {
+        // Wait 
+        yield return new WaitForSeconds(0.8f);
+
+        // Start the remaining instances
+        waitingforplayeroneINSTANCE.start();
+        waitingforplayertwoINSTANCE.start();
+    }
+
 
     // This method is called whenever a player joins
     public void OnPlayerJoined(PlayerInput playerInput)
@@ -38,8 +59,9 @@ public class PlayerJoinHandler : MonoBehaviour
 
         //play sound
         FMODUnity.RuntimeManager.PlayOneShot(joiningSound);
+        waitingforplayeroneINSTANCE.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
 
-        
+
         // Get the transform of the new player
         Transform playerTransform = playerInput.transform;
 
@@ -54,6 +76,7 @@ public class PlayerJoinHandler : MonoBehaviour
         } else
         {
             //audio
+            waitingforplayertwoINSTANCE.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
             maingamesnapshotInstance.start();
 
             playerInput.transform.position = playerTwoSpawn.position;

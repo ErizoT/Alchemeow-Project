@@ -32,7 +32,7 @@ public class audio_impactmortar : MonoBehaviour
         if (collisionObjects == null || collisionObjects.Length == 0)
         {
             collisionObjects = new GameObject[1]; // Define the size of the array (change as needed)
-            collisionObjects[0] = GameObject.Find("MortarFull");
+            collisionObjects[0] = GameObject.Find("MortarParent");
            
         }
 

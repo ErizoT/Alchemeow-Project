@@ -33,6 +33,132 @@ Transform:
   - {fileID: 1339975628509648566}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2481410484361259715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56946542785570371}
+  - component: {fileID: 7689367995110747796}
+  m_Layer: 0
+  m_Name: audio_impactsound2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &56946542785570371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481410484361259715}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -15.9, z: 0}
+  m_LocalScale: {x: 61.016464, y: 61.016464, z: 61.016464}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7651248503702660550}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7689367995110747796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481410484361259715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1686628652
+      Data2: 1211678265
+      Data3: 1355349671
+      Data4: 1241900698
+    Path: event:/Ingredients/sfx_bone_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &3074044894784649805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1567286451700736868}
+  - component: {fileID: 4875317496436626888}
+  m_Layer: 0
+  m_Name: audio_impactsound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1567286451700736868
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074044894784649805}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 9.3, z: 0}
+  m_LocalScale: {x: 61.016464, y: 61.016464, z: 61.016464}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1339975628509648566}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4875317496436626888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3074044894784649805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1686628652
+      Data2: 1211678265
+      Data3: 1355349671
+      Data4: 1241900698
+    Path: event:/Ingredients/sfx_bone_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6217782048471547995
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,6 +174,7 @@ GameObject:
   - component: {fileID: 7938966604057965924}
   - component: {fileID: 3323218329786932185}
   - component: {fileID: 204488512063835321}
+  - component: {fileID: 6691521466048178175}
   m_Layer: 8
   m_Name: BoneHalf1
   m_TagString: Untagged
@@ -68,6 +195,7 @@ Transform:
   m_LocalScale: {x: 0.013889, y: 0.013889, z: 0.013889}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1567286451700736868}
   - {fileID: 5849709852877864934}
   - {fileID: 801066858860034680}
   m_Father: {fileID: 6049935331031393768}
@@ -208,10 +336,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: BoneCrushed
-  essential: 0
+  canRespawn: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
+--- !u!114 &6691521466048178175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6217782048471547995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEmitter: {fileID: 4875317496436626888}
 --- !u!1 &8431760780604793198
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +369,7 @@ GameObject:
   - component: {fileID: 3150926038523576791}
   - component: {fileID: 4505775565114373505}
   - component: {fileID: 153660099559889904}
+  - component: {fileID: 3971346492082732241}
   m_Layer: 8
   m_Name: BoneHalf2
   m_TagString: Untagged
@@ -249,6 +392,7 @@ Transform:
   m_Children:
   - {fileID: 3827080457574857368}
   - {fileID: 2131857496155463732}
+  - {fileID: 56946542785570371}
   m_Father: {fileID: 6049935331031393768}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1286698407806189834
@@ -387,10 +531,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: BoneCrushed
-  essential: 0
+  canRespawn: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
+--- !u!114 &3971346492082732241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8431760780604793198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEmitter: {fileID: 7689367995110747796}
 --- !u!1001 &1524116130113871646
 PrefabInstance:
   m_ObjectHideFlags: 0

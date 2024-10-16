@@ -59,6 +59,69 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &884621085411668892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7813366704702455523}
+  - component: {fileID: 5740428339861637075}
+  m_Layer: 0
+  m_Name: audio_release
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7813366704702455523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884621085411668892}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.081, y: 0.051, z: -0.009}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3003184256563353009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5740428339861637075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884621085411668892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1309260652
+      Data2: 1152880750
+      Data3: 1272936086
+      Data4: 1010609055
+    Path: event:/Player/sfx_paw_grab_release
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1936506283411447923
 GameObject:
   m_ObjectHideFlags: 0
@@ -70,7 +133,7 @@ GameObject:
   - component: {fileID: 1524105657587855691}
   - component: {fileID: 3086258142940964302}
   m_Layer: 0
-  m_Name: GrabEmitter
+  m_Name: audio_successgrab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106,10 +169,10 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -408995478
-      Data2: 1166435604
-      Data3: -1184121925
-      Data4: 2024489649
+      Data1: -426234855
+      Data2: 1299966172
+      Data3: -1557807939
+      Data4: -1614754605
     Path: event:/Player/sfx_paw_grab
   Event: 
   PlayEvent: 0
@@ -430,6 +493,8 @@ Transform:
   - {fileID: 5966664780588217615}
   - {fileID: 257874082193587020}
   - {fileID: 1524105657587855691}
+  - {fileID: 8033703973749641570}
+  - {fileID: 7813366704702455523}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!54 &8180747053569034256
@@ -482,7 +547,9 @@ MonoBehaviour:
   damping: 0.7
   pawToChange: {fileID: 6864411428337062990}
   isHolding: 0
-  grabEmitter: {fileID: 3086258142940964302}
+  grabsuccessEmitter: {fileID: 3086258142940964302}
+  grabfailEmitter: {fileID: 7006439451617332738}
+  grabreleaseEmitter: {fileID: 5740428339861637075}
 --- !u!114 &9208606044530037577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -751,6 +818,69 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 0.5
   m_ConnectedMassScale: 1
+--- !u!1 &7161986052237274623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8033703973749641570}
+  - component: {fileID: 7006439451617332738}
+  m_Layer: 0
+  m_Name: audio_failgrab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8033703973749641570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7161986052237274623}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.081, y: 0.051, z: -0.009}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3003184256563353009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7006439451617332738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7161986052237274623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -408995478
+      Data2: 1166435604
+      Data3: -1184121925
+      Data4: 2024489649
+    Path: event:/Player/sfx_paw_grab_fail
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8390463827143634393
 GameObject:
   m_ObjectHideFlags: 0
