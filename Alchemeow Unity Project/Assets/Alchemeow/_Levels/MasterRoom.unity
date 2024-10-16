@@ -2865,7 +2865,7 @@ Transform:
   m_GameObject: {fileID: 358699799}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -963.9, y: -538.72, z: -7.08}
+  m_LocalPosition: {x: -963.9, y: -489.39, z: -7.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3945,7 +3945,7 @@ Transform:
   m_GameObject: {fileID: 595738770}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -955.968, y: -538.72, z: -7.207}
+  m_LocalPosition: {x: -955.968, y: -489.39, z: -7.207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23289,6 +23289,27 @@ MonoBehaviour:
   playerTwoText: {fileID: 1710504134}
   group: {fileID: 1335752665}
   playerTwoMat: {fileID: 2100000, guid: d29a11bccbf9b2d42a6ec854215b557a, type: 2}
+  joiningSound:
+    Guid:
+      Data1: 997423672
+      Data2: 1133764410
+      Data3: 1745099662
+      Data4: 2134325077
+    Path: event:/Player/sfx_player_join
+  startingSnapshot:
+    Guid:
+      Data1: 2050769430
+      Data2: 1314450333
+      Data3: -1263546972
+      Data4: -1992718870
+    Path: snapshot:/WaitingForPlayers
+  maingameSnapshot:
+    Guid:
+      Data1: 138197135
+      Data2: 1092723479
+      Data3: 2106641586
+      Data4: -1841141534
+    Path: snapshot:/NormalGameplay
 --- !u!222 &1917799588
 CanvasRenderer:
   m_ObjectHideFlags: 0

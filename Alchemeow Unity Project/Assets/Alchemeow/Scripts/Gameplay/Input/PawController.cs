@@ -35,7 +35,7 @@ public class PawController : MonoBehaviour
 
     //sound for grabbing
     [SerializeField] private StudioEventEmitter grabEmitter;
-    private bool playedPop = false;
+    
 
 
     private void Start()
@@ -49,11 +49,7 @@ public class PawController : MonoBehaviour
         GameObject mainCamObject = mainCamera.gameObject;
         MultipleTargetCamera camScript = mainCamObject.GetComponent<MultipleTargetCamera>();
         camScript.targets.Add(transform);
-
-        //plays sound on entry
-        grabEmitter.Play();
-        grabEmitter.SetParameter("GrabState", 3);
-    }
+                   }
 
     private void Update()
     {
@@ -182,15 +178,10 @@ public class PawController : MonoBehaviour
             objectHeld.GetComponent<GripPoint>().Gripped();
 
             //successful grab sound
-            if (playedPop == true)
-            {
-                grabEmitter.Play();
+                            grabEmitter.Play();
                 grabEmitter.SetParameter("GrabState", 0);
             }
-            else
-                playedPop = true;
-
-        } else
+           else
         {
             //unsuccessful grab sound
             grabEmitter.Play();

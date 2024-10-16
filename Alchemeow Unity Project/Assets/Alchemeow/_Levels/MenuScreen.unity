@@ -3168,6 +3168,7 @@ GameObject:
   - component: {fileID: 344759476}
   - component: {fileID: 344759478}
   - component: {fileID: 344759477}
+  - component: {fileID: 344759479}
   m_Layer: 5
   m_Name: Name
   m_TagString: Untagged
@@ -3291,6 +3292,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 344759475}
   m_CullTransparentMesh: 1
+--- !u!114 &344759479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344759475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf9b1ed5958de43a2b105a559f56e762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hoverSoundEvent:
+    Guid:
+      Data1: -721049486
+      Data2: 1104676028
+      Data3: -2080689530
+      Data4: -1719356889
+    Path: event:/Debug/sfx_pianoriff
 --- !u!1 &346719175
 GameObject:
   m_ObjectHideFlags: 0
@@ -10569,7 +10589,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1774127360}
+      - m_Target: {fileID: 1064679225}
         m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
         m_MethodName: Play
         m_Mode: 1
@@ -10633,11 +10653,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hoverSoundEvent:
     Guid:
-      Data1: 1269751693
-      Data2: 1228136075
-      Data3: -1040903547
-      Data4: 124210461
-    Path: event:/UI/ui_hover
+      Data1: 1442305539
+      Data2: 1214165360
+      Data3: 296025014
+      Data4: -1059485949
+    Path: event:/UI/ui_credithover
 --- !u!1 &1373644585
 GameObject:
   m_ObjectHideFlags: 0

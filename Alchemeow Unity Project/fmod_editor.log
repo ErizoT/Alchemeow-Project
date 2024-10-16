@@ -1,13 +1,12 @@
 [LOG] System::create                           : Header version = 2.02.23. Current version = 2.02.23.
-[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
+[LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0x0.
 [LOG] SystemI::init                            : Initialize version=20223 (144645), maxchannels=256, flags=0x00020000
-[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] SystemI::setOutputInternal               : Setting output to 'FMOD Core Audio Output'
+[LOG] OutputCoreAudio::init                    : Output running 2 channels at 48000Hz sample rate.
+[LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001EA5AAA70A8 isAsync 0 updatePeriod 0.02
+[LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncManager::init                       : manager 0x3d12ece08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -19,11 +18,497 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SoundI::release                          : Fireplace_Constant_CU_Flames_Whoosh_OCP-1037-050 (0x3639cddd8)
+[LOG] SoundI::release                          :     Fireplace_Constant_CU_Flames_Whoosh_OCP-1037-050 (0x4147e9378)
+[LOG] SoundI::release                          :     Fireplace_Constant_CU_Flames_Whoosh_OCP-1037-050 (0x4147e9508)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5191296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 125568
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3218fa7f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x397118528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x3971185f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x397118634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x397118704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x3c5119dc8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_cauldron_angry', format=5, channels=2, frequency=48000, lengthbytes=34176, lengthpcm=125522, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.501186.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1018.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1018.bank'
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1019.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1019.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1020.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1020.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1021.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1021.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1022.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1022.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1023.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1023.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1024.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1024.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1025.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1025.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1026.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1026.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1027.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1027.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1028.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1028.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1029.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1029.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1030.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1030.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1031.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1031.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1032.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1032.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1033.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1033.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1034.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1034.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1035.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1035.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1036.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1036.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1037.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1037.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1038.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1038.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1039.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1039.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1040.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1040.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1041.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1041.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1042.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1042.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1043.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1043.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1044.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1044.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 5191296
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 125568
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x3218fa7f4
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x397118528
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x3971185f8
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x397118634
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x397118704
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x41625a898
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='sfx_splash', format=5, channels=2, frequency=48000, lengthbytes=9216, lengthpcm=42172, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.501186.
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1045.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1045.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1046.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1046.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] Manager::receiveLiveUpdateBank           : Received live update bank path: fmod:///remote//Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1047.bank
+[LOG] ProfileRemoteFile::fileOpen              : Attemping to open remote file '/Users/timtham/Library/Application Support/FMOD Studio/UnsavedProjects/Hotswap-yzTnBA/hotswap_1047.bank'
+[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x415053ff8, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x41507ae98, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x41507ae98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x41507ae98
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x415053ff8, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x41507ae98, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x41507ae98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x41507ae98
+[LOG] SystemI::createSound                     : filename = Assets/FMod_Assets/Desktop/Music.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x3939ab408, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x3939ab408
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod_Assets/Desktop/Music.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 8767904
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9792
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x3939ab6d0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Comfort', format=5, channels=2, frequency=48000, lengthbytes=3063072, lengthpcm=15360000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.988500.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x3939ab408
+[LOG] SoundI::release                          : Jubilance  (0x392d67688)
+[LOG] SoundI::release                          :     Jubilance  (0x398fa78b8)
+[LOG] SoundI::release                          :     Jubilance  (0x3908b4c58)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x415053ff8, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x41507ae98, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x41507ae98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x41507ae98
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x415053ff8, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x415053ff8
+[LOG] SystemI::createSound                     : filename = Assets/FMod_Assets/Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x4145245b8, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x4145245b8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets/FMod_Assets/Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 5682688
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 16096
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x414515b20
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='sfx_ambience_bell', format=5, channels=2, frequency=48000, lengthbytes=119424, lengthpcm=576306, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.028849.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x4145245b8
+[LOG] SoundI::release                          : sfx_ambience_bell (0x4145245b8)
+[LOG] SoundI::release                          :     sfx_ambience_bell (0x393f07a68)
+[LOG] SoundI::release                          :     sfx_ambience_bell (0x393f0d798)
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x415053ff8, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x415053ff8, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x415053ff8, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x415053ff8
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x41507ae98, queue head = 0x392d25dc8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x41507ae98
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x41507ae98
+[LOG] SoundI::release                          :  (0x415f28928)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-022 (0x415ffa658)
+[LOG] SoundI::release                          :  (0x41505ef58)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-021 (0x41505f0c8)
+[LOG] SoundI::release                          :  (0x398ffef88)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-020 (0x4145648b8)
+[LOG] SoundI::release                          :  (0x4142f0968)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-019 (0x4142b6d18)
+[LOG] SoundI::release                          :  (0x325a4f838)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-018 (0x325a6a158)
+[LOG] SoundI::release                          :  (0x41505f628)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-017 (0x41505f798)
+[LOG] SoundI::release                          :  (0x41505c228)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-016 (0x41505e7a8)
+[LOG] SoundI::release                          :  (0x362dab518)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-015 (0x41676b4d8)
+[LOG] SoundI::release                          :  (0x41477ccb8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-014 (0x41477ce28)
+[LOG] SoundI::release                          :  (0x41505e018)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-013 (0x41505e188)
+[LOG] SoundI::release                          :  (0x3d64d0678)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-012 (0x3d6454178)
+[LOG] SoundI::release                          :  (0x325a671d8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-011 (0x325a30e68)
+[LOG] SoundI::release                          :  (0x41505e4a8)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-010 (0x41505e618)
+[LOG] SoundI::release                          :  (0x415ff9748)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-009 (0x415f248d8)
+[LOG] SoundI::release                          :  (0x3d6472298)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-008 (0x3d642bca8)
+[LOG] SoundI::release                          :  (0x415fec718)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-007 (0x415f19218)
+[LOG] SoundI::release                          :  (0x325a68528)
+[LOG] SoundI::release                          :     sfx_ambience_birdchirp-006 (0x413ede708)
+[LOG] SoundI::release                          :  (0x415ff6738)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-036 (0x415ffa1c8)
+[LOG] SoundI::release                          :  (0x325a19518)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-035 (0x414f548b8)
+[LOG] SoundI::release                          :  (0x41505fab8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-034 (0x41505fc28)
+[LOG] SoundI::release                          :  (0x414f55298)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-033 (0x392d6ec68)
+[LOG] SoundI::release                          :  (0x41477d818)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-032 (0x41477d988)
+[LOG] SoundI::release                          :  (0x3ee1a4a58)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-031 (0x3ee1a7118)
+[LOG] SoundI::release                          :  (0x362d8ed58)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-030 (0x325ae3488)
+[LOG] SoundI::release                          :  (0x415f8b8e8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-029 (0x415f1d738)
+[LOG] SoundI::release                          :  (0x41477dca8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-028 (0x41477de18)
+[LOG] SoundI::release                          :  (0x41505eac8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-027 (0x41505ec38)
+[LOG] SoundI::release                          :  (0x41477d388)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-026 (0x41477d4f8)
+[LOG] SoundI::release                          :  (0x3c5113ce8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-025 (0x360e79578)
+[LOG] SoundI::release                          :  (0x326942c48)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-024 (0x3a778cec8)
+[LOG] SoundI::release                          :  (0x415f9c3b8)
+[LOG] SoundI::release                          :     sfx_ambience_buildingcreak-023 (0x415fe3bd8)
+[LOG] SoundI::release                          :  (0x41625ac28)
+[LOG] SoundI::release                          :     sfx_splash (0x41625ad98)
+[LOG] SoundI::release                          :  (0x3edf66378)
+[LOG] SoundI::release                          :     sfx_knife_impact-007 (0x3d6587708)
+[LOG] SoundI::release                          :  (0x4150622d8)
+[LOG] SoundI::release                          :     sfx_knife_impact-006 (0x415062448)
+[LOG] SoundI::release                          :  (0x4150602e8)
+[LOG] SoundI::release                          :     sfx_knife_impact-005 (0x415060458)
+[LOG] SoundI::release                          :  (0x415062768)
+[LOG] SoundI::release                          :     sfx_knife_impact-004 (0x4150628d8)
+[LOG] SoundI::release                          :  (0x416109b68)
+[LOG] SoundI::release                          :     sfx_knife_impact-003 (0x392d4c918)
+[LOG] SoundI::release                          :  (0x415063518)
+[LOG] SoundI::release                          :     sfx_knife_impact-002 (0x415063688)
+[LOG] SoundI::release                          :  (0x41477f808)
+[LOG] SoundI::release                          :     sfx_knife_impact-001 (0x41477f978)
+[LOG] SoundI::release                          :  (0x41506cbf8)
+[LOG] SoundI::release                          :     sfx_crystal_impact-002 (0x415054fc8)
+[LOG] SoundI::release                          :  (0x3909850d8)
+[LOG] SoundI::release                          :     sfx_crystal_impact-003 (0x39d8c0b18)
+[LOG] SoundI::release                          :  (0x41506d848)
+[LOG] SoundI::release                          :     sfx_crystal_impact-004 (0x415055ac8)
+[LOG] SoundI::release                          :  (0x415054a08)
+[LOG] SoundI::release                          :     sfx_crystal_impact-005 (0x415052118)
+[LOG] SoundI::release                          :  (0x415067ca8)
+[LOG] SoundI::release                          :     sfx_crystal_impact-006 (0x4150590c8)
+[LOG] SoundI::release                          :  (0x41479e7f8)
+[LOG] SoundI::release                          :     sfx_bubble_pop (0x414757158)
+[LOG] SoundI::release                          :  (0x3ee074d38)
+[LOG] SoundI::release                          :     sfx_dialogue_next (0x398a07c58)
+[LOG] SoundI::release                          :  (0x3ee063578)
+[LOG] SoundI::release                          :     sfx_dialogue_next 2 (0x3ee0d7418)
+[LOG] SoundI::release                          :  (0x41477eee8)
+[LOG] SoundI::release                          :     sfx_jar_impact_table-006 (0x41477f058)
+[LOG] SoundI::release                          :  (0x4150639a8)
+[LOG] SoundI::release                          :     sfx_jar_impact_table-005 (0x415063b18)
+[LOG] SoundI::release                          :  (0x4150619b8)
+[LOG] SoundI::release                          :     sfx_jar_impact_table-004 (0x415061b28)
+[LOG] SoundI::release                          :  (0x41477e5c8)
+[LOG] SoundI::release                          :     sfx_jar_impact_table-003 (0x41477e738)
+[LOG] SoundI::release                          :  (0x392d23678)
+[LOG] SoundI::release                          :     sfx_jar_impact_table-002 (0x392d56898)
+[LOG] SoundI::release                          :  (0x415061e48)
+[LOG] SoundI::release                          :     sfx_jar_impact_table-001 (0x415061fb8)
+[LOG] SoundI::release                          :  (0x3d64982f8)
+[LOG] SoundI::release                          :     sfx_fish_impact-007 (0x415f97af8)
+[LOG] SoundI::release                          :  (0x4147805b8)
+[LOG] SoundI::release                          :     sfx_fish_impact-006 (0x4147e85b8)
+[LOG] SoundI::release                          :  (0x415060c08)
+[LOG] SoundI::release                          :     sfx_fish_impact-005 (0x415060d78)
+[LOG] SoundI::release                          :  (0x415061528)
+[LOG] SoundI::release                          :     sfx_fish_impact-004 (0x415061698)
+[LOG] SoundI::release                          :  (0x3d6588428)
+[LOG] SoundI::release                          :     sfx_fish_impact-003 (0x3d6588698)
+[LOG] SoundI::release                          :  (0x415063088)
+[LOG] SoundI::release                          :     sfx_fish_impact-002 (0x4150631f8)
+[LOG] SoundI::release                          :  (0x41477ea58)
+[LOG] SoundI::release                          :     sfx_fish_impact-001 (0x41477ebc8)
+[LOG] SoundI::release                          : sfx_grab_release-005.wav (0x411a49ca8)
+[LOG] SoundI::release                          : sfx_grab_release-004.wav (0x3943b1348)
+[LOG] SoundI::release                          : sfx_grab_release-003.wav (0x411a568a8)
+[LOG] SoundI::release                          : sfx_grab_release-002.wav (0x411a2c068)
+[LOG] SoundI::release                          : sfx_grab_release-001.wav (0x411ac1ff8)
+[LOG] SoundI::release                          : sfx_paw_grab-002.wav (0x411a4cc48)
+[LOG] SoundI::release                          : sfx_paw_grab-003.wav (0x3943ac7d8)
+[LOG] SoundI::release                          : sfx_grab_fail-005.wav (0x3dc4b6a38)
+[LOG] SoundI::release                          : sfx_grab_fail-004.wav (0x411a5ee58)
+[LOG] SoundI::release                          : sfx_grab_fail-003.wav (0x411a5efe8)
+[LOG] SoundI::release                          : sfx_grab_fail-002.wav (0x411abb3e8)
+[LOG] SoundI::release                          : sfx_grab_fail-001.wav (0x411abb778)
+[LOG] SoundI::release                          :  (0x415062bf8)
+[LOG] SoundI::release                          :     sfx_shell_impact-001 (0x415062d68)
+[LOG] SoundI::release                          :  (0x392de25c8)
+[LOG] SoundI::release                          :     sfx_shell_impact-002 (0x3edfeafa8)
+[LOG] SoundI::release                          :  (0x30eaa83e8)
+[LOG] SoundI::release                          :     sfx_shell_impact-003 (0x30eaf2598)
+[LOG] SoundI::release                          :  (0x3edf6c678)
+[LOG] SoundI::release                          :     sfx_shell_impact-004 (0x3edf6af78)
+[LOG] SoundI::release                          :  (0x41477e138)
+[LOG] SoundI::release                          :     sfx_shell_impact-005 (0x41477e2a8)
+[LOG] SoundI::release                          :  (0x41505fdb8)
+[LOG] SoundI::release                          :     sfx_shell_impact-006 (0x41505ff28)
+[LOG] SoundI::release                          :  (0x3edfd6748)
+[LOG] SoundI::release                          :     sfx_shell_impact-007 (0x3edfa9e38)
+[LOG] SoundI::release                          :  (0x411a62e18)
+[LOG] SoundI::release                          :     sfx_slime_jiggle (0x411a93b78)
+[LOG] SoundI::release                          :  (0x39bf70d78)
+[LOG] SoundI::release                          :     sfx_slimeball_impact-005 (0x39bf70ee8)
+[LOG] SoundI::release                          :  (0x39bf7c1f8)
+[LOG] SoundI::release                          :     sfx_slimeball_impact-004 (0x39bf7c368)
+[LOG] SoundI::release                          :  (0x39bf78aa8)
+[LOG] SoundI::release                          :     sfx_slimeball_impact-003 (0x39bf78c18)
+[LOG] SoundI::release                          :  (0x393c5b4c8)
+[LOG] SoundI::release                          :     sfx_slimeball_impact-007 (0x393c5b638)
+[LOG] SoundI::release                          :  (0x39bf749c8)
+[LOG] SoundI::release                          :     sfx_slimeball_impact-006 (0x39bf75ba8)
+[LOG] SoundI::release                          :  (0x39bf71368)
+[LOG] SoundI::release                          :     sfx_slimeball_impact-002 (0x39bf714d8)
+[LOG] SoundI::release                          :  (0x39bf708e8)
+[LOG] SoundI::release                          :     sfx_slimeball_impact-001 (0x39bf70a58)
+[LOG] SoundI::release                          :  (0x3ee057ec8)
+[LOG] SoundI::release                          :     dia_tanuki_-029 (0x3ee058038)
+[LOG] SoundI::release                          :  (0x4144f2da8)
+[LOG] SoundI::release                          :     dia_tanuki_-028 (0x4144535c8)
+[LOG] SoundI::release                          :  (0x3ee08cdc8)
+[LOG] SoundI::release                          :     dia_tanuki_-027 (0x3ee0eeb98)
+[LOG] SoundI::release                          :  (0x32935dd48)
+[LOG] SoundI::release                          :     dia_tanuki_-026 (0x3293057f8)
+[LOG] SoundI::release                          :  (0x32935d428)
+[LOG] SoundI::release                          :     dia_tanuki_-025 (0x32935d598)
+[LOG] SoundI::release                          :  (0x3293204b8)
+[LOG] SoundI::release                          :     dia_tanuki_-024 (0x3293bdc58)
+[LOG] SoundI::release                          :  (0x329306be8)
+[LOG] SoundI::release                          :     dia_tanuki_-023 (0x329306d58)
+[LOG] SoundI::release                          :  (0x3ee092718)
+[LOG] SoundI::release                          :     dia_tanuki_-022 (0x3ee092888)
+[LOG] SoundI::release                          :  (0x3293062c8)
+[LOG] SoundI::release                          :     dia_tanuki_-021 (0x329306438)
+[LOG] SoundI::release                          :  (0x32935cb78)
+[LOG] SoundI::release                          :     dia_tanuki_-020 (0x32935cce8)
+[LOG] SoundI::release                          :  (0x329306758)
+[LOG] SoundI::release                          :     dia_tanuki_-019 (0x3293068c8)
+[LOG] SoundI::release                          :  (0x32935d008)
+[LOG] SoundI::release                          :     dia_tanuki_-018 (0x3293909d8)
+[LOG] SoundI::release                          :  (0x3ee092ba8)
+[LOG] SoundI::release                          :     dia_tanuki_-017 (0x3ee092d18)
+[LOG] SoundI::release                          :  (0x3ee07cce8)
+[LOG] SoundI::release                          :     dia_tanuki_-016 (0x3ee07ce58)
+[LOG] SoundI::release                          :  (0x3ee0ee898)
+[LOG] SoundI::release                          :     dia_tanuki_-015 (0x3ee06fd38)
+[LOG] SoundI::release                          :  (0x3ee093038)
+[LOG] SoundI::release                          :     dia_tanuki_-014 (0x3ee0931a8)
+[LOG] SoundI::release                          :  (0x3ee092288)
+[LOG] SoundI::release                          :     dia_tanuki_-013 (0x3ee0923f8)
+[LOG] SoundI::release                          :  (0x3ee070058)
+[LOG] SoundI::release                          :     dia_tanuki_-012 (0x3ee0dd358)
+[LOG] SoundI::release                          :  (0x3ee0dd678)
+[LOG] SoundI::release                          :     dia_tanuki_-011 (0x3ee0dd7e8)
+[LOG] SoundI::release                          :  (0x32935deb8)
+[LOG] SoundI::release                          :     dia_tanuki_-010 (0x329305b18)
+[LOG] SoundI::release                          :  (0x3293d4238)
+[LOG] SoundI::release                          :     dia_tanuki_-009 (0x3293704c8)
+[LOG] SoundI::release                          :  (0x329305e38)
+[LOG] SoundI::release                          :     dia_tanuki_-008 (0x329305fa8)
+[LOG] SoundI::release                          :  (0x329390cf8)
+[LOG] SoundI::release                          :     dia_tanuki_-007 (0x3293d3f18)
+[LOG] SoundI::release                          :  (0x414467b48)
+[LOG] SoundI::release                          :     dia_tanuki_-006 (0x414467cb8)
+[LOG] SoundI::release                          :  (0x329370968)
+[LOG] SoundI::release                          :     dia_tanuki_-005 (0x329370ad8)
+[LOG] SoundI::release                          :  (0x3ee076bf8)
+[LOG] SoundI::release                          :     dia_tanuki_-004 (0x3ee076d68)
+[LOG] SoundI::release                          :  (0x3ee0268b8)
+[LOG] SoundI::release                          :     dia_tanuki_-003 (0x3ee026a28)
+[LOG] SoundI::release                          :  (0x3ee0c22c8)
+[LOG] SoundI::release                          :     dia_tanuki_-002 (0x3ee084768)
+[LOG] SoundI::release                          :  (0x414441048)
+[LOG] SoundI::release                          :     dia_tanuki_-001 (0x32935da28)
+[LOG] SoundI::release                          :  (0x3c5107048)
+[LOG] SoundI::release                          :     sfx_cauldron_angry (0x360e813e8)
+[LOG] SoundI::release                          : sfx_book_impact-004.wav (0x416047808)
+[LOG] SoundI::release                          : sfx_dragonscale_idle (0x416025c88)
+[LOG] SoundI::release                          :     sfx_dragonscale_idle (0x4150570c8)
+[LOG] SoundI::release                          :     sfx_dragonscale_idle (0x415053ff8)
+[LOG] SoundI::release                          : sfx_dragonscale_idle (0x11f8c7958)
+[LOG] SoundI::release                          :     sfx_dragonscale_idle (0x415053cc8)
+[LOG] SoundI::release                          :     sfx_dragonscale_idle (0x41507ae98)
+[LOG] SoundI::release                          : Comfort (0x3939ab408)
+[LOG] SoundI::release                          :     Comfort (0x416012db8)
+[LOG] SoundI::release                          :     Comfort (0x41600f778)
+[LOG] SoundI::release                          : sfx_cauldron_bubble (0x41504ba88)
+[LOG] SoundI::release                          :     sfx_cauldron_bubble (0x415053828)
+[LOG] SoundI::release                          :     sfx_cauldron_bubble (0x41477bb58)
+[LOG] SoundI::release                          : sfx_ambience_windheavy (0x3dc4a5708)
+[LOG] SoundI::release                          :     sfx_ambience_windheavy (0x4147e9c28)
+[LOG] SoundI::release                          :     sfx_ambience_windheavy (0x4147e9e88)
+[LOG] SoundI::release                          : sfx_ambience_softwindandbirds (0x3639eb478)
+[LOG] SoundI::release                          :     sfx_ambience_softwindandbirds (0x4147e8ac8)
+[LOG] SoundI::release                          :     sfx_ambience_softwindandbirds (0x4147e8c58)
+[LOG] SoundI::release                          : sfx_ambience_eveningbirdsandcrickets (0x3edc145d8)
+[LOG] SoundI::release                          :     sfx_ambience_eveningbirdsandcrickets (0x4150547a8)
+[LOG] SoundI::release                          :     sfx_ambience_eveningbirdsandcrickets (0x4150653d8)
+[LOG] SoundI::release                          : sfx_ambience_waterstream (0x367253be8)
+[LOG] SoundI::release                          :     sfx_ambience_waterstream (0x3ee110d08)
+[LOG] SoundI::release                          :     sfx_ambience_waterstream (0x3ee1f9588)
+[LOG] SoundI::release                          :  (0x415063e38)
+[LOG] SoundI::release                          :     sfx_jarlid_open (0x415063fa8)
+[LOG] SoundI::release                          :  (0x41477f378)
+[LOG] SoundI::release                          :     sfx_dragonscalejar_open-002 (0x41477f4e8)
+[LOG] SoundI::release                          :  (0x30eadeb88)
+[LOG] SoundI::release                          :     sfx_dragonscalejar_open-001 (0x362d17b18)
+[LOG] SoundI::release                          :  (0x39d8bc148)
+[LOG] SoundI::release                          :     sfx_poppingstar_impactpop-004 (0x39d8bc2b8)
+[LOG] SoundI::release                          :  (0x41506c538)
+[LOG] SoundI::release                          :     sfx_poppingstar_impactpop-003 (0x415058648)
+[LOG] SoundI::release                          :  (0x39090b6d8)
+[LOG] SoundI::release                          :     sfx_poppingstar_impactpop-002 (0x39d8cb418)
+[LOG] SoundI::release                          :  (0x415067ec8)
+[LOG] SoundI::release                          :     sfx_poppingstar_impactpop-001 (0x415059c68)
+[LOG] SoundI::release                          :  (0x3909055e8)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-010 (0x39d84ca98)
+[LOG] SoundI::release                          :  (0x39d8d0788)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-009 (0x39d8d08f8)
+[LOG] SoundI::release                          :  (0x39d891528)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-008 (0x39d891698)
+[LOG] SoundI::release                          :  (0x39d8de0f8)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-007 (0x39d8de268)
+[LOG] SoundI::release                          :  (0x39d8bbcb8)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-006 (0x39d8bbe28)
+[LOG] SoundI::release                          :  (0x39d8fa1c8)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-005 (0x39d8fa338)
+[LOG] SoundI::release                          :  (0x3909858a8)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-004 (0x39d830488)
+[LOG] SoundI::release                          :  (0x3269e3f28)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-003 (0x39d8d4e78)
+[LOG] SoundI::release                          :  (0x39d843a98)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-002 (0x39d8ab8f8)
+[LOG] SoundI::release                          :  (0x39d8fa9b8)
+[LOG] SoundI::release                          :     sfx_poppingstar_impact-001 (0x39d8397e8)
+[LOG] SoundI::release                          : sfx_book_impact-003.wav (0x39d8cc3f8)
+[LOG] SoundI::release                          : sfx_book_impact-002.wav (0x41049dde8)
+[LOG] SoundI::release                          : sfx_book_impact-001.wav (0x41507a5b8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[ERR] FMOD_OS_Net_Read                         : read failed with errno 9
+[ERR] ProfileClient::recvThreadLoopFunction    : Recv thread loop returned 43
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[ERR] assert                                   : assertion: 'gSystemInitCount == 0' failed

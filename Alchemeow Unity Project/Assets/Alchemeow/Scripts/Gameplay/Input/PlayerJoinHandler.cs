@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Cinemachine;
+using FMODUnity;
 
 public class PlayerJoinHandler : MonoBehaviour
 {
@@ -13,12 +14,30 @@ public class PlayerJoinHandler : MonoBehaviour
     [SerializeField] CinemachineTargetGroup group;
     [SerializeField] Material playerTwoMat;
 
+    //joining sounds and snapshot changes (mutes and unmutes SFX)
+    [SerializeField] private EventReference joiningSound;
+    [SerializeField] private EventReference startingSnapshot;
+    [SerializeField] private EventReference maingameSnapshot;
+    private FMOD.Studio.EventInstance startingsnapshotInstance;
+    private FMOD.Studio.EventInstance maingamesnapshotInstance;
+
+
     private PlayerInput playerOne;
+
+    private void Start()
+    {
+        startingsnapshotInstance = FMODUnity.RuntimeManager.CreateInstance(startingSnapshot);
+        maingamesnapshotInstance = FMODUnity.RuntimeManager.CreateInstance(maingameSnapshot);
+        startingsnapshotInstance.start();
+    }
 
     // This method is called whenever a player joins
     public void OnPlayerJoined(PlayerInput playerInput)
     {
         Debug.Log(playerInput.ToString() + "has joined");
+
+        //play sound
+        FMODUnity.RuntimeManager.PlayOneShot(joiningSound);
 
         
         // Get the transform of the new player
@@ -34,6 +53,9 @@ public class PlayerJoinHandler : MonoBehaviour
             playerOneText.SetActive(false);
         } else
         {
+            //audio
+            maingamesnapshotInstance.start();
+
             playerInput.transform.position = playerTwoSpawn.position;
             playerInput.gameObject.GetComponent<PawController>().InitialisePlayerTwo(playerTwoMat);
             DialogueArray.Instance.StartNextDialogue();

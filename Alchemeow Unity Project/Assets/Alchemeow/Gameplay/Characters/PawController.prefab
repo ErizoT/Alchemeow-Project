@@ -106,11 +106,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1963660221
-      Data2: 1123707509
-      Data3: -971438146
-      Data4: -1749766481
-    Path: event:/sfx_paw_grab
+      Data1: -408995478
+      Data2: 1166435604
+      Data3: -1184121925
+      Data4: 2024489649
+    Path: event:/Player/sfx_paw_grab
   Event: 
   PlayEvent: 0
   StopEvent: 0

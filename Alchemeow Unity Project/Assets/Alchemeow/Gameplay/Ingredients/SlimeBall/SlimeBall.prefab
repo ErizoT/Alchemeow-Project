@@ -921,11 +921,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 581981756
-      Data2: 1237046446
-      Data3: -838863699
-      Data4: -406391489
-    Path: event:/Ingredients/sfx_slimeball_drag
+      Data1: 971291364
+      Data2: 1303322574
+      Data3: -1473201733
+      Data4: -76602618
+    Path: event:/Ingredients/sfx_slimeball_impact
   Event: 
   PlayEvent: 0
   StopEvent: 0
