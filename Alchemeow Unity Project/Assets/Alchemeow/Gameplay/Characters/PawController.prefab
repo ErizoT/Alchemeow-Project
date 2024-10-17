@@ -538,7 +538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {fileID: 5529179515131860957}
   paw: {fileID: 4753066886768650826}
-  moveSpeed: 5000
+  moveSpeed: 3500
   raiseLowerSpeed: 2
   grabRange: 3
   animator: {fileID: 5046852351054863879}
