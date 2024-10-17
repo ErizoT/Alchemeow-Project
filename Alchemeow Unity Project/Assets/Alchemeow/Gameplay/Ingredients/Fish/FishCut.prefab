@@ -364,10 +364,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: FishBody
-  essential: 0
+  canRespawn: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &3025095056610969806
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,7 +561,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4711072378746876193}
@@ -592,7 +593,7 @@ Transform:
   m_GameObject: {fileID: 4195201240795578504}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.8, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -772,10 +773,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientID: FishHead
-  essential: 0
+  canRespawn: 0
   ingClass:
     ingID: 
     ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &5414005062899383375
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +803,7 @@ Transform:
   m_GameObject: {fileID: 5414005062899383375}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.13545, y: 33.566597, z: -28.940397}
+  m_LocalPosition: {x: -13.335449, y: 33.566597, z: -28.940397}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 0
   m_Children:
