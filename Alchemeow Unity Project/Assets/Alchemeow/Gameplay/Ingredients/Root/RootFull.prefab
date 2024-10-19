@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 5943748520476161566}
   - component: {fileID: 1968069265640684496}
   - component: {fileID: 7985803266770539200}
+  - component: {fileID: 3697477435602982142}
   m_Layer: 8
   m_Name: RootFull
   m_TagString: Untagged
@@ -209,6 +210,8 @@ Transform:
   m_Children:
   - {fileID: 9126453685320688963}
   - {fileID: 6506630444757308792}
+  - {fileID: 624190118578016356}
+  - {fileID: 2637117310054751603}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &663758608987114740
@@ -308,6 +311,20 @@ MonoBehaviour:
   points: []
   holds: 0
   cooperativeHold: 0
+--- !u!114 &3697477435602982142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586883858549317525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 954f81a40eb374ff0b1637c1c6556619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ripEmitter: {fileID: 4567860142164768697}
+  jujuPot: {fileID: 0}
 --- !u!1 &1722606981250376588
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,11 +621,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1764424791
-      Data2: 1221035405
-      Data3: 612092834
-      Data4: 1969596426
-    Path: event:/sfx_flyingfish_cut
+      Data1: -1760984476
+      Data2: 1103601306
+      Data3: -942010729
+      Data4: 722178104
+    Path: event:/Ingredients/sfx_joojoofruit_cut
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -691,6 +708,69 @@ Transform:
   - {fileID: 7087217089894048861}
   m_Father: {fileID: 9126453685320688963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3968150779774275592
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2637117310054751603}
+  - component: {fileID: 6963603519599133350}
+  m_Layer: 0
+  m_Name: audio_impactemitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2637117310054751603
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968150779774275592}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.98489046, z: -0, w: -0.17317888}
+  m_LocalPosition: {x: -0.049, y: 0.5014677, z: 0.281}
+  m_LocalScale: {x: 0.49999976, y: 0.5, z: 0.49999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406813597260040903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6963603519599133350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968150779774275592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -749365726
+      Data2: 1228151727
+      Data3: -88051569
+      Data4: 1888964276
+    Path: event:/Ingredients/sfx_jujufruit_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5400683852687253865
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +935,69 @@ Transform:
   - {fileID: 8867902813017901129}
   m_Father: {fileID: 9126453685320688963}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6137427773478955924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 624190118578016356}
+  - component: {fileID: 4567860142164768697}
+  m_Layer: 0
+  m_Name: audio_ripemitter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &624190118578016356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137427773478955924}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.98489046, z: -0, w: -0.17317888}
+  m_LocalPosition: {x: -0.042, y: 0.523, z: 0.158}
+  m_LocalScale: {x: 0.49999976, y: 0.5, z: 0.49999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 406813597260040903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4567860142164768697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137427773478955924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1201236444
+      Data2: 1270275203
+      Data3: 1468252032
+      Data4: -2068827801
+    Path: event:/Ingredients/sfx_jujufruit_tear
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6254615209519744151
 GameObject:
   m_ObjectHideFlags: 0

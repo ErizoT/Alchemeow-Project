@@ -31,7 +31,7 @@ public class audio_impactsound : MonoBehaviour
 
         if (collisionObjects == null || collisionObjects.Length == 0)
         {
-            collisionObjects = new GameObject[8]; // Define the size of the array (change as needed)
+            collisionObjects = new GameObject[12]; // Define the size of the array (change as needed)
             collisionObjects[0] = GameObject.Find("TableBase");
             collisionObjects[1] = GameObject.Find("TableBack");
             collisionObjects[2] = GameObject.Find("MortarParent");
@@ -40,7 +40,11 @@ public class audio_impactsound : MonoBehaviour
             collisionObjects[5] = GameObject.Find("envirnoment walls only");
             collisionObjects[6] = GameObject.Find("CauldronLowerPoly");
             collisionObjects[7] = GameObject.Find("SM_CrystalBall_Base");
-           
+            collisionObjects[8] = GameObject.Find("WholeCrystal");
+            collisionObjects[9] = GameObject.Find("WholeCrystal (1)");
+            collisionObjects[10] = GameObject.Find("WholeCrystal (3)");
+            collisionObjects[11] = GameObject.Find("WholeCrystal (2)");
+
 
         }
 

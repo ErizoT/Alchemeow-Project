@@ -509,7 +509,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 4617507503467914334, guid: b1c419a31e4131849830356c285c3171, type: 3}
-  cutEmitter: {fileID: 0}
+  cutEmitter: {fileID: 8100591542053860882}
 --- !u!1 &2899080559142482912
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,11 +710,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1764424791
-      Data2: 1221035405
-      Data3: 612092834
-      Data4: 1969596426
-    Path: event:/sfx_flyingfish_cut
+      Data1: -1760984476
+      Data2: 1103601306
+      Data3: -942010729
+      Data4: 722178104
+    Path: event:/Ingredients/sfx_joojoofruit_cut
   Event: 
   PlayEvent: 0
   StopEvent: 0

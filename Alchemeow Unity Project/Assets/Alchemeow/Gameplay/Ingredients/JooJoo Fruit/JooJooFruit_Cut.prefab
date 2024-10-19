@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1971496991377652628}
   - component: {fileID: 9191968784381638699}
   - component: {fileID: 3432601480468461125}
+  - component: {fileID: 2655296861184522561}
   m_Layer: 0
   m_Name: SM_JooJooFruitCut_Body_01
   m_TagString: Untagged
@@ -38,6 +39,7 @@ Transform:
   - {fileID: 9053295553095346829}
   - {fileID: 1829887887256637666}
   - {fileID: 7118198023954573176}
+  - {fileID: 9118526607609552024}
   m_Father: {fileID: 5431198422425648868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &402071221630353225
@@ -156,6 +158,19 @@ MonoBehaviour:
     ingID: 
     ingIMG: {fileID: 0}
   hasRespawned: 0
+--- !u!114 &2655296861184522561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318733843531842927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEmitter: {fileID: 4596548821461389056}
 --- !u!1 &434867468115452585
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,6 +185,7 @@ GameObject:
   - component: {fileID: 3279892649231945998}
   - component: {fileID: 265889542197173265}
   - component: {fileID: 2097863148615717739}
+  - component: {fileID: 9103396272216357868}
   m_Layer: 0
   m_Name: SM_JooJooFruitCut_Body_02
   m_TagString: Untagged
@@ -192,6 +208,7 @@ Transform:
   m_Children:
   - {fileID: 1464888253780201536}
   - {fileID: 4917002266036418549}
+  - {fileID: 7864097727729686761}
   m_Father: {fileID: 5431198422425648868}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &1064426316326243400
@@ -310,6 +327,19 @@ MonoBehaviour:
     ingID: 
     ingIMG: {fileID: 0}
   hasRespawned: 0
+--- !u!114 &9103396272216357868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434867468115452585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEmitter: {fileID: 6416086374887123144}
 --- !u!1 &601658039671655625
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +629,132 @@ Transform:
   - {fileID: 1619457597458069767}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7166123554715197497
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9118526607609552024}
+  - component: {fileID: 4596548821461389056}
+  m_Layer: 0
+  m_Name: audio_impactsound_L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9118526607609552024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166123554715197497}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0.00402, y: 0.0007, z: -0.00013}
+  m_LocalScale: {x: 0.01, y: 0.010000002, z: 0.010000002}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6339281536623356772}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4596548821461389056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7166123554715197497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -749365726
+      Data2: 1228151727
+      Data3: -88051569
+      Data4: 1888964276
+    Path: event:/Ingredients/sfx_jujufruit_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!1 &8305708180101774820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7864097727729686761}
+  - component: {fileID: 6416086374887123144}
+  m_Layer: 0
+  m_Name: audio_impactsound_R
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7864097727729686761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305708180101774820}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.0036, y: 0.00049, z: -0.00013}
+  m_LocalScale: {x: 0.01, y: 0.009999997, z: 0.009999997}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1619457597458069767}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6416086374887123144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305708180101774820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -749365726
+      Data2: 1228151727
+      Data3: -88051569
+      Data4: 1888964276
+    Path: event:/Ingredients/sfx_jujufruit_impact
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &8730770488419478184
 GameObject:
   m_ObjectHideFlags: 0

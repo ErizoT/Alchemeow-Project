@@ -437,7 +437,7 @@ MonoBehaviour:
       Data2: 1136519775
       Data3: 1702986685
       Data4: -1812247582
-    Path: event:/sfx_jar_impacts
+    Path: event:/Tools/sfx_jar_impacts
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -470,6 +470,7 @@ GameObject:
   - component: {fileID: 96984866298611559}
   - component: {fileID: 580907791327827897}
   - component: {fileID: 8268920381242393533}
+  - component: {fileID: 5941902281410328944}
   m_Layer: 8
   m_Name: Jar_01
   m_TagString: Untagged
@@ -775,7 +776,7 @@ MonoBehaviour:
       Data2: 1161717647
       Data3: 2119640247
       Data4: 438972583
-    Path: event:/sfx_jar_open
+    Path: event:/Tools/sfx_jar_open
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -820,6 +821,19 @@ MonoBehaviour:
   points: []
   holds: 0
   cooperativeHold: 0
+--- !u!114 &5941902281410328944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7123327636624689814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e0bc5543b8242e6b74447775369475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactEmitter: {fileID: 4459731342105017655}
 --- !u!1001 &2403279753564340281
 PrefabInstance:
   m_ObjectHideFlags: 0
