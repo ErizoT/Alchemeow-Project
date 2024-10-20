@@ -3782,22 +3782,15 @@ MonoBehaviour:
     dialogueEntries:
     - Hellooooooooooo my delightfully devilish rascal!
     - "Today I come to you with my biggest request\u2026"
-    - "What do you mean \u201CNo thanks.\u201D? Have you seen the state of the town
-      recently?"
     - Your arcane studies ask much of you, Hermit Cat. This much I do know, but please
       hear me out!
     - "Thank you oh thank you, you\u2019re the only one for the job, as I\u2019m
       sure you\u2019ll understand\u2026"
-    - "You see\u2026 the village has gone proper mad!"
-    - "The High Horses have all gone bald! They\u2019re feeling very unSTABLE! Pardon
-      me..."
-    - The Dolphino Family and the Alley Cats are fighting on the streets like little
-      bambini!
-    - The gym rats are- okay you get the picture.
+    - "You see\u2026 the village has gone proper mad! Only you can create the cure-all
+      potion!"
     - "Leave it to me to peddle that potion to all the villagers, for an exorbitant
       price of course\u2026"
-    - "And I\u2019ll leave it to you to get me that cure-all potion!"
-    - "You\u2019ll of course, be handsomely rewarded\u2026 toodloo!"
+    - "You\u2019ll of course, be handsomely rewarded\u2026 toodaloo!"
     - Anyhow... it looks like the Crystal Ball is telling me the cauldron needs...
     - Crushed... pink... things?
     - I'm sure the mortar and pestle can help out with that.
@@ -3808,8 +3801,7 @@ MonoBehaviour:
     - {fileID: 0}
     dialogueEntries:
     - Hey, that seemed to do the trick!
-    - Looks like something dusty, white and broken now...
-    - Right, let's get to work!
+    - Looks like something dusty, white and broken now... right. Let's get to work!
   - ingredientName: Popping Star
     characterExpressions:
     - {fileID: 0}
@@ -3817,8 +3809,7 @@ MonoBehaviour:
     - {fileID: 0}
     dialogueEntries:
     - Splendid!
-    - Now it's asking for...
-    - Popping Stars? Thankfully I just got some from the merchant.
+    - Now it's asking for... Popping Stars? Thankfully I just got some from the merchant.
   - ingredientName: Dragon Scale
     characterExpressions:
     - {fileID: 0}
@@ -3826,8 +3817,7 @@ MonoBehaviour:
     - {fileID: 0}
     dialogueEntries:
     - Wonderful!
-    - Oh dear, is that what I think it is?
-    - I hope I don't burn my paw too badly...
+    - Oh dear, is that what I think it is? I hope I don't burn my paw too badly...
   - ingredientName: Fish Head
     characterExpressions:
     - {fileID: 0}
@@ -3835,29 +3825,34 @@ MonoBehaviour:
     - {fileID: 0}
     dialogueEntries:
     - Phew! What a fiery individual...
-    - Oooo! A flying fish head!
-    - I'm keeping the body to myself, mmmm...
+    - Oooo! A flying fish head! I'm keeping the body to myself, mmmm...
   - ingredientName: RootCut
     characterExpressions:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     dialogueEntries:
-    - Put in the root?
+    - Such a tasty snack... I'll have to get more after this.
+    - A root..? Oh good at least it's not a mandrake...
   - ingredientName: SlimeBall
     characterExpressions:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     dialogueEntries:
-    - Time for some slime!?
+    - I haven't had to deal with a mandrake since magic school, and I hope I don't
+      have to deal with one ever again...
+    - Slime? I have been keeping some Jlorp somewhere... where was it again?
   - ingredientName: JooJooCut
     characterExpressions:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
     dialogueEntries:
-    - You're breaking my heart son.
+    - Bleh... I'm gonna need a shower after this...
+    - The JooJoo frui-
+    - Wait a sec... aren't these usually reserved for love potions?
+    - Though, they do make good calming agents...
   - ingredientName: End of Playtest
     characterExpressions:
     - {fileID: 0}
