@@ -12,19 +12,6 @@ public class Menu : MonoBehaviour
 
     public GameObject startGame;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-
-    }
-
     public void OpenOptions()
 
     {
@@ -48,8 +35,6 @@ public class Menu : MonoBehaviour
         //set a new selected obj
         EventSystem.current.SetSelectedGameObject(optionsClosedButton);
     }
-
-   
 
         public void GameStart()
 
