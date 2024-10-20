@@ -1314,6 +1314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 133238393}
   - component: {fileID: 133238394}
+  - component: {fileID: 133238395}
   m_Layer: 0
   m_Name: SFX_Slider
   m_TagString: Untagged
@@ -1406,6 +1407,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &133238395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133238392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1830b04314bb748b197775abd627edbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  changeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &150293395
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2030,7 @@ GameObject:
   - component: {fileID: 198350820}
   - component: {fileID: 198350819}
   - component: {fileID: 198350818}
+  - component: {fileID: 198350821}
   m_Layer: 5
   m_Name: Back_Button
   m_TagString: Untagged
@@ -2159,6 +2187,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198350816}
   m_CullTransparentMesh: 1
+--- !u!114 &198350821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198350816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &207323729
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,6 +4322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 402511328}
   - component: {fileID: 402511329}
+  - component: {fileID: 402511330}
   m_Layer: 0
   m_Name: Music_Slider
   m_TagString: Untagged
@@ -4360,6 +4415,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &402511330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402511327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1830b04314bb748b197775abd627edbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  changeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &432924495
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,16 +5756,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 573137474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf9b1ed5958de43a2b105a559f56e762, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSoundEvent:
+  selectSound:
     Guid:
       Data1: 1248392200
       Data2: 1161549418
       Data3: 1449685919
       Data4: 909606529
     Path: event:/UI/ui_exitgame
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &598181566
 GameObject:
   m_ObjectHideFlags: 0
@@ -6058,6 +6146,7 @@ GameObject:
   - component: {fileID: 623536714}
   - component: {fileID: 623536713}
   - component: {fileID: 623536716}
+  - component: {fileID: 623536717}
   m_Layer: 5
   m_Name: TikTok
   m_TagString: Untagged
@@ -6191,6 +6280,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38f50c85452cd434ea3a47533aa14249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &623536717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623536711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &633018249
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,6 +6602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 672515023}
   - component: {fileID: 672515024}
+  - component: {fileID: 672515025}
   m_Layer: 0
   m_Name: Master_Slider
   m_TagString: Untagged
@@ -6579,6 +6695,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
+--- !u!114 &672515025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 672515022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1830b04314bb748b197775abd627edbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  changeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &694475010
 GameObject:
   m_ObjectHideFlags: 0
@@ -8029,6 +8171,7 @@ GameObject:
   - component: {fileID: 848219393}
   - component: {fileID: 848219392}
   - component: {fileID: 848219395}
+  - component: {fileID: 848219396}
   m_Layer: 5
   m_Name: Twitter
   m_TagString: Untagged
@@ -8162,6 +8305,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d76dadd1518d01e45855c9bac9348d3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &848219396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848219390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &852557369
 GameObject:
   m_ObjectHideFlags: 0
@@ -8332,6 +8501,7 @@ GameObject:
   - component: {fileID: 864661398}
   - component: {fileID: 864661397}
   - component: {fileID: 864661396}
+  - component: {fileID: 864661399}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -8488,6 +8658,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 864661394}
   m_CullTransparentMesh: 1
+--- !u!114 &864661399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864661394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &878388758
 GameObject:
   m_ObjectHideFlags: 0
@@ -10071,6 +10267,7 @@ GameObject:
   - component: {fileID: 1132867214}
   - component: {fileID: 1132867213}
   - component: {fileID: 1132867216}
+  - component: {fileID: 1132867217}
   m_Layer: 5
   m_Name: Youtube
   m_TagString: Untagged
@@ -10204,6 +10401,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b2e2370729ff44da4d4e45eac052fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1132867217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132867211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &1138608546
 GameObject:
   m_ObjectHideFlags: 0
@@ -10329,6 +10552,7 @@ GameObject:
   - component: {fileID: 1156254854}
   - component: {fileID: 1156254853}
   - component: {fileID: 1156254852}
+  - component: {fileID: 1156254855}
   m_Layer: 5
   m_Name: Controls_Button
   m_TagString: Untagged
@@ -10473,6 +10697,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1156254850}
   m_CullTransparentMesh: 1
+--- !u!114 &1156254855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156254850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &1162853657
 GameObject:
   m_ObjectHideFlags: 0
@@ -11050,6 +11300,7 @@ GameObject:
   - component: {fileID: 1226364278}
   - component: {fileID: 1226364277}
   - component: {fileID: 1226364276}
+  - component: {fileID: 1226364279}
   m_Layer: 5
   m_Name: Start_Button
   m_TagString: Untagged
@@ -11144,18 +11395,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1064679225}
-        m_TargetAssemblyTypeName: FMODUnity.StudioEventEmitter, FMODUnity
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1226364277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11194,6 +11433,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226364274}
   m_CullTransparentMesh: 1
+--- !u!114 &1226364279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226364274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1250245683
 GameObject:
   m_ObjectHideFlags: 0
@@ -11917,7 +12182,7 @@ GameObject:
   - component: {fileID: 1363902143}
   - component: {fileID: 1363902142}
   - component: {fileID: 1363902141}
-  - component: {fileID: 1363902144}
+  - component: {fileID: 1363902145}
   m_Layer: 5
   m_Name: Credits_Button
   m_TagString: Untagged
@@ -12074,7 +12339,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1363902139}
   m_CullTransparentMesh: 1
---- !u!114 &1363902144
+--- !u!114 &1363902145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12083,16 +12348,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1363902139}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf9b1ed5958de43a2b105a559f56e762, type: 3}
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSoundEvent:
+  selectSound:
     Guid:
       Data1: 1442305539
       Data2: 1214165360
       Data3: 296025014
       Data4: -1059485949
     Path: event:/UI/ui_credithover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &1373644585
 GameObject:
   m_ObjectHideFlags: 0
@@ -12225,6 +12497,7 @@ GameObject:
   - component: {fileID: 1393751629}
   - component: {fileID: 1393751628}
   - component: {fileID: 1393751627}
+  - component: {fileID: 1393751630}
   m_Layer: 5
   m_Name: Audio_Button
   m_TagString: Untagged
@@ -12369,6 +12642,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1393751625}
   m_CullTransparentMesh: 1
+--- !u!114 &1393751630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1393751625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &1406317097
 GameObject:
   m_ObjectHideFlags: 0
@@ -13397,6 +13696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1666796287}
   - component: {fileID: 1666796288}
+  - component: {fileID: 1666796289}
   m_Layer: 0
   m_Name: UI_Slider
   m_TagString: Untagged
@@ -13489,6 +13789,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1666796289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666796286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1830b04314bb748b197775abd627edbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  changeSound:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &1668046707
 GameObject:
   m_ObjectHideFlags: 0
@@ -13923,6 +14249,7 @@ GameObject:
   - component: {fileID: 1777071009}
   - component: {fileID: 1777071008}
   - component: {fileID: 1777071011}
+  - component: {fileID: 1777071012}
   m_Layer: 5
   m_Name: Instagram
   m_TagString: Untagged
@@ -14056,6 +14383,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9ce1500ab4ba42468b93a74bb3e7400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1777071012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777071006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &1777237692
 GameObject:
   m_ObjectHideFlags: 0
@@ -14356,6 +14709,7 @@ GameObject:
   - component: {fileID: 1797326302}
   - component: {fileID: 1797326301}
   - component: {fileID: 1797326300}
+  - component: {fileID: 1797326303}
   m_Layer: 5
   m_Name: Options_Button
   m_TagString: Untagged
@@ -14512,6 +14866,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797326298}
   m_CullTransparentMesh: 1
+--- !u!114 &1797326303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797326298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &1804888365
 GameObject:
   m_ObjectHideFlags: 0
@@ -16333,6 +16713,7 @@ GameObject:
   - component: {fileID: 2069590955}
   - component: {fileID: 2069590954}
   - component: {fileID: 2069590953}
+  - component: {fileID: 2069590957}
   m_Layer: 5
   m_Name: Food Flingers
   m_TagString: Untagged
@@ -16466,6 +16847,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069590951}
   m_CullTransparentMesh: 1
+--- !u!114 &2069590957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069590951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &2080318056
 GameObject:
   m_ObjectHideFlags: 0
