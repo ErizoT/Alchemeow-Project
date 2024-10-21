@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8618248085637693721}
   - component: {fileID: 5936579728019058808}
   - component: {fileID: 8963189502688698977}
+  - component: {fileID: 6568680313648899088}
   m_Layer: 0
   m_Name: SM_Butterfly_L_LowerWing
   m_TagString: Untagged
@@ -135,6 +136,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6568680313648899088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398812347291707964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: ButterflyWing
+  canRespawn: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &3769423249067052511
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +200,7 @@ GameObject:
   - component: {fileID: 8199190680887377357}
   - component: {fileID: 7463548680535012447}
   - component: {fileID: 3945266932030052965}
+  - component: {fileID: 8328725209495113386}
   m_Layer: 0
   m_Name: SM_Butterfly_R_UpperWing
   m_TagString: Untagged
@@ -303,6 +323,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8328725209495113386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5599841936781004724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: ButterflyWing
+  canRespawn: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &5941189283110490035
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,6 +354,7 @@ GameObject:
   - component: {fileID: 3759896084359797239}
   - component: {fileID: 8051242000488849113}
   - component: {fileID: 3634873921743961599}
+  - component: {fileID: 8968305284943173333}
   m_Layer: 0
   m_Name: SM_Butterfly_L_UpperWing
   m_TagString: Untagged
@@ -438,6 +477,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8968305284943173333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5941189283110490035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: ButterflyWing
+  canRespawn: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &7409945618751112553
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,6 +541,7 @@ GameObject:
   - component: {fileID: 5778551314231800188}
   - component: {fileID: 7111022780873495342}
   - component: {fileID: 1852814359048581657}
+  - component: {fileID: 7269607245718206894}
   m_Layer: 0
   m_Name: SM_Butterfly_R_LowerWing
   m_TagString: Untagged
@@ -606,6 +664,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7269607245718206894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7834662487388838313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: ButterflyWing
+  canRespawn: 0
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &8406151720091903579
 GameObject:
   m_ObjectHideFlags: 0
