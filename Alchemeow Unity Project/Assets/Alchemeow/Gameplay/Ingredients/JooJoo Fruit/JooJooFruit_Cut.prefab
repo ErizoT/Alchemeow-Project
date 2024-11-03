@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9191968784381638699}
   - component: {fileID: 3432601480468461125}
   - component: {fileID: 2655296861184522561}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_JooJooFruitCut_Body_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 265889542197173265}
   - component: {fileID: 2097863148615717739}
   - component: {fileID: 9103396272216357868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_JooJooFruitCut_Body_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 7118198023954573176}
   - component: {fileID: 2591541178054375634}
   - component: {fileID: 1997483222899712706}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_JooJooFruitCut_Leaf_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9053295553095346829}
   - component: {fileID: 5654042911357494730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GP_JooJooFruitCut_Body_01_02
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -479,7 +479,7 @@ GameObject:
   - component: {fileID: 1829887887256637666}
   - component: {fileID: 526248192729992143}
   - component: {fileID: 2696852197982485870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_JooJooFruitCut_Leaf_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -561,7 +561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4917002266036418549}
   - component: {fileID: 8640232605817272498}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GP_JooJooFruitCut_Body_02_02
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -605,7 +605,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5431198422425648868}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: JooJooFruit_Cut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -639,7 +639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9118526607609552024}
   - component: {fileID: 4596548821461389056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: audio_impactsound_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -702,7 +702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7864097727729686761}
   - component: {fileID: 6416086374887123144}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: audio_impactsound_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -765,7 +765,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1464888253780201536}
   - component: {fileID: 2846453496065974023}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GP_JooJooFruitCut_Body_02_01
   m_TagString: Holdable
   m_Icon: {fileID: 0}
@@ -810,7 +810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1438501927967055709}
   - component: {fileID: 2315522720179720218}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: GP_JooJooFruitCut_Body_01_01
   m_TagString: Holdable
   m_Icon: {fileID: 0}

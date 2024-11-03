@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5936579728019058808}
   - component: {fileID: 8963189502688698977}
   - component: {fileID: 6568680313648899088}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Butterfly_L_LowerWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4187785802957538870}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_ButterflyCrushed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 7463548680535012447}
   - component: {fileID: 3945266932030052965}
   - component: {fileID: 8328725209495113386}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Butterfly_R_UpperWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 8051242000488849113}
   - component: {fileID: 3634873921743961599}
   - component: {fileID: 8968305284943173333}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Butterfly_L_UpperWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4889175012305938720}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Butterfly_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 7111022780873495342}
   - component: {fileID: 1852814359048581657}
   - component: {fileID: 7269607245718206894}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Butterfly_R_LowerWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1806089503329586528}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SM_Butterfly_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -779,6 +779,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GP_Butterfly_R_LowerWing
       objectReference: {fileID: 0}
+    - target: {fileID: 5568564010199359342, guid: df1ea9d5e079e9349bf563b53baa2263, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -852,6 +856,10 @@ PrefabInstance:
     - target: {fileID: 5568564010199359342, guid: df1ea9d5e079e9349bf563b53baa2263, type: 3}
       propertyPath: m_Name
       value: GP_Butterfly_R_UpperWing
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568564010199359342, guid: df1ea9d5e079e9349bf563b53baa2263, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -927,6 +935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GP_Butterfly_L_LowerWing
       objectReference: {fileID: 0}
+    - target: {fileID: 5568564010199359342, guid: df1ea9d5e079e9349bf563b53baa2263, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1000,6 +1012,10 @@ PrefabInstance:
     - target: {fileID: 5568564010199359342, guid: df1ea9d5e079e9349bf563b53baa2263, type: 3}
       propertyPath: m_Name
       value: GP_Butterfly_L_UpperWing
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568564010199359342, guid: df1ea9d5e079e9349bf563b53baa2263, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
