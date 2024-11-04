@@ -7,6 +7,10 @@ using FMODUnity;
 
 public class PlayerJoinHandler : MonoBehaviour
 {
+    [Header("Debug Stuff")]
+    [SerializeField] bool debugMode;
+
+    [Header("Main Variables")]
     [SerializeField] Transform playerOneSpawn;
     [SerializeField] Transform playerTwoSpawn;
     [SerializeField] GameObject playerOneText;
@@ -73,6 +77,15 @@ public class PlayerJoinHandler : MonoBehaviour
             playerInput.DeactivateInput();
             playerOne = playerInput;
             playerOneText.SetActive(false);
+            
+            if(debugMode)
+            {
+                playerOne.ActivateInput();
+                playerTwoText.SetActive(false);
+                //CameraManager.Instance.ChangeCameraState("CrystalBall");
+                //DialogueArray.Instance.StartNextDialogue();
+
+            }
         } else
         {
             //audio

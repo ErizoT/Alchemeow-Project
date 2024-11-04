@@ -7,6 +7,7 @@ public class GripHandler : MonoBehaviour
     public GripPoint[] points;
     public int holds;
     public bool cooperativeHold;
+    public bool isGripped;
 
     private void Start()
     {
@@ -16,7 +17,7 @@ public class GripHandler : MonoBehaviour
     }
 
     private void Update()
-    {
+    {   
         if (holds == 2)
         {
             cooperativeHold = true;

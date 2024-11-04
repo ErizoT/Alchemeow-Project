@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 820075173961847455}
   - component: {fileID: 6610569372261753164}
   - component: {fileID: 4960386235426506402}
+  - component: {fileID: 2559732883654449400}
   m_Layer: 3
   m_Name: Visuals
   m_TagString: Untagged
@@ -455,6 +456,22 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 0.00001
   m_ConnectedMassScale: 0.00001
+--- !u!114 &2559732883654449400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753066886768650826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873c9c019a7b6d7489ab15947d893366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: []
+  holds: 0
+  cooperativeHold: 0
+  isGripped: 0
 --- !u!1 &4758212547997966723
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162e17c67bd6585469b3d6b5786a4980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDistance: 0
   playerInput: {fileID: 5529179515131860957}
   paw: {fileID: 4753066886768650826}
   moveSpeed: 3500

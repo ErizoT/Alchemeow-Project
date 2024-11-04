@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(GripHandler))]
 public class IngData : MonoBehaviour
 {
     [Tooltip("Name that the cauldron will check when placed inside.")]
     [SerializeField] string ingredientID;
     [Tooltip("Whether the object will respawn or not")]
     public bool canRespawn;
+    //public GripHandler gP;
 
     [HideInInspector] public Ingredient ingClass;
     [HideInInspector] public bool hasRespawned = false;
@@ -25,6 +27,13 @@ public class IngData : MonoBehaviour
         respawnPoint = transform.position;
         respawnRotation = transform.rotation;
         prefabToRespawn = gameObject;
+
+        /*
+        gP = GetComponent<GripHandler>();
+        if(gP == null)
+        {
+            Debug.LogError("Couldn't find a GripHandler for" + this);
+        }*/
     }
 
     public void Respawn()

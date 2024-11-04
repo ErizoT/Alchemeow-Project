@@ -39,7 +39,11 @@ public class PawController : MonoBehaviour
     [SerializeField] private StudioEventEmitter grabreleaseEmitter;
 
 
-
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawLine(visuals.transform.position, nearestObject.transform.position);
+    }
 
     private void Start()
     {
@@ -100,23 +104,22 @@ public class PawController : MonoBehaviour
             }
         }
 
-        if (grabbed)
+        if(Vector3.Distance(transform.position, nearestObject.transform.position) > grabRange)
         {
-            transform.position = nearestObject.transform.position;
-            hinge.connectedBody = nearestObject.GetComponentInParent<Rigidbody>();
-            visuals.transform.rotation = nearestObject.transform.rotation;
-            visuals.transform.position = nearestObject.transform.position;
-            animator.SetBool("Holding", true);
+            LetGo();
         }
     }
 
-    // Callum request:
-    // Play a sound when you let go of an object, not JUST the air.
-    // - Detect when it is holding an object
-    // - Detect when you let go of said object
-
     private void FixedUpdate()
     {
+        if (grabbed)
+        {
+            transform.position = nearestObject.transform.position;
+            transform.rotation = nearestObject.transform.rotation;
+            hinge.connectedBody = nearestObject.GetComponentInParent<Rigidbody>();
+            animator.SetBool("Holding", true);
+        }
+
         // Velocity Damping
         Vector3 tempV = rb.velocity;
         tempV = Vector3.Scale(tempV, new Vector3(damping, damping, damping));
@@ -158,7 +161,7 @@ public class PawController : MonoBehaviour
                     LetGo();
                 }
 
-                            }
+            }
             else
             {
                 isHolding = true;
