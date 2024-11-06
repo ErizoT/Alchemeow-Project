@@ -188,7 +188,7 @@ public class PawController : MonoBehaviour
             grabbed = true;
             paw.layer = LayerMask.NameToLayer("GhostPlayer");
             objectHeld = nearestObject;
-            objectHeld.GetComponent<GripPoint>().Gripped();
+            objectHeld.GetComponent<GripPoint>().Gripped(this);
 
             
                 
@@ -201,7 +201,7 @@ public class PawController : MonoBehaviour
         }
     }
 
-    void LetGo()
+    public void LetGo()
     {
         // Happens when you do a successful grab and let go
         

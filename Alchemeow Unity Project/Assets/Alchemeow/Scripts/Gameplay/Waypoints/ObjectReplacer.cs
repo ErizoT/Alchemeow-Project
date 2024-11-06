@@ -19,8 +19,12 @@ public class ObjectReplacer : MonoBehaviour
         {
             if (point.gameObject.CompareTag("Untagged"))
             {
-                Instantiate(objectToSpawn, this.transform.position, this.transform.rotation);
+                GameObject prefabSpawning = Instantiate(objectToSpawn, this.transform.position, this.transform.rotation);
+                prefabSpawning.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 5f, ForceMode.Impulse);
+
                 Destroy(this.gameObject);
+
+                point.GetComponent<GripPoint>().pC.LetGo();
             }
         }
     }

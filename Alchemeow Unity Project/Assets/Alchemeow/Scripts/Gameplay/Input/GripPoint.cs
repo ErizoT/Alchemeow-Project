@@ -5,6 +5,7 @@ using UnityEngine;
 public class GripPoint : MonoBehaviour
 {
     public GripHandler gripHandler;
+    public PawController pC;
 
     private void OnDrawGizmos()
     {
@@ -18,8 +19,11 @@ public class GripPoint : MonoBehaviour
         Gizmos.DrawLine(transform.position, transform.position + transform.right * -0.5f);
     }
 
-    public void Gripped()
+    public void Gripped(PawController controller)
     {
+        // Keep track of the current player holding the thing
+        pC = controller;
+
         // Set the tag of the grip point to default
         gameObject.tag = "Untagged";
         gripHandler.holds += 1;
@@ -27,6 +31,8 @@ public class GripPoint : MonoBehaviour
 
     public void Ungripped()
     {
+        pC = null;
+
         // Set the tag of the grip point to Holdable
         gameObject.tag = "Holdable";
         gripHandler.holds -= 1;
