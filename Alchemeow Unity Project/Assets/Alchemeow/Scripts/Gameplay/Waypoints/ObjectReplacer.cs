@@ -26,7 +26,7 @@ public class ObjectReplacer : MonoBehaviour
                 objectToSpawn.SetActive(true);
                 objectToSpawn.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 5f, ForceMode.Impulse);
 
-                Destroy(this.gameObject);
+                gameObject.SetActive(false);
 
                 point.GetComponent<GripPoint>().pC.LetGo();
             }

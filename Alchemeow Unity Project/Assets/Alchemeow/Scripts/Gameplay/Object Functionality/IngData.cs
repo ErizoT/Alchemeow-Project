@@ -9,6 +9,9 @@ public class IngData : MonoBehaviour
     [Tooltip("Whether the object will respawn or not")]
     public bool canRespawn;
 
+    [SerializeField] bool reactivator;
+    [SerializeField] GameObject prefabToReactivate;
+
     [HideInInspector] public Ingredient ingClass;
     [HideInInspector] public bool hasRespawned = false;
     
@@ -25,20 +28,12 @@ public class IngData : MonoBehaviour
         respawnPoint = transform.position;
         respawnRotation = transform.rotation;
         prefabToRespawn = gameObject;
-
-        /*
-        gP = GetComponent<GripHandler>();
-        if(gP == null)
-        {
-            Debug.LogError("Couldn't find a GripHandler for" + this);
-        }*/
     }
 
     public void Respawn()
     {
         if (canRespawn)
         {
-            //Instantiate(prefabToRespawn, respawnPoint, respawnRotation);
             transform.position = respawnPoint;
             transform.rotation = respawnRotation;
 
@@ -57,6 +52,11 @@ public class IngData : MonoBehaviour
                 childRb.angularVelocity = Vector3.zero; // Reset angular velocity for children as well
             }
 
+            if(reactivator)
+            {
+                gameObject.SetActive(false);
+                prefabToReactivate.SetActive(true);
+            }
         }
 
     }
