@@ -589,30 +589,45 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6684289806742105270, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4933410230414686507}
+    - targetCorrespondingSourceObject: {fileID: 6684289806742105270, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 730932450961837418}
     - targetCorrespondingSourceObject: {fileID: -1070064484387827244, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8772224459074042730}
     - targetCorrespondingSourceObject: {fileID: -1070064484387827244, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5638030962811086037}
+    - targetCorrespondingSourceObject: {fileID: -1070064484387827244, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9161937943136382546}
     - targetCorrespondingSourceObject: {fileID: 3878693915945519709, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7299643547877656835}
     - targetCorrespondingSourceObject: {fileID: 3878693915945519709, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7473410472415989659}
+    - targetCorrespondingSourceObject: {fileID: 3878693915945519709, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6513375817716875748}
     - targetCorrespondingSourceObject: {fileID: 8211287780160105573, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2488261355460655380}
     - targetCorrespondingSourceObject: {fileID: 8211287780160105573, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3022555743477099272}
+    - targetCorrespondingSourceObject: {fileID: 8211287780160105573, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3289058788784803282}
     - targetCorrespondingSourceObject: {fileID: 1236180061444712663, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8146432987677712087}
     - targetCorrespondingSourceObject: {fileID: 1236180061444712663, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7762922048468864066}
+    - targetCorrespondingSourceObject: {fileID: 1236180061444712663, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3872047524327758983}
   m_SourcePrefab: {fileID: 100100000, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
 --- !u!1 &654711220900332416 stripped
 GameObject:
@@ -667,6 +682,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3872047524327758983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 654711220900332416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: Book
+  canRespawn: 1
+  reactivator: 0
+  prefabToReactivate: {fileID: 0}
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!4 &1277200532258882601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 686882830744301438, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
@@ -735,6 +770,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6513375817716875748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3306249904703791370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: Book
+  canRespawn: 1
+  reactivator: 0
+  prefabToReactivate: {fileID: 0}
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!4 &4219463372417385523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2503791116711292772, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
@@ -793,6 +848,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &730932450961837418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968197713956931553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: Book
+  canRespawn: 1
+  reactivator: 0
+  prefabToReactivate: {fileID: 0}
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &7572685472525351555 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1070064484387827244, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
@@ -846,6 +921,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9161937943136382546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7572685472525351555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: Book
+  canRespawn: 1
+  reactivator: 0
+  prefabToReactivate: {fileID: 0}
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!1 &7621658398133438258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8211287780160105573, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
@@ -899,6 +994,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3289058788784803282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7621658398133438258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3407e09b96541a04e9f196421e403846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredientID: Book
+  canRespawn: 1
+  reactivator: 0
+  prefabToReactivate: {fileID: 0}
+  ingClass:
+    ingID: 
+    ingIMG: {fileID: 0}
+  hasRespawned: 0
 --- !u!4 &8738809979674019342 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7023282486129257817, guid: 7c4d428fa46495f4a855505b0c8f0029, type: 3}
