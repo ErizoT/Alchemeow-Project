@@ -19,6 +19,7 @@ public class PawController : MonoBehaviour
     [Range(.5f, 1f)]
     [SerializeField] float damping = 0.7f;
     [SerializeField] SkinnedMeshRenderer pawToChange;
+    [SerializeField] ParticleSystem meowParticles;
     //[SerializeField] Material playerTwoMat;
 
     public bool isHolding;
@@ -224,6 +225,20 @@ public class PawController : MonoBehaviour
         if(input.performed)
         {
             DialogueArray.Instance.NextLine();
+        }
+
+    }
+
+    public void Meow(InputAction.CallbackContext input)
+    {
+        if(input.started)
+        {
+            // Play a MEOW SOUND at varying pitches!!
+            // Somethin like...
+            // audioSource.pitch = RandomRange(0.8, 1.2);
+            // audioSource.Play();
+
+            meowParticles.Play();
         }
 
     }

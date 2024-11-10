@@ -564,6 +564,7 @@ MonoBehaviour:
   dummyRigidbody: {fileID: 5810281254281777087}
   damping: 0.7
   pawToChange: {fileID: 6864411428337062990}
+  meowParticles: {fileID: 7846571901655363676}
   isHolding: 0
   grabsuccessEmitter: {fileID: 3086258142940964302}
   grabfailEmitter: {fileID: 7006439451617332738}
@@ -729,6 +730,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: ff92df83-f3c5-4cea-81f6-a1cc794c13bf
     m_ActionName: Player/Confirm[/DualSenseGamepadHID/buttonSouth,/Keyboard/f]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5692666194571809138}
+        m_TargetAssemblyTypeName: PawController, Assembly-CSharp
+        m_MethodName: Meow
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 84f06829-3d71-40b0-9c5a-1ab45d6fe45b
+    m_ActionName: Player/Meow[/Keyboard/f]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -1271,34 +1288,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PS_Meow
       objectReference: {fileID: 0}
-    - target: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
-      propertyPath: InitialModule.startRotation.scalar
-      value: 0.5235988
-      objectReference: {fileID: 0}
-    - target: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
-      propertyPath: InitialModule.startRotation.minScalar
-      value: -0.5235988
-      objectReference: {fileID: 0}
-    - target: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
-      propertyPath: InitialModule.startRotation.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
-      propertyPath: InitialModule.startRotationX.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
-      propertyPath: InitialModule.startRotationY.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
-      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
-      value: 0.06955576
-      objectReference: {fileID: 0}
     - target: {fileID: 8653895676741607889, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.99999976
@@ -1355,5 +1344,10 @@ PrefabInstance:
 --- !u!4 &608129769454076300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8653895676741607889, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
+  m_PrefabInstance: {fileID: 8099814678774833245}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7846571901655363676 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
   m_PrefabInstance: {fileID: 8099814678774833245}
   m_PrefabAsset: {fileID: 0}
