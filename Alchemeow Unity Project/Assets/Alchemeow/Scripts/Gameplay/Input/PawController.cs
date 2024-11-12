@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using Cinemachine;
 using FMODUnity;
+using UnityEngine.UI;
 
 public class PawController : MonoBehaviour
 {
+    public static bool isPaused;
+
     [SerializeField] PlayerInput playerInput;
     [SerializeField] GameObject paw;
     [SerializeField] float moveSpeed = 10;
@@ -20,6 +22,10 @@ public class PawController : MonoBehaviour
     [SerializeField] float damping = 0.7f;
     [SerializeField] SkinnedMeshRenderer pawToChange;
     [SerializeField] ParticleSystem meowParticles;
+
+    [Header("Pause Menu Varialbles")]
+    [SerializeField] GameObject pauseMenu;
+    [SerializeField] Button pauseButton;
     //[SerializeField] Material playerTwoMat;
 
     public bool isHolding;
@@ -243,17 +249,50 @@ public class PawController : MonoBehaviour
 
     }
 
+    public void InputPause(InputAction.CallbackContext input)
+    {
+        if (input.started)
+        {
+            Pause();
+        }
+    }
+
+    public void Pause()
+    {
+        if (!isPaused)
+        {
+            Time.timeScale = 0f;
+            pauseMenu.SetActive(true);
+            isPaused = true;
+        }
+        else if (isPaused)
+        {
+            Time.timeScale = 1f;
+            pauseMenu.SetActive(false);
+            isPaused = false;
+        }
+    }
+
     public void InitialisePlayerTwo(Material matToChangeTo)
     {
         pawToChange.material = matToChangeTo;
     }
 
-    public void ResetScene(InputAction.CallbackContext input)
+    public void ResetScene()
     {
+        Time.timeScale = 1f;
+        isPaused = false;
+
         // Get the currently active scene
         Scene currentScene = SceneManager.GetActiveScene();
 
         // Reload the scene
         SceneManager.LoadScene(currentScene.name);
+    }
+
+    public void ExitScene()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MenuScreen");
     }
 }
