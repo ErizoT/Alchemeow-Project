@@ -113,7 +113,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _FoamWidth: 0
+    - _FoamWidth: 0.161
     - _Foam_Smoothness: 0.98
     - _Frequency: 2
     - _GlossMapScale: 0
@@ -136,10 +136,10 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BottomColor: {r: 0.764151, g: 0.20569181, b: 0, a: 1}
+    - _BottomColor: {r: 0.5471698, g: 0.15176219, b: 0.48036075, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 0.4716981, g: 0, b: 0.12545158, a: 1}
+    - _FoamColor: {r: 0.5169811, g: 0.04584547, b: 0.32562944, a: 1}
     - _Rim_Color: {r: 0.5943396, g: 0, b: 0.13205542, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _TopColor: {r: 0.8018868, g: 0.30999982, b: 0.11725702, a: 1}

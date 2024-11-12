@@ -128,6 +128,7 @@ MonoBehaviour:
     - ingID: CrushedCube
       ingIMG: {fileID: 0}
   ballImage: {fileID: 0}
+  dialogue: {fileID: 0}
   cauldronAnimator: {fileID: 0}
   particleCorrect: {fileID: 0}
   particleIncorrect: {fileID: 0}
@@ -145,6 +146,8 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
+  crystalBallImage: {fileID: 0}
+  crystalBallParticle: {fileID: 0}
 --- !u!1 &1672331064066000441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5604,8 +5607,8 @@ Transform:
   m_GameObject: {fileID: 6830612841049560166}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.89, z: 0}
-  m_LocalScale: {x: 2.0510244, y: 2.051025, z: 2.051024}
+  m_LocalPosition: {x: 0, y: 0.35, z: 0}
+  m_LocalScale: {x: 2.4280026, y: 2.4280033, z: 2.428002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9089107585217564865}
