@@ -46,8 +46,8 @@ public class PestelScript : MonoBehaviour
         {
             //Debug.Log("Crushing...");
             objToCrush.Crush();
-            //systemToPlay.Play();
-            //smokesoundEmitter.Play();
+            systemToPlay.Play();
+            smokesoundEmitter.Play();
         }
     }
 }
