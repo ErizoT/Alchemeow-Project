@@ -40,10 +40,20 @@ public class PawController : MonoBehaviour
     private GameObject objectHeld;
     private Camera mainCamera;
 
-    //sound for grabbing
+    //sound for grabbing and meow
     [SerializeField] private StudioEventEmitter grabsuccessEmitter;
     [SerializeField] private StudioEventEmitter grabfailEmitter;
     [SerializeField] private StudioEventEmitter grabreleaseEmitter;
+    [SerializeField] private StudioEventEmitter meowEmitter;
+
+    //sounds for pausing and pause snapshots
+    [SerializeField] private EventReference startingSnapshot;
+    [SerializeField] private EventReference maingameSnapshot;
+    [SerializeField] private EventReference pauseSound;
+    private FMOD.Studio.EventInstance pausesnapshotInstance;
+    private FMOD.Studio.EventInstance maingamesnapshotInstance;
+ 
+
 
 
     private void OnDrawGizmos()
@@ -63,7 +73,11 @@ public class PawController : MonoBehaviour
         GameObject mainCamObject = mainCamera.gameObject;
         MultipleTargetCamera camScript = mainCamObject.GetComponent<MultipleTargetCamera>();
         camScript.targets.Add(transform);
-                   }
+        //fmod snapshots
+        pausesnapshotInstance = FMODUnity.RuntimeManager.CreateInstance(startingSnapshot);
+        maingamesnapshotInstance = FMODUnity.RuntimeManager.CreateInstance(maingameSnapshot);
+        
+    }
 
     private void Update()
     {
@@ -239,10 +253,8 @@ public class PawController : MonoBehaviour
     {
         if(input.started)
         {
-            // Play a MEOW SOUND at varying pitches!!
-            // Somethin like...
-            // audioSource.pitch = RandomRange(0.8, 1.2);
-            // audioSource.Play();
+            
+            meowEmitter.Play();
 
             meowParticles.Play();
         }
@@ -259,14 +271,18 @@ public class PawController : MonoBehaviour
 
     public void Pause()
     {
+        RuntimeManager.PlayOneShot(pauseSound);
         if (!isPaused)
         {
+            pausesnapshotInstance.start();
             Time.timeScale = 0f;
             pauseMenu.SetActive(true);
             isPaused = true;
         }
         else if (isPaused)
         {
+         
+            maingamesnapshotInstance.start();
             Time.timeScale = 1f;
             pauseMenu.SetActive(false);
             isPaused = false;

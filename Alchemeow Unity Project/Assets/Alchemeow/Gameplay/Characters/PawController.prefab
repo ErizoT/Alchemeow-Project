@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4949439901500466470}
   - component: {fileID: 5117049300606462972}
   - component: {fileID: 9210176940125812904}
+  - component: {fileID: 1625064715033294721}
   m_Layer: 5
   m_Name: ResetButton
   m_TagString: Untagged
@@ -132,6 +133,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1625064715033294721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395965588841301363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &410746827482221144
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +356,7 @@ GameObject:
   - component: {fileID: 8521212808273957776}
   - component: {fileID: 3625865916506727014}
   - component: {fileID: 6469162822701300980}
+  - component: {fileID: 1067422032068594908}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -449,6 +477,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1067422032068594908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058050360541902344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &2782024205435085945
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,6 +1060,7 @@ Transform:
   - {fileID: 1524105657587855691}
   - {fileID: 8033703973749641570}
   - {fileID: 7813366704702455523}
+  - {fileID: 8412752791910207200}
   - {fileID: 608129769454076300}
   - {fileID: 4206953461356853410}
   m_Father: {fileID: 0}
@@ -1066,6 +1121,28 @@ MonoBehaviour:
   grabsuccessEmitter: {fileID: 3086258142940964302}
   grabfailEmitter: {fileID: 7006439451617332738}
   grabreleaseEmitter: {fileID: 5740428339861637075}
+  meowEmitter: {fileID: 0}
+  startingSnapshot:
+    Guid:
+      Data1: 138197135
+      Data2: 1092723479
+      Data3: 2106641586
+      Data4: -1841141534
+    Path: snapshot:/NormalGameplay
+  maingameSnapshot:
+    Guid:
+      Data1: 2050769430
+      Data2: 1314450333
+      Data3: -1263546972
+      Data4: -1992718870
+    Path: snapshot:/WaitingForPlayers
+  pauseSound:
+    Guid:
+      Data1: -1090279580
+      Data2: 1287395656
+      Data3: 1442598312
+      Data4: -1321946629
+    Path: event:/UI/ui_pause
 --- !u!114 &9208606044530037577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1378,6 +1455,101 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 0.5
   m_ConnectedMassScale: 1
+--- !u!1 &4965194650131183974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8412752791910207200}
+  - component: {fileID: 843946638872945382}
+  - component: {fileID: 1448231781087436816}
+  m_Layer: 0
+  m_Name: audio_meow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8412752791910207200
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965194650131183974}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.081, y: 0.051, z: -0.009}
+  m_LocalScale: {x: 0.99999976, y: 1, z: 0.99999976}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3003184256563353009}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &843946638872945382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965194650131183974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1309260652
+      Data2: 1152880750
+      Data3: 1272936086
+      Data4: 1010609055
+    Path: event:/Player/sfx_paw_grab_release
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1448231781087436816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4965194650131183974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -566489533
+      Data2: 1324453949
+      Data3: 1110646461
+      Data4: 1119551681
+    Path: event:/Player/sfx_meowbutton
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &5088259372375088165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1562,7 @@ GameObject:
   - component: {fileID: 3736612467090761303}
   - component: {fileID: 4119660132685517793}
   - component: {fileID: 4564080086033680395}
+  - component: {fileID: 1963234031252232292}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -1510,6 +1683,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1963234031252232292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088259372375088165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcac046535044b4c8c994da0eb639c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+    Guid:
+      Data1: 1269751693
+      Data2: 1228136075
+      Data3: -1040903547
+      Data4: 124210461
+    Path: event:/UI/ui_hover
+  pressSound:
+    Guid:
+      Data1: 1579893920
+      Data2: 1111060688
+      Data3: 1477844385
+      Data4: -1720504859
+    Path: event:/UI/ui_click
 --- !u!1 &6116871521588952802
 GameObject:
   m_ObjectHideFlags: 0
