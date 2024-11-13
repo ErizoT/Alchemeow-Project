@@ -81,13 +81,36 @@ public class DialogueDisplay : MonoBehaviour
     IEnumerator TypeLine()
     {
         portraitSprite.sprite = changeSprites[index];
+
+        // Check the current character expression for sound changes
+        string currentExpression = portraitSprite.sprite.name;
+        Debug.Log("current expression: " + currentExpression);
+        
+        if (currentExpression.Contains("r_"))
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("CurrentCharacter", 0);
+            Debug.Log("deez");
+        }
+        else if (currentExpression.Contains("Cat"))
+        {
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("CurrentCharacter", 1);
+
+
+            Debug.Log("nuts");
+        }
+
+
+
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
             dialogueEmitter.Play();
             yield return new WaitForSeconds(textSpeed);
         }
-        
+
+
+       
+
     }
 
     void NextLine()
