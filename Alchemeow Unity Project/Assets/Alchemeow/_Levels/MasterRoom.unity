@@ -4594,9 +4594,9 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ce9d07347f9ee1b44a41df69e4d100f8, type: 3}
     - {fileID: 21300000, guid: 5d86ee4054e36b24d9521befcc479212, type: 3}
     - {fileID: 21300000, guid: 59a2ec55f9bf0ec4d8026b81183f3d06, type: 3}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 2a41f9aed36e745409f996c853ffb9ca, type: 3}
+    - {fileID: 21300000, guid: e9b10ee03fb451443aac140ab6283942, type: 3}
+    - {fileID: 21300000, guid: 4f1e1b35e5083944db6a130002397b7f, type: 3}
     dialogueEntries:
     - Hellooooooooooo my delightfully devilish rascal!
     - "Today I come to you with my biggest request\u2026"
@@ -4614,17 +4614,17 @@ MonoBehaviour:
     - I'm sure the mortar and pestle can help out with that.
   - ingredientName: Popping Star
     characterExpressions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 9d5d437f1d43a1e41be996d70fa3a2fa, type: 3}
+    - {fileID: 21300000, guid: e9b10ee03fb451443aac140ab6283942, type: 3}
     dialogueEntries:
     - Hey, that seemed to do the trick!
     - Now it's asking for... Popping Stars? Thankfully I just got some from the merchant.
   - ingredientName: JooJooCut
     characterExpressions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 9d5d437f1d43a1e41be996d70fa3a2fa, type: 3}
+    - {fileID: 21300000, guid: 1154b3b6e2716014e8e4103640a66746, type: 3}
+    - {fileID: 21300000, guid: 2e917b3750e4d174687c25c3431cd111, type: 3}
+    - {fileID: 21300000, guid: c42851f75b24eb14c8ee73cb876b8a3e, type: 3}
     dialogueEntries:
     - Splendid!
     - The JooJoo frui-
@@ -4632,50 +4632,45 @@ MonoBehaviour:
     - Though, they do make good calming agents...
   - ingredientName: Crushed Bones
     characterExpressions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 9d5d437f1d43a1e41be996d70fa3a2fa, type: 3}
+    - {fileID: 21300000, guid: 2a41f9aed36e745409f996c853ffb9ca, type: 3}
     dialogueEntries:
     - Wonderful!
     - Looks like something dusty, white and broken now... right. Let's get to work!
   - ingredientName: Dragon Scale
     characterExpressions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 4f1e1b35e5083944db6a130002397b7f, type: 3}
+    - {fileID: 21300000, guid: 160ef8d13d44d3a42971972f9da52f76, type: 3}
     dialogueEntries:
     - Nice! Now, what's next...?
     - Oh dear, is that what I think it is? I hope I don't burn my paw too badly...
   - ingredientName: Fish Head
     characterExpressions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 1154b3b6e2716014e8e4103640a66746, type: 3}
+    - {fileID: 21300000, guid: d3bbe0a21e1b3604da7de989728404df, type: 3}
     dialogueEntries:
     - Phew! What a fiery individual...
     - Oooo! A flying fish head! I'm keeping the body to myself, mmmm...
   - ingredientName: RootCut
     characterExpressions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 9d5d437f1d43a1e41be996d70fa3a2fa, type: 3}
+    - {fileID: 21300000, guid: 160ef8d13d44d3a42971972f9da52f76, type: 3}
     dialogueEntries:
     - Such a tasty snack... I'll have to get more after this.
     - A root..? Oh good at least it's not a mandrake...
   - ingredientName: SlimeBall
     characterExpressions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 160ef8d13d44d3a42971972f9da52f76, type: 3}
+    - {fileID: 21300000, guid: e9b10ee03fb451443aac140ab6283942, type: 3}
     dialogueEntries:
     - I haven't had to deal with a mandrake since magic school, and I hope I don't
       have to deal with one ever again...
     - Slime? I have been keeping some Jlorp somewhere... where was it again?
   - ingredientName: Butterfly
     characterExpressions:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 2e917b3750e4d174687c25c3431cd111, type: 3}
+    - {fileID: 21300000, guid: 2a41f9aed36e745409f996c853ffb9ca, type: 3}
+    - {fileID: 21300000, guid: 160ef8d13d44d3a42971972f9da52f76, type: 3}
     dialogueEntries:
     - Bleh... I'm gonna need a shower after this...
     - "Phew! This potion is coming along swimmingly\u2026 just one last ingredient!"
@@ -5940,6 +5935,30 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2608777084611264603, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 4481.094
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608777084611264603, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2048
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608777084611264603, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5914077
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608777084611264603, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5914077
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608777084611264603, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5914077
+      objectReference: {fileID: 0}
+    - target: {fileID: 2608777084611264603, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2274
+      objectReference: {fileID: 0}
     - target: {fileID: 4309165156721198369, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -6027,7 +6046,7 @@ PrefabInstance:
     - target: {fileID: 8379958179850366106, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: c14cf784d8a0b934b8bb8469718c7283, type: 3}
+      objectReference: {fileID: 21300000, guid: bd696c48187d82541a61bed54fd8983a, type: 3}
     - target: {fileID: 8379958179850366106, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -6045,81 +6064,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d93ec91f7c1a404e9ee4ce28588ee11, type: 3}
---- !u!1 &677718623
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 677718624}
-  - component: {fileID: 677718626}
-  - component: {fileID: 677718625}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &677718624
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677718623}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.35507762, y: 0.35507762, z: 0.35507762}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2042361894}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2501.6345, y: 1377.7942}
-  m_SizeDelta: {x: 1034, y: 662}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &677718625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677718623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.73689765, g: 0.6884568, b: 0.764151, a: 0.6862745}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e7779e78851f09c4b972fa3f35f7360e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &677718626
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 677718623}
-  m_CullTransparentMesh: 1
 --- !u!4 &684271797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6316233453155367273, guid: 71d3bcb74294c844282f3a33d6a99a24, type: 3}
@@ -6400,7 +6344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 740, y: 140}
+  m_AnchoredPosition: {x: 705, y: 53}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &708466090
@@ -29037,6 +28981,81 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 0}
+--- !u!1 &1941342751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1941342752}
+  - component: {fileID: 1941342754}
+  - component: {fileID: 1941342753}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1941342752
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941342751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25130418, y: 0.25130418, z: 0.25130418}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2042361894}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -756, y: 409}
+  m_SizeDelta: {x: 1034, y: 662}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1941342753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941342751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.14117648}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e7779e78851f09c4b972fa3f35f7360e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1941342754
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941342751}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1944606166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29707,7 +29726,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 128.73596, y: 49.055595, z: -1206.3811, w: -255.4078}
+  m_margin: {x: 128.73596, y: 49.055595, z: -1091.375, w: -255.4078}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -30033,7 +30052,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 677718624}
+  - {fileID: 1941342752}
   m_Father: {fileID: 290239919}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -30102,7 +30121,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!4 &2049267859 stripped
 Transform:
@@ -38310,6 +38329,10 @@ PrefabInstance:
     - target: {fileID: 1797046160762087045, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
       propertyPath: m_Name
       value: PS_Meow
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797046160762087045, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2057244647602049025, guid: 472e149a369164a4a8795f4d2aa3e4d5, type: 3}
       propertyPath: InitialModule.startSize.scalar
