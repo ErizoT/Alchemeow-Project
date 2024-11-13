@@ -6,11 +6,14 @@ public class MortarFunctionality : MonoBehaviour
 {
     [SerializeField] float groundCheckDistance;
     [SerializeField] LayerMask layerMask;
+    [SerializeField] Animator animator;
 
     [HideInInspector] public MortarMovement mortarMovement;
     private GripHandler gP;
     private bool isGrounded;
     private bool objInBowl;
+    private bool animTriggered;
+    private bool isFrozen;
 
     private void OnDrawGizmos()
     {
@@ -22,7 +25,7 @@ public class MortarFunctionality : MonoBehaviour
 
     private void Start()
     {
-        gP = GetComponent<GripHandler>();
+        gP = GetComponentInParent<GripHandler>();
         mortarMovement = GetComponentInParent<MortarMovement>();
     }
 
@@ -33,22 +36,54 @@ public class MortarFunctionality : MonoBehaviour
         
         if(isGrounded && objInBowl)
         {
-            mortarMovement.canMove = true;
+            //mortarMovement.canMove = true;
+
+            if(!animTriggered && !isFrozen)
+            {
+                animTriggered = true;
+                animator.SetTrigger("Shocked");
+                animator.SetBool("Walking", true);
+                StartCoroutine(StartWalking());
+            }
         }
         else
         {
             mortarMovement.canMove = false;
+
+            if (animTriggered && !isFrozen)
+            {
+                animTriggered = false;
+                StartCoroutine(StopWalking());
+            }
+        }
+
+        
+        if (gP.isHeld && !isFrozen)
+        {
+            isFrozen = true;
+            animator.SetTrigger("Shocked");
+            animator.SetBool("Grabbed", true);
+        }
+        else if (!gP.isHeld && isFrozen)
+        {
+            isFrozen = false;
+            animator.SetTrigger("Shocked");
+            animator.SetBool("Grabbed", false);
         }
     }
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerStay(Collider other)
     {
         if (other.gameObject.TryGetComponent<Crushable>(out Crushable objToCrush))
         {
             objToCrush.inBowl = true;
             objInBowl = true;
+            //print("Oject in bowl!");
         }
-        else return;
+        else
+        {
+            objInBowl = false;
+        }
     }
     public void OnTriggerExit(Collider other)
     {
@@ -57,5 +92,18 @@ public class MortarFunctionality : MonoBehaviour
             objToCrush.inBowl = false;
             objInBowl = false;
         }
+    }
+    
+    IEnumerator StartWalking()
+    {
+        yield return new WaitForSeconds(.8f);
+        mortarMovement.canMove = true;
+    }
+
+    IEnumerator StopWalking()
+    {
+        animator.SetTrigger("Shocked");
+        animator.SetBool("Walking", false);
+        return null;
     }
 }

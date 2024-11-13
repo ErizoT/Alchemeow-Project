@@ -784,7 +784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437803944495798089, guid: 7db53ef4a53d8fb47989bef3cb3a403b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.914
+      value: -0.005
       objectReference: {fileID: 0}
     - target: {fileID: 4437803944495798089, guid: 7db53ef4a53d8fb47989bef3cb3a403b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -792,7 +792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4437803944495798089, guid: 7db53ef4a53d8fb47989bef3cb3a403b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.736
+      value: 0.029
       objectReference: {fileID: 0}
     - target: {fileID: 4437803944495798089, guid: 7db53ef4a53d8fb47989bef3cb3a403b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2115,10 +2115,6 @@ PrefabInstance:
     - target: {fileID: 577152561148484796, guid: 406dd3ec65bfdb44a860cf693e13097c, type: 3}
       propertyPath: m_Name
       value: Mortar
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175457888924437663, guid: 406dd3ec65bfdb44a860cf693e13097c, type: 3}
-      propertyPath: movementSpeed
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1613662709137350566, guid: 406dd3ec65bfdb44a860cf693e13097c, type: 3}
       propertyPath: m_LocalPosition.x
