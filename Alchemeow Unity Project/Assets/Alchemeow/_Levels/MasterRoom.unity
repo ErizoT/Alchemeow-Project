@@ -3971,7 +3971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &418365758
 Transform:
   m_ObjectHideFlags: 0
@@ -4587,6 +4587,13 @@ MonoBehaviour:
   ingredientDialogueList:
   - ingredientName: Crushed Crystal
     characterExpressions:
+    - {fileID: 21300000, guid: 496b81d736eb044458e1ec10f7793094, type: 3}
+    - {fileID: 21300000, guid: 5d86ee4054e36b24d9521befcc479212, type: 3}
+    - {fileID: 21300000, guid: 8f0d26dabe38c6b46b428da752ac1ebb, type: 3}
+    - {fileID: 21300000, guid: 496b81d736eb044458e1ec10f7793094, type: 3}
+    - {fileID: 21300000, guid: ce9d07347f9ee1b44a41df69e4d100f8, type: 3}
+    - {fileID: 21300000, guid: 5d86ee4054e36b24d9521befcc479212, type: 3}
+    - {fileID: 21300000, guid: 59a2ec55f9bf0ec4d8026b81183f3d06, type: 3}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -4695,6 +4702,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectChecker: {fileID: 1223322777}
   textComponent: {fileID: 2010205677}
+  portraitSprite: {fileID: 708466091}
+  changeSprites: []
   lines: []
   textSpeed: 0.05
   fadeOut: {fileID: 1682081264}
@@ -6357,6 +6366,81 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &708466088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 708466089}
+  - component: {fileID: 708466090}
+  - component: {fileID: 708466091}
+  m_Layer: 5
+  m_Name: Racoon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &708466089
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708466088}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.6825752, y: 0.6825752, z: 0.6825752}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1682081263}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 740, y: 140}
+  m_SizeDelta: {x: 512, y: 512}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &708466090
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708466088}
+  m_CullTransparentMesh: 1
+--- !u!114 &708466091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708466088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 496b81d736eb044458e1ec10f7793094, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &710500245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27056,6 +27140,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2010205676}
+  - {fileID: 708466089}
   m_Father: {fileID: 274181390}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
@@ -29586,8 +29671,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -29622,7 +29707,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 128.73596, y: 49.055595, z: -1375.4945, w: -255.4078}
+  m_margin: {x: 128.73596, y: 49.055595, z: -1206.3811, w: -255.4078}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
