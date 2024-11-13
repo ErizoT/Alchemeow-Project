@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using FMODUnity;
+using UnityEditor.UI;
 using UnityEngine.ProBuilder.MeshOperations;
 using System.Diagnostics.CodeAnalysis;
 using System;
+using UnityEngine.UI;
 
 public class DialogueDisplay : MonoBehaviour
 {
     [SerializeField] private ObjectChecker objectChecker;
     
     public TextMeshProUGUI textComponent;
+    public Image portraitSprite;
+    public List<Sprite> changeSprites;
     public List<string> lines;
     public float textSpeed;
 
@@ -51,6 +55,7 @@ public class DialogueDisplay : MonoBehaviour
             {
                 nextEmitter.Play();
                 NextLine();
+                //portraitSprite.sprite = changeSprites[index];
             }
             else // For when a player presses skip mid-sentence
             {
@@ -58,27 +63,31 @@ public class DialogueDisplay : MonoBehaviour
                 // source.Play();
                 StopAllCoroutines();
                 textComponent.text = lines[index];
+                
             }
         }
     }
 
-    public void StartDialogue(List<string> dialogueList)
+    public void StartDialogue(List<string> dialogueList, List<Sprite> characterSprites)
     {
         Debug.Log("Started Dialogue");
         fadeOut.SetBool("DialogueEnd", false);
         lines = new List<string>(dialogueList);
+        changeSprites = new List<Sprite>(characterSprites);
         index = 0;
         StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine()
     {
+        portraitSprite.sprite = changeSprites[index];
         foreach (char c in lines[index].ToCharArray())
         {
             textComponent.text += c;
             dialogueEmitter.Play();
             yield return new WaitForSeconds(textSpeed);
         }
+        
     }
 
     void NextLine()
@@ -92,6 +101,7 @@ public class DialogueDisplay : MonoBehaviour
             fadeOut.SetBool("DialogueEnd", true);
             Debug.Log("CLOSE");
             lines = null;
+            changeSprites = null;
             StartCoroutine(CameraManager.Instance.BackToPlayer());
         }
     }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DialogueArray : MonoBehaviour
 {
@@ -32,7 +33,8 @@ public class DialogueArray : MonoBehaviour
     {
         Debug.Log("Called The next dialogue");
         List<string> stringList = ingredientDialogueList[0].dialogueEntries;
-        dialogueDisplay.StartDialogue(stringList);
+        List<Sprite> spriteList = ingredientDialogueList[0].characterExpressions; 
+        dialogueDisplay.StartDialogue(stringList, spriteList);
     }
 
     public void ClearIngredient()
