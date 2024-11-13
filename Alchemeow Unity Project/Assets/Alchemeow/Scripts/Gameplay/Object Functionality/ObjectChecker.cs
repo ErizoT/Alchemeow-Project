@@ -36,6 +36,7 @@ public class ObjectChecker : MonoBehaviour
         ballImage = potions[0].ingredients[0].ingIMG;
         crystalBallImage.GetComponent<MeshRenderer>().material.SetTexture("_Texture", ballImage);
     }
+
     private void OnTriggerEnter(Collider other)
     {
         // WHEN AN INGREDIENT IS PUT INSIDE THE CAULDRON
@@ -62,14 +63,13 @@ public class ObjectChecker : MonoBehaviour
             cauldronAnimator.SetTrigger("AddedIngredient");
             cauldronAnimator.SetBool("CorrectIngredient", true);
 
-            // Call CameraManager to do the CorrectIngredient camera moveent
-            StartCoroutine(CameraManager.Instance.CorrectIngredient());
-
             // Call DialogueArray to cycle to next ingredient dialogue list
             DialogueArray.Instance.ClearIngredient();
 
+
+
             // Mark complete objective
-            print("Placed the correct ingredient");
+            //print("Placed the correct ingredient");
             CompleteObjective();
             
         }
@@ -91,7 +91,7 @@ public class ObjectChecker : MonoBehaviour
             // Call CameraManager to do the WrongIngredient camera moveent
             StartCoroutine(CameraManager.Instance.WrongIngredient());
 
-            print("Placed the wrong ingredient");
+            //print("Placed the wrong ingredient");
         }
 
         if (ingredientData.canRespawn)
@@ -105,35 +105,37 @@ public class ObjectChecker : MonoBehaviour
         cauldronAnimator.SetTrigger("AddedIngredient");
     }
 
-    private void CompleteObjective()
+    public void CompleteObjective()
     {
+        // Remove the first ingredient from the current potion
         potions[0].ingredients.RemoveAt(0);
-        ballImage = potions[0].ingredients[0].ingIMG;
-        StartCoroutine(SwitchImage(ballImage));
 
-
-        //print("Removed an ingredient");
-        
-        
-        if(potions[0].ingredients.Count == 0)
+        // Check if there are no more ingredients left
+        if (potions[0].ingredients.Count == 0)
         {
-            //print("complete potion");
+            // Initiate the ending sequence for this potion
+            print("Completed the quest!");
             CompleteQuest();
         }
+        else
+        {
+            // Call CameraManager to do the CorrectIngredient camera moveent
+            StartCoroutine(CameraManager.Instance.CorrectIngredient());
 
+            // Update the crystal ball image to the next ingredient
+            ballImage = potions[0].ingredients[0].ingIMG;
+            StartCoroutine(SwitchImage(ballImage));
+        }
     }
 
     private void CompleteQuest()
     {
-        // Remove potion[0] from the potion list
-
-        print("Moved to new potion");
-        potions.RemoveAt(0);
+        // Call CameraManager to do the CorrectIngredient camera moveent
+        StartCoroutine(CameraManager.Instance.FinalPotion());
     }
 
     IEnumerator SwitchImage(Texture2D image)
     {
-        Debug.Log("triggered");
         yield return new WaitForSeconds(2);
         crystalBallImage.GetComponent<MeshRenderer>().material.SetTexture("_Texture", image);
         crystalBallParticle.Play();

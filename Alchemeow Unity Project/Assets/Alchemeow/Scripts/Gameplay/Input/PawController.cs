@@ -141,6 +141,15 @@ public class PawController : MonoBehaviour
             animator.SetBool("Holding", true);
         }
 
+        // DEBUG, USE TO ADVANCE QUEST
+        /*
+        if (Input.GetKey(KeyCode.O))
+        {
+            GameObject deletionBox = GameObject.Find("DeletionBox");
+            ObjectChecker checker = deletionBox.GetComponent<ObjectChecker>();
+            checker.CompleteObjective();
+        }*/
+
         // Velocity Damping
         Vector3 tempV = rb.velocity;
         tempV = Vector3.Scale(tempV, new Vector3(damping, damping, damping));
@@ -253,12 +262,9 @@ public class PawController : MonoBehaviour
     {
         if(input.started)
         {
-            
             meowEmitter.Play();
-
             meowParticles.Play();
         }
-
     }
 
     public void InputPause(InputAction.CallbackContext input)

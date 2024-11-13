@@ -14,6 +14,10 @@ public class CameraManager : MonoBehaviour
     public string currentCameraState;
     public Animator stateAnimator;
 
+    [Header("Final Potion Variables")]
+    [SerializeField] GameObject finalPotion;
+    private Animator finalPotionAnimator;
+
     private void Awake()
     {
         // Singleton to make sure this is the only camera manager in the scene
@@ -25,6 +29,8 @@ public class CameraManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        finalPotionAnimator = finalPotion.GetComponent<Animator>();
     }
 
 
@@ -58,5 +64,24 @@ public class CameraManager : MonoBehaviour
     {
         ChangeCameraState("Player");
         yield return null;
+    }
+
+    public IEnumerator FinalPotion()
+    {
+        ChangeCameraState("Cauldron");
+        yield return new WaitForSeconds(2);
+
+        ChangeCameraState("FinalPotion");
+
+        // Start Potion Rising Animation
+        finalPotion.SetActive(true);
+        finalPotionAnimator.SetBool("End", true);
+        yield return new WaitForSeconds(6f);
+        // Start Dialogue Sequence
+        DialogueArray.Instance.StartNextDialogue();
+        yield return new WaitForSeconds(3f);
+        finalPotion.GetComponent<MeshCollider>().enabled = true;
+        finalPotionAnimator.enabled = false;
+        finalPotion.GetComponent<Rigidbody>().velocity = Vector3.zero;
     }
 }

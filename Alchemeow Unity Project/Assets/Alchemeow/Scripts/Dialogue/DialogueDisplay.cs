@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using FMODUnity;
-using UnityEditor.UI;
 using UnityEngine.ProBuilder.MeshOperations;
 using System.Diagnostics.CodeAnalysis;
-using System;
 using UnityEngine.UI;
 
 public class DialogueDisplay : MonoBehaviour
@@ -37,15 +35,6 @@ public class DialogueDisplay : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*if (Input.GetKeyDown(KeyCode.F))
-        {
-            AdvanceText();
-        }*/
-    }
-
     public void AdvanceText()
     {
         if (lines != null) 
@@ -70,7 +59,6 @@ public class DialogueDisplay : MonoBehaviour
 
     public void StartDialogue(List<string> dialogueList, List<Sprite> characterSprites)
     {
-        Debug.Log("Started Dialogue");
         fadeOut.SetBool("DialogueEnd", false);
         lines = new List<string>(dialogueList);
         changeSprites = new List<Sprite>(characterSprites);
@@ -122,7 +110,7 @@ public class DialogueDisplay : MonoBehaviour
         if (index == lines.Count)
         {
             fadeOut.SetBool("DialogueEnd", true);
-            Debug.Log("CLOSE");
+            //Debug.Log("CLOSE");
             lines = null;
             changeSprites = null;
             StartCoroutine(CameraManager.Instance.BackToPlayer());

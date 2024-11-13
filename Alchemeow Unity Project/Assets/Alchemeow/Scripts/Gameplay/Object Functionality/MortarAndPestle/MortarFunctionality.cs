@@ -78,7 +78,6 @@ public class MortarFunctionality : MonoBehaviour
         {
             objToCrush.inBowl = true;
             objInBowl = true;
-            //print("Oject in bowl!");
         }
         else
         {

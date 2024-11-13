@@ -31,7 +31,6 @@ public class DialogueArray : MonoBehaviour
 
     public void StartNextDialogue()
     {
-        Debug.Log("Called The next dialogue");
         List<string> stringList = ingredientDialogueList[0].dialogueEntries;
         List<Sprite> spriteList = ingredientDialogueList[0].characterExpressions; 
         dialogueDisplay.StartDialogue(stringList, spriteList);
