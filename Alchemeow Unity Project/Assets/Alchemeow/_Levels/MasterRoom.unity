@@ -1362,15 +1362,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.571024
+      value: -10.637
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.235806
+      value: 25.064
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.75092
+      value: -21.601
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalRotation.w
@@ -27269,15 +27269,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.224655
+      value: -4.78
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.740126
+      value: 17.33
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -25.498365
+      value: -26.03
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30582,7 +30582,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2042361894
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30632,10 +30632,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1980, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -38258,15 +38258,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -37.801254
+      value: -37.42
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.533203
+      value: 22.43
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -24.025564
+      value: -24.02
       objectReference: {fileID: 0}
     - target: {fileID: 470460988878239270, guid: 57b91317769198e4c9fcc89db38a3594, type: 3}
       propertyPath: m_LocalRotation.w
