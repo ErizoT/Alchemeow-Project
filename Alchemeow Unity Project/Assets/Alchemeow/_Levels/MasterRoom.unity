@@ -29611,7 +29611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70e4aff7c12860f469ca08f4607b4043, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 1
+  debugMode: 0
   playerOneSpawn: {fileID: 358699800}
   playerTwoSpawn: {fileID: 595738771}
   playerOneText: {fileID: 256039541}
